@@ -1,0 +1,20 @@
+// Modeling > New table. Then mark as a date table using the date column.
+// Full calendar boundaries avoid partial-month artifacts in time intelligence.
+DimDate =
+VAR MinDate = MIN ( 'Bookings'[booking_date] )
+VAR MaxDate = MAX ( 'Bookings'[booking_date] )
+RETURN
+    SELECTCOLUMNS (
+        ADDCOLUMNS (
+            CALENDAR ( DATE ( YEAR ( MinDate ), 1, 1 ), DATE ( YEAR ( MaxDate ), 12, 31 ) ),
+            "yr", YEAR ( [Date] ),
+            "month_num", MONTH ( [Date] ),
+            "month_text", FORMAT ( [Date], "MMM" ),
+            "year_month_text", FORMAT ( [Date], "yyyy-MM" )
+        ),
+        "date", [Date],
+        "year", [yr],
+        "month_number", [month_num],
+        "month_name", [month_text],
+        "year_month", [year_month_text]
+    )

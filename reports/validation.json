@@ -1,0 +1,100 @@
+{
+  "anomalies": {
+    "accepted_booking_value_inr": 51279303,
+    "accepted_row_count": 19301,
+    "conflicting_booking_id_groups": 349,
+    "conflicting_fields_by_group_count": {
+      "Booking_Date": 349
+    },
+    "exact_duplicate_rows_removed": 1,
+    "exact_duplicate_value_removed_inr": 660,
+    "invalid_chronology_count": 11408,
+    "invalid_chronology_pct": 59.105746,
+    "population": "accepted booking records",
+    "quarantined_booking_value_inr": 1775602,
+    "quarantined_rows": 698,
+    "records_in_delay_conflicting_groups": 7145,
+    "records_in_occupancy_conflicting_groups": 8639,
+    "retained_row_pct": 96.505,
+    "source_booking_value_inr": 53055565,
+    "source_charge_mismatch_count": 0,
+    "source_missing_cell_count": 0,
+    "source_row_count": 20000,
+    "source_unique_booking_ids": 19650,
+    "train_date_delay_conflicting_groups": 3113,
+    "train_date_groups": 14482,
+    "train_date_groups_with_multiple_records": 3845,
+    "train_date_occupancy_conflicting_groups": 3833,
+    "train_metadata_conflicting_numbers": 540,
+    "train_metadata_conflicting_numbers_by_field": {
+      "destination_station": 540,
+      "distance_km": 540,
+      "railway_zone": 540,
+      "route": 540,
+      "source_station": 540,
+      "train_capacity": 0,
+      "train_name": 540,
+      "train_type": 0
+    },
+    "train_number_count": 540,
+    "valid_lead_time_count": 7893
+  },
+  "check_count": 24,
+  "checks": {
+    "accepted_and_quarantine_ids_disjoint": true,
+    "accepted_booking_ids_unique": true,
+    "all_charge_components_reconcile": true,
+    "booking_types_count_and_value_reconcile": true,
+    "booking_value_reconciles": true,
+    "channel_type_count_and_value_reconcile": true,
+    "channels_count_and_value_reconcile": true,
+    "classes_count_and_value_reconcile": true,
+    "hourly_count_and_value_reconcile": true,
+    "lead_time_denominators_reconcile": true,
+    "monthly_channel_count_and_value_reconcile": true,
+    "monthly_count_and_value_reconcile": true,
+    "monthly_status_count_and_value_reconcile": true,
+    "partners_count_and_value_reconcile": true,
+    "payment_methods_count_and_value_reconcile": true,
+    "routes_count_and_value_reconcile": true,
+    "row_count_reconciles": true,
+    "sqlite_foreign_keys_valid": true,
+    "sqlite_integrity_ok": true,
+    "sqlite_totals_match": true,
+    "statuses_count_and_value_reconcile": true,
+    "train_types_count_and_value_reconcile": true,
+    "weekday_count_and_value_reconcile": true,
+    "zones_count_and_value_reconcile": true
+  },
+  "qualification": "PASS means processing and accounting controls pass; source anomalies remain explicitly flagged or quarantined.",
+  "reconciliation": [
+    {
+      "booking_value_inr": 53055565,
+      "row_count": 20000,
+      "stage": "source"
+    },
+    {
+      "booking_value_inr": -660,
+      "row_count": -1,
+      "stage": "less_exact_duplicate_occurrences"
+    },
+    {
+      "booking_value_inr": -1775602,
+      "row_count": -698,
+      "stage": "less_conflicting_id_quarantine"
+    },
+    {
+      "booking_value_inr": 51279303,
+      "row_count": 19301,
+      "stage": "accepted"
+    }
+  ],
+  "schema_version": "1.0",
+  "sql_checks": {
+    "foreign_key_violations": 0,
+    "integrity_check": "ok",
+    "sql_booking_value_inr": 51279303,
+    "sql_row_count": 19301
+  },
+  "status": "PASS"
+}

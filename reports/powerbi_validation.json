@@ -1,0 +1,4132 @@
+{
+  "status": "passed",
+  "validated_at_utc": "2026-10-06T14:34:38.925530+00:00",
+  "scope": "Official Microsoft JSON schemas, project references, model field references, visual bounds and embedded-source equality. No Power BI engine was run.",
+  "not_tested": [
+    "Power BI Desktop file opening",
+    "Power Query M execution and refresh",
+    "DAX evaluation and filter behavior",
+    "Desktop visual rendering",
+    "PBIX serialization"
+  ],
+  "summary": {
+    "embedded_bookings_verified": true,
+    "tables": 2,
+    "measures": 38,
+    "relationships": 2,
+    "embedded_sources": [
+      {
+        "table": "Bookings",
+        "format": "CSV",
+        "payload_sha256": "01e05a54749d2a77096f0c3e131334cea0059028e76e97095335da08dea0b1b9",
+        "rows": 19301
+      },
+      {
+        "table": "DimDate",
+        "format": "CSV",
+        "payload_sha256": "c2f19e2a629ec6250aa4bc4ee0c1a5595130bfdf6691c969a6c4ed405ba031c7",
+        "rows": 365
+      }
+    ],
+    "pages": 3,
+    "visuals": 60,
+    "visual_types": {
+      "textbox": 16,
+      "lineChart": 2,
+      "slicer": 15,
+      "tableEx": 2,
+      "cardVisual": 19,
+      "barChart": 6
+    },
+    "official_schema_files": 69,
+    "official_schema_resources": 15
+  },
+  "checks": [
+    {
+      "name": "pbip_single_report",
+      "passed": true,
+      "detail": [
+        "IRCTC.Report"
+      ]
+    },
+    {
+      "name": "pbip_report_path",
+      "passed": true,
+      "detail": {
+        "reference": "IRCTC.Report",
+        "resolved": "powerbi/IRCTC.Report"
+      }
+    },
+    {
+      "name": "report_model_path",
+      "passed": true,
+      "detail": {
+        "reference": "../IRCTC.SemanticModel",
+        "resolved": "powerbi/IRCTC.SemanticModel"
+      }
+    },
+    {
+      "name": "official_schema:powerbi/IRCTC.pbip",
+      "passed": true,
+      "detail": "https://developer.microsoft.com/json-schemas/fabric/pbip/pbipProperties/1.0.0/schema.json"
+    },
+    {
+      "name": "official_schema:powerbi/IRCTC.Report/definition.pbir",
+      "passed": true,
+      "detail": "https://developer.microsoft.com/json-schemas/fabric/item/report/definitionProperties/2.0.0/schema.json"
+    },
+    {
+      "name": "official_schema:powerbi/IRCTC.SemanticModel/definition.pbism",
+      "passed": true,
+      "detail": "https://developer.microsoft.com/json-schemas/fabric/item/semanticModel/definitionProperties/1.0.0/schema.json"
+    },
+    {
+      "name": "official_schema:powerbi/IRCTC.Report/definition/pages/data_quality/page.json",
+      "passed": true,
+      "detail": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json"
+    },
+    {
+      "name": "official_schema:powerbi/IRCTC.Report/definition/pages/data_quality/visuals/amount_reconciliation/visual.json",
+      "passed": true,
+      "detail": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json"
+    },
+    {
+      "name": "official_schema:powerbi/IRCTC.Report/definition/pages/data_quality/visuals/chronology_month/visual.json",
+      "passed": true,
+      "detail": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json"
+    },
+    {
+      "name": "official_schema:powerbi/IRCTC.Report/definition/pages/data_quality/visuals/filter_channel/visual.json",
+      "passed": true,
+      "detail": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json"
+    },
+    {
+      "name": "official_schema:powerbi/IRCTC.Report/definition/pages/data_quality/visuals/filter_month/visual.json",
+      "passed": true,
+      "detail": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json"
+    },
+    {
+      "name": "official_schema:powerbi/IRCTC.Report/definition/pages/data_quality/visuals/filter_route/visual.json",
+      "passed": true,
+      "detail": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json"
+    },
+    {
+      "name": "official_schema:powerbi/IRCTC.Report/definition/pages/data_quality/visuals/filter_status/visual.json",
+      "passed": true,
+      "detail": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json"
+    },
+    {
+      "name": "official_schema:powerbi/IRCTC.Report/definition/pages/data_quality/visuals/filter_type/visual.json",
+      "passed": true,
+      "detail": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json"
+    },
+    {
+      "name": "official_schema:powerbi/IRCTC.Report/definition/pages/data_quality/visuals/fixed_heading/visual.json",
+      "passed": true,
+      "detail": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json"
+    },
+    {
+      "name": "official_schema:powerbi/IRCTC.Report/definition/pages/data_quality/visuals/page_number/visual.json",
+      "passed": true,
+      "detail": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json"
+    },
+    {
+      "name": "official_schema:powerbi/IRCTC.Report/definition/pages/data_quality/visuals/page_subtitle/visual.json",
+      "passed": true,
+      "detail": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json"
+    },
+    {
+      "name": "official_schema:powerbi/IRCTC.Report/definition/pages/data_quality/visuals/page_title/visual.json",
+      "passed": true,
+      "detail": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json"
+    },
+    {
+      "name": "official_schema:powerbi/IRCTC.Report/definition/pages/data_quality/visuals/quality_details/visual.json",
+      "passed": true,
+      "detail": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json"
+    },
+    {
+      "name": "official_schema:powerbi/IRCTC.Report/definition/pages/data_quality/visuals/quality_notes/visual.json",
+      "passed": true,
+      "detail": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json"
+    },
+    {
+      "name": "official_schema:powerbi/IRCTC.Report/definition/pages/data_quality/visuals/route_quality/visual.json",
+      "passed": true,
+      "detail": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json"
+    },
+    {
+      "name": "official_schema:powerbi/IRCTC.Report/definition/pages/data_quality/visuals/selected_0/visual.json",
+      "passed": true,
+      "detail": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json"
+    },
+    {
+      "name": "official_schema:powerbi/IRCTC.Report/definition/pages/data_quality/visuals/selected_1/visual.json",
+      "passed": true,
+      "detail": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json"
+    },
+    {
+      "name": "official_schema:powerbi/IRCTC.Report/definition/pages/data_quality/visuals/selected_2/visual.json",
+      "passed": true,
+      "detail": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json"
+    },
+    {
+      "name": "official_schema:powerbi/IRCTC.Report/definition/pages/data_quality/visuals/selected_3/visual.json",
+      "passed": true,
+      "detail": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json"
+    },
+    {
+      "name": "official_schema:powerbi/IRCTC.Report/definition/pages/data_quality/visuals/selected_4/visual.json",
+      "passed": true,
+      "detail": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json"
+    },
+    {
+      "name": "official_schema:powerbi/IRCTC.Report/definition/pages/data_quality/visuals/selected_heading/visual.json",
+      "passed": true,
+      "detail": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json"
+    },
+    {
+      "name": "official_schema:powerbi/IRCTC.Report/definition/pages/data_quality/visuals/source_0/visual.json",
+      "passed": true,
+      "detail": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json"
+    },
+    {
+      "name": "official_schema:powerbi/IRCTC.Report/definition/pages/data_quality/visuals/source_1/visual.json",
+      "passed": true,
+      "detail": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json"
+    },
+    {
+      "name": "official_schema:powerbi/IRCTC.Report/definition/pages/data_quality/visuals/source_2/visual.json",
+      "passed": true,
+      "detail": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json"
+    },
+    {
+      "name": "official_schema:powerbi/IRCTC.Report/definition/pages/data_quality/visuals/source_3/visual.json",
+      "passed": true,
+      "detail": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json"
+    },
+    {
+      "name": "official_schema:powerbi/IRCTC.Report/definition/pages/data_quality/visuals/source_4/visual.json",
+      "passed": true,
+      "detail": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json"
+    },
+    {
+      "name": "official_schema:powerbi/IRCTC.Report/definition/pages/overview/page.json",
+      "passed": true,
+      "detail": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json"
+    },
+    {
+      "name": "official_schema:powerbi/IRCTC.Report/definition/pages/overview/visuals/channel_type_value/visual.json",
+      "passed": true,
+      "detail": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json"
+    },
+    {
+      "name": "official_schema:powerbi/IRCTC.Report/definition/pages/overview/visuals/filter_channel/visual.json",
+      "passed": true,
+      "detail": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json"
+    },
+    {
+      "name": "official_schema:powerbi/IRCTC.Report/definition/pages/overview/visuals/filter_month/visual.json",
+      "passed": true,
+      "detail": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json"
+    },
+    {
+      "name": "official_schema:powerbi/IRCTC.Report/definition/pages/overview/visuals/filter_route/visual.json",
+      "passed": true,
+      "detail": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json"
+    },
+    {
+      "name": "official_schema:powerbi/IRCTC.Report/definition/pages/overview/visuals/filter_status/visual.json",
+      "passed": true,
+      "detail": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json"
+    },
+    {
+      "name": "official_schema:powerbi/IRCTC.Report/definition/pages/overview/visuals/filter_type/visual.json",
+      "passed": true,
+      "detail": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json"
+    },
+    {
+      "name": "official_schema:powerbi/IRCTC.Report/definition/pages/overview/visuals/kpi_0/visual.json",
+      "passed": true,
+      "detail": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json"
+    },
+    {
+      "name": "official_schema:powerbi/IRCTC.Report/definition/pages/overview/visuals/kpi_1/visual.json",
+      "passed": true,
+      "detail": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json"
+    },
+    {
+      "name": "official_schema:powerbi/IRCTC.Report/definition/pages/overview/visuals/kpi_2/visual.json",
+      "passed": true,
+      "detail": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json"
+    },
+    {
+      "name": "official_schema:powerbi/IRCTC.Report/definition/pages/overview/visuals/kpi_3/visual.json",
+      "passed": true,
+      "detail": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json"
+    },
+    {
+      "name": "official_schema:powerbi/IRCTC.Report/definition/pages/overview/visuals/kpi_4/visual.json",
+      "passed": true,
+      "detail": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json"
+    },
+    {
+      "name": "official_schema:powerbi/IRCTC.Report/definition/pages/overview/visuals/metric_note/visual.json",
+      "passed": true,
+      "detail": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json"
+    },
+    {
+      "name": "official_schema:powerbi/IRCTC.Report/definition/pages/overview/visuals/monthly_bookings/visual.json",
+      "passed": true,
+      "detail": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json"
+    },
+    {
+      "name": "official_schema:powerbi/IRCTC.Report/definition/pages/overview/visuals/page_number/visual.json",
+      "passed": true,
+      "detail": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json"
+    },
+    {
+      "name": "official_schema:powerbi/IRCTC.Report/definition/pages/overview/visuals/page_subtitle/visual.json",
+      "passed": true,
+      "detail": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json"
+    },
+    {
+      "name": "official_schema:powerbi/IRCTC.Report/definition/pages/overview/visuals/page_title/visual.json",
+      "passed": true,
+      "detail": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json"
+    },
+    {
+      "name": "official_schema:powerbi/IRCTC.Report/definition/pages/overview/visuals/route_bookings/visual.json",
+      "passed": true,
+      "detail": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json"
+    },
+    {
+      "name": "official_schema:powerbi/IRCTC.Report/definition/pages/overview/visuals/status_value/visual.json",
+      "passed": true,
+      "detail": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json"
+    },
+    {
+      "name": "official_schema:powerbi/IRCTC.Report/definition/pages/pages.json",
+      "passed": true,
+      "detail": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/pagesMetadata/1.0.0/schema.json"
+    },
+    {
+      "name": "official_schema:powerbi/IRCTC.Report/definition/pages/routes_customers/page.json",
+      "passed": true,
+      "detail": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json"
+    },
+    {
+      "name": "official_schema:powerbi/IRCTC.Report/definition/pages/routes_customers/visuals/class_value/visual.json",
+      "passed": true,
+      "detail": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json"
+    },
+    {
+      "name": "official_schema:powerbi/IRCTC.Report/definition/pages/routes_customers/visuals/filter_channel/visual.json",
+      "passed": true,
+      "detail": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json"
+    },
+    {
+      "name": "official_schema:powerbi/IRCTC.Report/definition/pages/routes_customers/visuals/filter_month/visual.json",
+      "passed": true,
+      "detail": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json"
+    },
+    {
+      "name": "official_schema:powerbi/IRCTC.Report/definition/pages/routes_customers/visuals/filter_route/visual.json",
+      "passed": true,
+      "detail": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json"
+    },
+    {
+      "name": "official_schema:powerbi/IRCTC.Report/definition/pages/routes_customers/visuals/filter_status/visual.json",
+      "passed": true,
+      "detail": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json"
+    },
+    {
+      "name": "official_schema:powerbi/IRCTC.Report/definition/pages/routes_customers/visuals/filter_type/visual.json",
+      "passed": true,
+      "detail": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json"
+    },
+    {
+      "name": "official_schema:powerbi/IRCTC.Report/definition/pages/routes_customers/visuals/kpi_0/visual.json",
+      "passed": true,
+      "detail": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json"
+    },
+    {
+      "name": "official_schema:powerbi/IRCTC.Report/definition/pages/routes_customers/visuals/kpi_1/visual.json",
+      "passed": true,
+      "detail": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json"
+    },
+    {
+      "name": "official_schema:powerbi/IRCTC.Report/definition/pages/routes_customers/visuals/kpi_2/visual.json",
+      "passed": true,
+      "detail": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json"
+    },
+    {
+      "name": "official_schema:powerbi/IRCTC.Report/definition/pages/routes_customers/visuals/kpi_3/visual.json",
+      "passed": true,
+      "detail": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json"
+    },
+    {
+      "name": "official_schema:powerbi/IRCTC.Report/definition/pages/routes_customers/visuals/page_number/visual.json",
+      "passed": true,
+      "detail": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json"
+    },
+    {
+      "name": "official_schema:powerbi/IRCTC.Report/definition/pages/routes_customers/visuals/page_subtitle/visual.json",
+      "passed": true,
+      "detail": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json"
+    },
+    {
+      "name": "official_schema:powerbi/IRCTC.Report/definition/pages/routes_customers/visuals/page_title/visual.json",
+      "passed": true,
+      "detail": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json"
+    },
+    {
+      "name": "official_schema:powerbi/IRCTC.Report/definition/pages/routes_customers/visuals/payment_value/visual.json",
+      "passed": true,
+      "detail": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json"
+    },
+    {
+      "name": "official_schema:powerbi/IRCTC.Report/definition/pages/routes_customers/visuals/route_detail/visual.json",
+      "passed": true,
+      "detail": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json"
+    },
+    {
+      "name": "official_schema:powerbi/IRCTC.Report/definition/pages/routes_customers/visuals/route_note/visual.json",
+      "passed": true,
+      "detail": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json"
+    },
+    {
+      "name": "official_schema:powerbi/IRCTC.Report/definition/pages/routes_customers/visuals/train_type_bookings/visual.json",
+      "passed": true,
+      "detail": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json"
+    },
+    {
+      "name": "official_schema:powerbi/IRCTC.Report/definition/report.json",
+      "passed": true,
+      "detail": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/report/3.3.0/schema.json"
+    },
+    {
+      "name": "official_schema:powerbi/IRCTC.Report/definition/version.json",
+      "passed": true,
+      "detail": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/versionMetadata/1.0.0/schema.json"
+    },
+    {
+      "name": "model_unique_table_names",
+      "passed": true,
+      "detail": [
+        "Bookings",
+        "DimDate"
+      ]
+    },
+    {
+      "name": "model_compatibility_level",
+      "passed": true,
+      "detail": 1600
+    },
+    {
+      "name": "model_unique_measure_names",
+      "passed": true,
+      "detail": {
+        "count": 38
+      }
+    },
+    {
+      "name": "model_has_measures",
+      "passed": true,
+      "detail": {
+        "count": 38
+      }
+    },
+    {
+      "name": "model_unique_columns:Bookings",
+      "passed": true,
+      "detail": {
+        "count": 42
+      }
+    },
+    {
+      "name": "model_partition:Bookings",
+      "passed": true,
+      "detail": {
+        "count": 1
+      }
+    },
+    {
+      "name": "sort_columns:Bookings",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "model_unique_columns:DimDate",
+      "passed": true,
+      "detail": {
+        "count": 9
+      }
+    },
+    {
+      "name": "model_partition:DimDate",
+      "passed": true,
+      "detail": {
+        "count": 1
+      }
+    },
+    {
+      "name": "sort_columns:DimDate",
+      "passed": true,
+      "detail": [
+        "month_number",
+        "weekday_number"
+      ]
+    },
+    {
+      "name": "relationship:3f6e6489-8179-5778-97b2-cbd1dd4effdb",
+      "passed": true,
+      "detail": {
+        "name": "3f6e6489-8179-5778-97b2-cbd1dd4effdb",
+        "fromTable": "Bookings",
+        "fromColumn": "booking_date",
+        "fromCardinality": "many",
+        "toTable": "DimDate",
+        "toColumn": "date",
+        "toCardinality": "one",
+        "isActive": true,
+        "crossFilteringBehavior": "oneDirection",
+        "securityFilteringBehavior": "oneDirection",
+        "joinOnDateBehavior": "dateAndTime"
+      }
+    },
+    {
+      "name": "relationship:1a9e8623-6709-5ef3-b580-5b34da23d18e",
+      "passed": true,
+      "detail": {
+        "name": "1a9e8623-6709-5ef3-b580-5b34da23d18e",
+        "fromTable": "Bookings",
+        "fromColumn": "travel_date",
+        "fromCardinality": "many",
+        "toTable": "DimDate",
+        "toColumn": "date",
+        "toCardinality": "one",
+        "isActive": false,
+        "crossFilteringBehavior": "oneDirection",
+        "securityFilteringBehavior": "oneDirection",
+        "joinOnDateBehavior": "dateAndTime"
+      }
+    },
+    {
+      "name": "qualified_dax_field_references",
+      "passed": true,
+      "detail": {
+        "references_checked": 22,
+        "invalid": [],
+        "scope": "Reference spelling only. DAX was not executed."
+      }
+    },
+    {
+      "name": "unqualified_dax_measure_references",
+      "passed": true,
+      "detail": {
+        "invalid": [],
+        "scope": "Known named measures only; no DAX expression evaluation."
+      }
+    },
+    {
+      "name": "measure_dependency_cycles",
+      "passed": true,
+      "detail": "No cycles in statically extracted named-measure references."
+    },
+    {
+      "name": "import_mode:Bookings",
+      "passed": true,
+      "detail": "import"
+    },
+    {
+      "name": "portable_partition:Bookings",
+      "passed": true,
+      "detail": {
+        "source_type": "m",
+        "external_data_source": false
+      }
+    },
+    {
+      "name": "source_columns:Bookings",
+      "passed": true,
+      "detail": {
+        "source_column_count": 42,
+        "model_column_count": 42,
+        "missing_from_model": [],
+        "missing_from_source": []
+      }
+    },
+    {
+      "name": "source_types:Bookings",
+      "passed": true,
+      "detail": "All nonblank source values fit their declared model scalar types."
+    },
+    {
+      "name": "embedded_bookings_match_clean_csv",
+      "passed": true,
+      "detail": {
+        "embedded_records": 19301,
+        "source_records": 19301,
+        "full_row_and_column_equality": true,
+        "exact_csv_byte_equality": true
+      }
+    },
+    {
+      "name": "embedded_booking_controls",
+      "passed": true,
+      "detail": {
+        "expected": {
+          "rows": 19301,
+          "value": 51279303,
+          "users": 19101,
+          "train_numbers": 540,
+          "passengers": 38528,
+          "invalid_chronology": 11408
+        },
+        "actual": {
+          "rows": 19301,
+          "value": 51279303.0,
+          "users": 19101,
+          "train_numbers": 540,
+          "passengers": 38528,
+          "invalid_chronology": 11408
+        }
+      }
+    },
+    {
+      "name": "import_mode:DimDate",
+      "passed": true,
+      "detail": "import"
+    },
+    {
+      "name": "portable_partition:DimDate",
+      "passed": true,
+      "detail": {
+        "source_type": "m",
+        "external_data_source": false
+      }
+    },
+    {
+      "name": "source_columns:DimDate",
+      "passed": true,
+      "detail": {
+        "source_column_count": 9,
+        "model_column_count": 9,
+        "missing_from_model": [],
+        "missing_from_source": []
+      }
+    },
+    {
+      "name": "source_types:DimDate",
+      "passed": true,
+      "detail": "All nonblank source values fit their declared model scalar types."
+    },
+    {
+      "name": "relationship_data:3f6e6489-8179-5778-97b2-cbd1dd4effdb",
+      "passed": true,
+      "detail": {
+        "missing_foreign_keys": [],
+        "to_side_unique": true,
+        "from_unique_values": 365,
+        "to_records": 365
+      }
+    },
+    {
+      "name": "relationship_data:1a9e8623-6709-5ef3-b580-5b34da23d18e",
+      "passed": true,
+      "detail": {
+        "missing_foreign_keys": [],
+        "to_side_unique": true,
+        "from_unique_values": 75,
+        "to_records": 365
+      }
+    },
+    {
+      "name": "embedded_booking_source_present",
+      "passed": true,
+      "detail": [
+        {
+          "table": "Bookings",
+          "format": "CSV",
+          "payload_sha256": "01e05a54749d2a77096f0c3e131334cea0059028e76e97095335da08dea0b1b9",
+          "rows": 19301
+        },
+        {
+          "table": "DimDate",
+          "format": "CSV",
+          "payload_sha256": "c2f19e2a629ec6250aa4bc4ee0c1a5595130bfdf6691c969a6c4ed405ba031c7",
+          "rows": 365
+        }
+      ]
+    },
+    {
+      "name": "required_report_file:version.json",
+      "passed": true,
+      "detail": "version.json"
+    },
+    {
+      "name": "required_report_file:report.json",
+      "passed": true,
+      "detail": "report.json"
+    },
+    {
+      "name": "required_report_file:pages/pages.json",
+      "passed": true,
+      "detail": "pages/pages.json"
+    },
+    {
+      "name": "report_resource:CY24SU02",
+      "passed": true,
+      "detail": {
+        "reference": "BaseThemes/CY24SU02.json",
+        "resolved": "powerbi/IRCTC.Report/StaticResources/SharedResources/BaseThemes/CY24SU02.json"
+      }
+    },
+    {
+      "name": "report_resource:IRCTC_Theme.json",
+      "passed": true,
+      "detail": {
+        "reference": "IRCTC_Theme.json",
+        "resolved": "powerbi/IRCTC.Report/StaticResources/RegisteredResources/IRCTC_Theme.json"
+      }
+    },
+    {
+      "name": "theme_resource_binding:baseTheme",
+      "passed": true,
+      "detail": {
+        "resource_package": "SharedResources",
+        "name": "CY24SU02"
+      }
+    },
+    {
+      "name": "theme_resource_binding:customTheme",
+      "passed": true,
+      "detail": {
+        "resource_package": "RegisteredResources",
+        "name": "IRCTC_Theme.json"
+      }
+    },
+    {
+      "name": "report_pages_present",
+      "passed": true,
+      "detail": [
+        "data_quality",
+        "overview",
+        "routes_customers"
+      ]
+    },
+    {
+      "name": "page_ids_unique",
+      "passed": true,
+      "detail": [
+        "data_quality",
+        "overview",
+        "routes_customers"
+      ]
+    },
+    {
+      "name": "page_order_complete",
+      "passed": true,
+      "detail": {
+        "pageOrder": [
+          "overview",
+          "routes_customers",
+          "data_quality"
+        ],
+        "pageIds": [
+          "data_quality",
+          "overview",
+          "routes_customers"
+        ]
+      }
+    },
+    {
+      "name": "active_page_exists",
+      "passed": true,
+      "detail": "overview"
+    },
+    {
+      "name": "page_folder_id:data_quality",
+      "passed": true,
+      "detail": "data_quality"
+    },
+    {
+      "name": "visual_bounds:amount_reconciliation",
+      "passed": true,
+      "detail": {
+        "page": "data_quality",
+        "position": {
+          "x": 40,
+          "y": 360,
+          "z": 15000,
+          "width": 1520,
+          "height": 30,
+          "tabOrder": 15000
+        },
+        "canvas": [
+          1600,
+          1000
+        ]
+      }
+    },
+    {
+      "name": "visual_folder_id:amount_reconciliation",
+      "passed": true,
+      "detail": "amount_reconciliation"
+    },
+    {
+      "name": "visual_bounds:chronology_month",
+      "passed": true,
+      "detail": {
+        "page": "data_quality",
+        "position": {
+          "x": 40,
+          "y": 568,
+          "z": 22000,
+          "width": 744,
+          "height": 266,
+          "tabOrder": 22000
+        },
+        "canvas": [
+          1600,
+          1000
+        ]
+      }
+    },
+    {
+      "name": "visual_folder_id:chronology_month",
+      "passed": true,
+      "detail": "chronology_month"
+    },
+    {
+      "name": "formatting_metadata_bindings:data_quality/chronology_month",
+      "passed": true,
+      "detail": {
+        "selectors": 1,
+        "unresolved": []
+      }
+    },
+    {
+      "name": "data_visual_projection:chronology_month",
+      "passed": true,
+      "detail": {
+        "type": "lineChart",
+        "projection_count": 2
+      }
+    },
+    {
+      "name": "native_visual_roles:chronology_month",
+      "passed": true,
+      "detail": {
+        "type": "lineChart",
+        "required_for_this_report": [
+          "Category",
+          "Y"
+        ],
+        "populated_roles": [
+          "Category",
+          "Y"
+        ]
+      }
+    },
+    {
+      "name": "visual_bounds:filter_channel",
+      "passed": true,
+      "detail": {
+        "page": "data_quality",
+        "position": {
+          "x": 348,
+          "y": 114,
+          "z": 5000,
+          "width": 288,
+          "height": 80,
+          "tabOrder": 5000
+        },
+        "canvas": [
+          1600,
+          1000
+        ]
+      }
+    },
+    {
+      "name": "visual_folder_id:filter_channel",
+      "passed": true,
+      "detail": "filter_channel"
+    },
+    {
+      "name": "data_visual_projection:filter_channel",
+      "passed": true,
+      "detail": {
+        "type": "slicer",
+        "projection_count": 1
+      }
+    },
+    {
+      "name": "native_visual_roles:filter_channel",
+      "passed": true,
+      "detail": {
+        "type": "slicer",
+        "required_for_this_report": [
+          "Values"
+        ],
+        "populated_roles": [
+          "Values"
+        ]
+      }
+    },
+    {
+      "name": "visual_bounds:filter_month",
+      "passed": true,
+      "detail": {
+        "page": "data_quality",
+        "position": {
+          "x": 40,
+          "y": 114,
+          "z": 4000,
+          "width": 288,
+          "height": 80,
+          "tabOrder": 4000
+        },
+        "canvas": [
+          1600,
+          1000
+        ]
+      }
+    },
+    {
+      "name": "visual_folder_id:filter_month",
+      "passed": true,
+      "detail": "filter_month"
+    },
+    {
+      "name": "data_visual_projection:filter_month",
+      "passed": true,
+      "detail": {
+        "type": "slicer",
+        "projection_count": 1
+      }
+    },
+    {
+      "name": "native_visual_roles:filter_month",
+      "passed": true,
+      "detail": {
+        "type": "slicer",
+        "required_for_this_report": [
+          "Values"
+        ],
+        "populated_roles": [
+          "Values"
+        ]
+      }
+    },
+    {
+      "name": "visual_bounds:filter_route",
+      "passed": true,
+      "detail": {
+        "page": "data_quality",
+        "position": {
+          "x": 1272,
+          "y": 114,
+          "z": 8000,
+          "width": 288,
+          "height": 80,
+          "tabOrder": 8000
+        },
+        "canvas": [
+          1600,
+          1000
+        ]
+      }
+    },
+    {
+      "name": "visual_folder_id:filter_route",
+      "passed": true,
+      "detail": "filter_route"
+    },
+    {
+      "name": "data_visual_projection:filter_route",
+      "passed": true,
+      "detail": {
+        "type": "slicer",
+        "projection_count": 1
+      }
+    },
+    {
+      "name": "native_visual_roles:filter_route",
+      "passed": true,
+      "detail": {
+        "type": "slicer",
+        "required_for_this_report": [
+          "Values"
+        ],
+        "populated_roles": [
+          "Values"
+        ]
+      }
+    },
+    {
+      "name": "visual_bounds:filter_status",
+      "passed": true,
+      "detail": {
+        "page": "data_quality",
+        "position": {
+          "x": 964,
+          "y": 114,
+          "z": 7000,
+          "width": 288,
+          "height": 80,
+          "tabOrder": 7000
+        },
+        "canvas": [
+          1600,
+          1000
+        ]
+      }
+    },
+    {
+      "name": "visual_folder_id:filter_status",
+      "passed": true,
+      "detail": "filter_status"
+    },
+    {
+      "name": "data_visual_projection:filter_status",
+      "passed": true,
+      "detail": {
+        "type": "slicer",
+        "projection_count": 1
+      }
+    },
+    {
+      "name": "native_visual_roles:filter_status",
+      "passed": true,
+      "detail": {
+        "type": "slicer",
+        "required_for_this_report": [
+          "Values"
+        ],
+        "populated_roles": [
+          "Values"
+        ]
+      }
+    },
+    {
+      "name": "visual_bounds:filter_type",
+      "passed": true,
+      "detail": {
+        "page": "data_quality",
+        "position": {
+          "x": 656,
+          "y": 114,
+          "z": 6000,
+          "width": 288,
+          "height": 80,
+          "tabOrder": 6000
+        },
+        "canvas": [
+          1600,
+          1000
+        ]
+      }
+    },
+    {
+      "name": "visual_folder_id:filter_type",
+      "passed": true,
+      "detail": "filter_type"
+    },
+    {
+      "name": "data_visual_projection:filter_type",
+      "passed": true,
+      "detail": {
+        "type": "slicer",
+        "projection_count": 1
+      }
+    },
+    {
+      "name": "native_visual_roles:filter_type",
+      "passed": true,
+      "detail": {
+        "type": "slicer",
+        "required_for_this_report": [
+          "Values"
+        ],
+        "populated_roles": [
+          "Values"
+        ]
+      }
+    },
+    {
+      "name": "visual_bounds:fixed_heading",
+      "passed": true,
+      "detail": {
+        "page": "data_quality",
+        "position": {
+          "x": 40,
+          "y": 208,
+          "z": 9000,
+          "width": 1520,
+          "height": 28,
+          "tabOrder": 9000
+        },
+        "canvas": [
+          1600,
+          1000
+        ]
+      }
+    },
+    {
+      "name": "visual_folder_id:fixed_heading",
+      "passed": true,
+      "detail": "fixed_heading"
+    },
+    {
+      "name": "visual_bounds:page_number",
+      "passed": true,
+      "detail": {
+        "page": "data_quality",
+        "position": {
+          "x": 1330,
+          "y": 32,
+          "z": 3000,
+          "width": 230,
+          "height": 34,
+          "tabOrder": 3000
+        },
+        "canvas": [
+          1600,
+          1000
+        ]
+      }
+    },
+    {
+      "name": "visual_folder_id:page_number",
+      "passed": true,
+      "detail": "page_number"
+    },
+    {
+      "name": "visual_bounds:page_subtitle",
+      "passed": true,
+      "detail": {
+        "page": "data_quality",
+        "position": {
+          "x": 40,
+          "y": 76,
+          "z": 2000,
+          "width": 1520,
+          "height": 28,
+          "tabOrder": 2000
+        },
+        "canvas": [
+          1600,
+          1000
+        ]
+      }
+    },
+    {
+      "name": "visual_folder_id:page_subtitle",
+      "passed": true,
+      "detail": "page_subtitle"
+    },
+    {
+      "name": "visual_bounds:page_title",
+      "passed": true,
+      "detail": {
+        "page": "data_quality",
+        "position": {
+          "x": 40,
+          "y": 24,
+          "z": 1000,
+          "width": 1120,
+          "height": 48,
+          "tabOrder": 1000
+        },
+        "canvas": [
+          1600,
+          1000
+        ]
+      }
+    },
+    {
+      "name": "visual_folder_id:page_title",
+      "passed": true,
+      "detail": "page_title"
+    },
+    {
+      "name": "visual_bounds:quality_details",
+      "passed": true,
+      "detail": {
+        "page": "data_quality",
+        "position": {
+          "x": 40,
+          "y": 890,
+          "z": 25000,
+          "width": 1520,
+          "height": 88,
+          "tabOrder": 25000
+        },
+        "canvas": [
+          1600,
+          1000
+        ]
+      }
+    },
+    {
+      "name": "visual_folder_id:quality_details",
+      "passed": true,
+      "detail": "quality_details"
+    },
+    {
+      "name": "visual_bounds:quality_notes",
+      "passed": true,
+      "detail": {
+        "page": "data_quality",
+        "position": {
+          "x": 40,
+          "y": 854,
+          "z": 24000,
+          "width": 1520,
+          "height": 28,
+          "tabOrder": 24000
+        },
+        "canvas": [
+          1600,
+          1000
+        ]
+      }
+    },
+    {
+      "name": "visual_folder_id:quality_notes",
+      "passed": true,
+      "detail": "quality_notes"
+    },
+    {
+      "name": "visual_bounds:route_quality",
+      "passed": true,
+      "detail": {
+        "page": "data_quality",
+        "position": {
+          "x": 804,
+          "y": 568,
+          "z": 23000,
+          "width": 756,
+          "height": 266,
+          "tabOrder": 23000
+        },
+        "canvas": [
+          1600,
+          1000
+        ]
+      }
+    },
+    {
+      "name": "visual_folder_id:route_quality",
+      "passed": true,
+      "detail": "route_quality"
+    },
+    {
+      "name": "data_visual_projection:route_quality",
+      "passed": true,
+      "detail": {
+        "type": "tableEx",
+        "projection_count": 5
+      }
+    },
+    {
+      "name": "native_visual_roles:route_quality",
+      "passed": true,
+      "detail": {
+        "type": "tableEx",
+        "required_for_this_report": [
+          "Values"
+        ],
+        "populated_roles": [
+          "Values"
+        ]
+      }
+    },
+    {
+      "name": "visual_bounds:selected_0",
+      "passed": true,
+      "detail": {
+        "page": "data_quality",
+        "position": {
+          "x": 40,
+          "y": 438,
+          "z": 17000,
+          "width": 288,
+          "height": 110,
+          "tabOrder": 17000
+        },
+        "canvas": [
+          1600,
+          1000
+        ]
+      }
+    },
+    {
+      "name": "visual_folder_id:selected_0",
+      "passed": true,
+      "detail": "selected_0"
+    },
+    {
+      "name": "data_visual_projection:selected_0",
+      "passed": true,
+      "detail": {
+        "type": "cardVisual",
+        "projection_count": 1
+      }
+    },
+    {
+      "name": "native_visual_roles:selected_0",
+      "passed": true,
+      "detail": {
+        "type": "cardVisual",
+        "required_for_this_report": [
+          "Data"
+        ],
+        "populated_roles": [
+          "Data"
+        ]
+      }
+    },
+    {
+      "name": "visual_bounds:selected_1",
+      "passed": true,
+      "detail": {
+        "page": "data_quality",
+        "position": {
+          "x": 348,
+          "y": 438,
+          "z": 18000,
+          "width": 288,
+          "height": 110,
+          "tabOrder": 18000
+        },
+        "canvas": [
+          1600,
+          1000
+        ]
+      }
+    },
+    {
+      "name": "visual_folder_id:selected_1",
+      "passed": true,
+      "detail": "selected_1"
+    },
+    {
+      "name": "data_visual_projection:selected_1",
+      "passed": true,
+      "detail": {
+        "type": "cardVisual",
+        "projection_count": 1
+      }
+    },
+    {
+      "name": "native_visual_roles:selected_1",
+      "passed": true,
+      "detail": {
+        "type": "cardVisual",
+        "required_for_this_report": [
+          "Data"
+        ],
+        "populated_roles": [
+          "Data"
+        ]
+      }
+    },
+    {
+      "name": "visual_bounds:selected_2",
+      "passed": true,
+      "detail": {
+        "page": "data_quality",
+        "position": {
+          "x": 656,
+          "y": 438,
+          "z": 19000,
+          "width": 288,
+          "height": 110,
+          "tabOrder": 19000
+        },
+        "canvas": [
+          1600,
+          1000
+        ]
+      }
+    },
+    {
+      "name": "visual_folder_id:selected_2",
+      "passed": true,
+      "detail": "selected_2"
+    },
+    {
+      "name": "data_visual_projection:selected_2",
+      "passed": true,
+      "detail": {
+        "type": "cardVisual",
+        "projection_count": 1
+      }
+    },
+    {
+      "name": "native_visual_roles:selected_2",
+      "passed": true,
+      "detail": {
+        "type": "cardVisual",
+        "required_for_this_report": [
+          "Data"
+        ],
+        "populated_roles": [
+          "Data"
+        ]
+      }
+    },
+    {
+      "name": "visual_bounds:selected_3",
+      "passed": true,
+      "detail": {
+        "page": "data_quality",
+        "position": {
+          "x": 964,
+          "y": 438,
+          "z": 20000,
+          "width": 288,
+          "height": 110,
+          "tabOrder": 20000
+        },
+        "canvas": [
+          1600,
+          1000
+        ]
+      }
+    },
+    {
+      "name": "visual_folder_id:selected_3",
+      "passed": true,
+      "detail": "selected_3"
+    },
+    {
+      "name": "data_visual_projection:selected_3",
+      "passed": true,
+      "detail": {
+        "type": "cardVisual",
+        "projection_count": 1
+      }
+    },
+    {
+      "name": "native_visual_roles:selected_3",
+      "passed": true,
+      "detail": {
+        "type": "cardVisual",
+        "required_for_this_report": [
+          "Data"
+        ],
+        "populated_roles": [
+          "Data"
+        ]
+      }
+    },
+    {
+      "name": "visual_bounds:selected_4",
+      "passed": true,
+      "detail": {
+        "page": "data_quality",
+        "position": {
+          "x": 1272,
+          "y": 438,
+          "z": 21000,
+          "width": 288,
+          "height": 110,
+          "tabOrder": 21000
+        },
+        "canvas": [
+          1600,
+          1000
+        ]
+      }
+    },
+    {
+      "name": "visual_folder_id:selected_4",
+      "passed": true,
+      "detail": "selected_4"
+    },
+    {
+      "name": "data_visual_projection:selected_4",
+      "passed": true,
+      "detail": {
+        "type": "cardVisual",
+        "projection_count": 1
+      }
+    },
+    {
+      "name": "native_visual_roles:selected_4",
+      "passed": true,
+      "detail": {
+        "type": "cardVisual",
+        "required_for_this_report": [
+          "Data"
+        ],
+        "populated_roles": [
+          "Data"
+        ]
+      }
+    },
+    {
+      "name": "visual_bounds:selected_heading",
+      "passed": true,
+      "detail": {
+        "page": "data_quality",
+        "position": {
+          "x": 40,
+          "y": 400,
+          "z": 16000,
+          "width": 1520,
+          "height": 28,
+          "tabOrder": 16000
+        },
+        "canvas": [
+          1600,
+          1000
+        ]
+      }
+    },
+    {
+      "name": "visual_folder_id:selected_heading",
+      "passed": true,
+      "detail": "selected_heading"
+    },
+    {
+      "name": "visual_bounds:source_0",
+      "passed": true,
+      "detail": {
+        "page": "data_quality",
+        "position": {
+          "x": 40,
+          "y": 244,
+          "z": 10000,
+          "width": 288,
+          "height": 102,
+          "tabOrder": 10000
+        },
+        "canvas": [
+          1600,
+          1000
+        ]
+      }
+    },
+    {
+      "name": "visual_folder_id:source_0",
+      "passed": true,
+      "detail": "source_0"
+    },
+    {
+      "name": "data_visual_projection:source_0",
+      "passed": true,
+      "detail": {
+        "type": "cardVisual",
+        "projection_count": 1
+      }
+    },
+    {
+      "name": "native_visual_roles:source_0",
+      "passed": true,
+      "detail": {
+        "type": "cardVisual",
+        "required_for_this_report": [
+          "Data"
+        ],
+        "populated_roles": [
+          "Data"
+        ]
+      }
+    },
+    {
+      "name": "visual_bounds:source_1",
+      "passed": true,
+      "detail": {
+        "page": "data_quality",
+        "position": {
+          "x": 348,
+          "y": 244,
+          "z": 11000,
+          "width": 288,
+          "height": 102,
+          "tabOrder": 11000
+        },
+        "canvas": [
+          1600,
+          1000
+        ]
+      }
+    },
+    {
+      "name": "visual_folder_id:source_1",
+      "passed": true,
+      "detail": "source_1"
+    },
+    {
+      "name": "data_visual_projection:source_1",
+      "passed": true,
+      "detail": {
+        "type": "cardVisual",
+        "projection_count": 1
+      }
+    },
+    {
+      "name": "native_visual_roles:source_1",
+      "passed": true,
+      "detail": {
+        "type": "cardVisual",
+        "required_for_this_report": [
+          "Data"
+        ],
+        "populated_roles": [
+          "Data"
+        ]
+      }
+    },
+    {
+      "name": "visual_bounds:source_2",
+      "passed": true,
+      "detail": {
+        "page": "data_quality",
+        "position": {
+          "x": 656,
+          "y": 244,
+          "z": 12000,
+          "width": 288,
+          "height": 102,
+          "tabOrder": 12000
+        },
+        "canvas": [
+          1600,
+          1000
+        ]
+      }
+    },
+    {
+      "name": "visual_folder_id:source_2",
+      "passed": true,
+      "detail": "source_2"
+    },
+    {
+      "name": "data_visual_projection:source_2",
+      "passed": true,
+      "detail": {
+        "type": "cardVisual",
+        "projection_count": 1
+      }
+    },
+    {
+      "name": "native_visual_roles:source_2",
+      "passed": true,
+      "detail": {
+        "type": "cardVisual",
+        "required_for_this_report": [
+          "Data"
+        ],
+        "populated_roles": [
+          "Data"
+        ]
+      }
+    },
+    {
+      "name": "visual_bounds:source_3",
+      "passed": true,
+      "detail": {
+        "page": "data_quality",
+        "position": {
+          "x": 964,
+          "y": 244,
+          "z": 13000,
+          "width": 288,
+          "height": 102,
+          "tabOrder": 13000
+        },
+        "canvas": [
+          1600,
+          1000
+        ]
+      }
+    },
+    {
+      "name": "visual_folder_id:source_3",
+      "passed": true,
+      "detail": "source_3"
+    },
+    {
+      "name": "data_visual_projection:source_3",
+      "passed": true,
+      "detail": {
+        "type": "cardVisual",
+        "projection_count": 1
+      }
+    },
+    {
+      "name": "native_visual_roles:source_3",
+      "passed": true,
+      "detail": {
+        "type": "cardVisual",
+        "required_for_this_report": [
+          "Data"
+        ],
+        "populated_roles": [
+          "Data"
+        ]
+      }
+    },
+    {
+      "name": "visual_bounds:source_4",
+      "passed": true,
+      "detail": {
+        "page": "data_quality",
+        "position": {
+          "x": 1272,
+          "y": 244,
+          "z": 14000,
+          "width": 288,
+          "height": 102,
+          "tabOrder": 14000
+        },
+        "canvas": [
+          1600,
+          1000
+        ]
+      }
+    },
+    {
+      "name": "visual_folder_id:source_4",
+      "passed": true,
+      "detail": "source_4"
+    },
+    {
+      "name": "data_visual_projection:source_4",
+      "passed": true,
+      "detail": {
+        "type": "cardVisual",
+        "projection_count": 1
+      }
+    },
+    {
+      "name": "native_visual_roles:source_4",
+      "passed": true,
+      "detail": {
+        "type": "cardVisual",
+        "required_for_this_report": [
+          "Data"
+        ],
+        "populated_roles": [
+          "Data"
+        ]
+      }
+    },
+    {
+      "name": "data_visual_overlap:data_quality",
+      "passed": true,
+      "detail": "No overlapping data-visual rectangles. Background shapes/text are excluded."
+    },
+    {
+      "name": "visual_interaction_endpoints:data_quality",
+      "passed": true,
+      "detail": {
+        "interactions": 82,
+        "invalid": []
+      }
+    },
+    {
+      "name": "visual_interaction_pairs_unique:data_quality",
+      "passed": true,
+      "detail": {
+        "interactions": 82
+      }
+    },
+    {
+      "name": "page_folder_id:overview",
+      "passed": true,
+      "detail": "overview"
+    },
+    {
+      "name": "visual_bounds:channel_type_value",
+      "passed": true,
+      "detail": {
+        "page": "overview",
+        "position": {
+          "x": 804,
+          "y": 350,
+          "z": 15000,
+          "width": 756,
+          "height": 270,
+          "tabOrder": 15000
+        },
+        "canvas": [
+          1600,
+          1000
+        ]
+      }
+    },
+    {
+      "name": "visual_folder_id:channel_type_value",
+      "passed": true,
+      "detail": "channel_type_value"
+    },
+    {
+      "name": "data_visual_projection:channel_type_value",
+      "passed": true,
+      "detail": {
+        "type": "barChart",
+        "projection_count": 3
+      }
+    },
+    {
+      "name": "native_visual_roles:channel_type_value",
+      "passed": true,
+      "detail": {
+        "type": "barChart",
+        "required_for_this_report": [
+          "Category",
+          "Y"
+        ],
+        "populated_roles": [
+          "Category",
+          "Series",
+          "Y"
+        ]
+      }
+    },
+    {
+      "name": "visual_bounds:filter_channel",
+      "passed": true,
+      "detail": {
+        "page": "overview",
+        "position": {
+          "x": 348,
+          "y": 114,
+          "z": 5000,
+          "width": 288,
+          "height": 80,
+          "tabOrder": 5000
+        },
+        "canvas": [
+          1600,
+          1000
+        ]
+      }
+    },
+    {
+      "name": "visual_folder_id:filter_channel",
+      "passed": true,
+      "detail": "filter_channel"
+    },
+    {
+      "name": "data_visual_projection:filter_channel",
+      "passed": true,
+      "detail": {
+        "type": "slicer",
+        "projection_count": 1
+      }
+    },
+    {
+      "name": "native_visual_roles:filter_channel",
+      "passed": true,
+      "detail": {
+        "type": "slicer",
+        "required_for_this_report": [
+          "Values"
+        ],
+        "populated_roles": [
+          "Values"
+        ]
+      }
+    },
+    {
+      "name": "visual_bounds:filter_month",
+      "passed": true,
+      "detail": {
+        "page": "overview",
+        "position": {
+          "x": 40,
+          "y": 114,
+          "z": 4000,
+          "width": 288,
+          "height": 80,
+          "tabOrder": 4000
+        },
+        "canvas": [
+          1600,
+          1000
+        ]
+      }
+    },
+    {
+      "name": "visual_folder_id:filter_month",
+      "passed": true,
+      "detail": "filter_month"
+    },
+    {
+      "name": "data_visual_projection:filter_month",
+      "passed": true,
+      "detail": {
+        "type": "slicer",
+        "projection_count": 1
+      }
+    },
+    {
+      "name": "native_visual_roles:filter_month",
+      "passed": true,
+      "detail": {
+        "type": "slicer",
+        "required_for_this_report": [
+          "Values"
+        ],
+        "populated_roles": [
+          "Values"
+        ]
+      }
+    },
+    {
+      "name": "visual_bounds:filter_route",
+      "passed": true,
+      "detail": {
+        "page": "overview",
+        "position": {
+          "x": 1272,
+          "y": 114,
+          "z": 8000,
+          "width": 288,
+          "height": 80,
+          "tabOrder": 8000
+        },
+        "canvas": [
+          1600,
+          1000
+        ]
+      }
+    },
+    {
+      "name": "visual_folder_id:filter_route",
+      "passed": true,
+      "detail": "filter_route"
+    },
+    {
+      "name": "data_visual_projection:filter_route",
+      "passed": true,
+      "detail": {
+        "type": "slicer",
+        "projection_count": 1
+      }
+    },
+    {
+      "name": "native_visual_roles:filter_route",
+      "passed": true,
+      "detail": {
+        "type": "slicer",
+        "required_for_this_report": [
+          "Values"
+        ],
+        "populated_roles": [
+          "Values"
+        ]
+      }
+    },
+    {
+      "name": "visual_bounds:filter_status",
+      "passed": true,
+      "detail": {
+        "page": "overview",
+        "position": {
+          "x": 964,
+          "y": 114,
+          "z": 7000,
+          "width": 288,
+          "height": 80,
+          "tabOrder": 7000
+        },
+        "canvas": [
+          1600,
+          1000
+        ]
+      }
+    },
+    {
+      "name": "visual_folder_id:filter_status",
+      "passed": true,
+      "detail": "filter_status"
+    },
+    {
+      "name": "data_visual_projection:filter_status",
+      "passed": true,
+      "detail": {
+        "type": "slicer",
+        "projection_count": 1
+      }
+    },
+    {
+      "name": "native_visual_roles:filter_status",
+      "passed": true,
+      "detail": {
+        "type": "slicer",
+        "required_for_this_report": [
+          "Values"
+        ],
+        "populated_roles": [
+          "Values"
+        ]
+      }
+    },
+    {
+      "name": "visual_bounds:filter_type",
+      "passed": true,
+      "detail": {
+        "page": "overview",
+        "position": {
+          "x": 656,
+          "y": 114,
+          "z": 6000,
+          "width": 288,
+          "height": 80,
+          "tabOrder": 6000
+        },
+        "canvas": [
+          1600,
+          1000
+        ]
+      }
+    },
+    {
+      "name": "visual_folder_id:filter_type",
+      "passed": true,
+      "detail": "filter_type"
+    },
+    {
+      "name": "data_visual_projection:filter_type",
+      "passed": true,
+      "detail": {
+        "type": "slicer",
+        "projection_count": 1
+      }
+    },
+    {
+      "name": "native_visual_roles:filter_type",
+      "passed": true,
+      "detail": {
+        "type": "slicer",
+        "required_for_this_report": [
+          "Values"
+        ],
+        "populated_roles": [
+          "Values"
+        ]
+      }
+    },
+    {
+      "name": "visual_bounds:kpi_0",
+      "passed": true,
+      "detail": {
+        "page": "overview",
+        "position": {
+          "x": 40,
+          "y": 214,
+          "z": 9000,
+          "width": 288,
+          "height": 116,
+          "tabOrder": 9000
+        },
+        "canvas": [
+          1600,
+          1000
+        ]
+      }
+    },
+    {
+      "name": "visual_folder_id:kpi_0",
+      "passed": true,
+      "detail": "kpi_0"
+    },
+    {
+      "name": "data_visual_projection:kpi_0",
+      "passed": true,
+      "detail": {
+        "type": "cardVisual",
+        "projection_count": 1
+      }
+    },
+    {
+      "name": "native_visual_roles:kpi_0",
+      "passed": true,
+      "detail": {
+        "type": "cardVisual",
+        "required_for_this_report": [
+          "Data"
+        ],
+        "populated_roles": [
+          "Data"
+        ]
+      }
+    },
+    {
+      "name": "visual_bounds:kpi_1",
+      "passed": true,
+      "detail": {
+        "page": "overview",
+        "position": {
+          "x": 348,
+          "y": 214,
+          "z": 10000,
+          "width": 288,
+          "height": 116,
+          "tabOrder": 10000
+        },
+        "canvas": [
+          1600,
+          1000
+        ]
+      }
+    },
+    {
+      "name": "visual_folder_id:kpi_1",
+      "passed": true,
+      "detail": "kpi_1"
+    },
+    {
+      "name": "data_visual_projection:kpi_1",
+      "passed": true,
+      "detail": {
+        "type": "cardVisual",
+        "projection_count": 1
+      }
+    },
+    {
+      "name": "native_visual_roles:kpi_1",
+      "passed": true,
+      "detail": {
+        "type": "cardVisual",
+        "required_for_this_report": [
+          "Data"
+        ],
+        "populated_roles": [
+          "Data"
+        ]
+      }
+    },
+    {
+      "name": "visual_bounds:kpi_2",
+      "passed": true,
+      "detail": {
+        "page": "overview",
+        "position": {
+          "x": 656,
+          "y": 214,
+          "z": 11000,
+          "width": 288,
+          "height": 116,
+          "tabOrder": 11000
+        },
+        "canvas": [
+          1600,
+          1000
+        ]
+      }
+    },
+    {
+      "name": "visual_folder_id:kpi_2",
+      "passed": true,
+      "detail": "kpi_2"
+    },
+    {
+      "name": "data_visual_projection:kpi_2",
+      "passed": true,
+      "detail": {
+        "type": "cardVisual",
+        "projection_count": 1
+      }
+    },
+    {
+      "name": "native_visual_roles:kpi_2",
+      "passed": true,
+      "detail": {
+        "type": "cardVisual",
+        "required_for_this_report": [
+          "Data"
+        ],
+        "populated_roles": [
+          "Data"
+        ]
+      }
+    },
+    {
+      "name": "visual_bounds:kpi_3",
+      "passed": true,
+      "detail": {
+        "page": "overview",
+        "position": {
+          "x": 964,
+          "y": 214,
+          "z": 12000,
+          "width": 288,
+          "height": 116,
+          "tabOrder": 12000
+        },
+        "canvas": [
+          1600,
+          1000
+        ]
+      }
+    },
+    {
+      "name": "visual_folder_id:kpi_3",
+      "passed": true,
+      "detail": "kpi_3"
+    },
+    {
+      "name": "data_visual_projection:kpi_3",
+      "passed": true,
+      "detail": {
+        "type": "cardVisual",
+        "projection_count": 1
+      }
+    },
+    {
+      "name": "native_visual_roles:kpi_3",
+      "passed": true,
+      "detail": {
+        "type": "cardVisual",
+        "required_for_this_report": [
+          "Data"
+        ],
+        "populated_roles": [
+          "Data"
+        ]
+      }
+    },
+    {
+      "name": "visual_bounds:kpi_4",
+      "passed": true,
+      "detail": {
+        "page": "overview",
+        "position": {
+          "x": 1272,
+          "y": 214,
+          "z": 13000,
+          "width": 288,
+          "height": 116,
+          "tabOrder": 13000
+        },
+        "canvas": [
+          1600,
+          1000
+        ]
+      }
+    },
+    {
+      "name": "visual_folder_id:kpi_4",
+      "passed": true,
+      "detail": "kpi_4"
+    },
+    {
+      "name": "data_visual_projection:kpi_4",
+      "passed": true,
+      "detail": {
+        "type": "cardVisual",
+        "projection_count": 1
+      }
+    },
+    {
+      "name": "native_visual_roles:kpi_4",
+      "passed": true,
+      "detail": {
+        "type": "cardVisual",
+        "required_for_this_report": [
+          "Data"
+        ],
+        "populated_roles": [
+          "Data"
+        ]
+      }
+    },
+    {
+      "name": "visual_bounds:metric_note",
+      "passed": true,
+      "detail": {
+        "page": "overview",
+        "position": {
+          "x": 40,
+          "y": 944,
+          "z": 18000,
+          "width": 1520,
+          "height": 48,
+          "tabOrder": 18000
+        },
+        "canvas": [
+          1600,
+          1000
+        ]
+      }
+    },
+    {
+      "name": "visual_folder_id:metric_note",
+      "passed": true,
+      "detail": "metric_note"
+    },
+    {
+      "name": "visual_bounds:monthly_bookings",
+      "passed": true,
+      "detail": {
+        "page": "overview",
+        "position": {
+          "x": 40,
+          "y": 350,
+          "z": 14000,
+          "width": 744,
+          "height": 270,
+          "tabOrder": 14000
+        },
+        "canvas": [
+          1600,
+          1000
+        ]
+      }
+    },
+    {
+      "name": "visual_folder_id:monthly_bookings",
+      "passed": true,
+      "detail": "monthly_bookings"
+    },
+    {
+      "name": "formatting_metadata_bindings:overview/monthly_bookings",
+      "passed": true,
+      "detail": {
+        "selectors": 1,
+        "unresolved": []
+      }
+    },
+    {
+      "name": "data_visual_projection:monthly_bookings",
+      "passed": true,
+      "detail": {
+        "type": "lineChart",
+        "projection_count": 2
+      }
+    },
+    {
+      "name": "native_visual_roles:monthly_bookings",
+      "passed": true,
+      "detail": {
+        "type": "lineChart",
+        "required_for_this_report": [
+          "Category",
+          "Y"
+        ],
+        "populated_roles": [
+          "Category",
+          "Y"
+        ]
+      }
+    },
+    {
+      "name": "visual_bounds:page_number",
+      "passed": true,
+      "detail": {
+        "page": "overview",
+        "position": {
+          "x": 1330,
+          "y": 32,
+          "z": 3000,
+          "width": 230,
+          "height": 34,
+          "tabOrder": 3000
+        },
+        "canvas": [
+          1600,
+          1000
+        ]
+      }
+    },
+    {
+      "name": "visual_folder_id:page_number",
+      "passed": true,
+      "detail": "page_number"
+    },
+    {
+      "name": "visual_bounds:page_subtitle",
+      "passed": true,
+      "detail": {
+        "page": "overview",
+        "position": {
+          "x": 40,
+          "y": 76,
+          "z": 2000,
+          "width": 1520,
+          "height": 28,
+          "tabOrder": 2000
+        },
+        "canvas": [
+          1600,
+          1000
+        ]
+      }
+    },
+    {
+      "name": "visual_folder_id:page_subtitle",
+      "passed": true,
+      "detail": "page_subtitle"
+    },
+    {
+      "name": "visual_bounds:page_title",
+      "passed": true,
+      "detail": {
+        "page": "overview",
+        "position": {
+          "x": 40,
+          "y": 24,
+          "z": 1000,
+          "width": 1120,
+          "height": 48,
+          "tabOrder": 1000
+        },
+        "canvas": [
+          1600,
+          1000
+        ]
+      }
+    },
+    {
+      "name": "visual_folder_id:page_title",
+      "passed": true,
+      "detail": "page_title"
+    },
+    {
+      "name": "visual_bounds:route_bookings",
+      "passed": true,
+      "detail": {
+        "page": "overview",
+        "position": {
+          "x": 40,
+          "y": 640,
+          "z": 16000,
+          "width": 744,
+          "height": 284,
+          "tabOrder": 16000
+        },
+        "canvas": [
+          1600,
+          1000
+        ]
+      }
+    },
+    {
+      "name": "visual_folder_id:route_bookings",
+      "passed": true,
+      "detail": "route_bookings"
+    },
+    {
+      "name": "formatting_metadata_bindings:overview/route_bookings",
+      "passed": true,
+      "detail": {
+        "selectors": 1,
+        "unresolved": []
+      }
+    },
+    {
+      "name": "data_visual_projection:route_bookings",
+      "passed": true,
+      "detail": {
+        "type": "barChart",
+        "projection_count": 2
+      }
+    },
+    {
+      "name": "native_visual_roles:route_bookings",
+      "passed": true,
+      "detail": {
+        "type": "barChart",
+        "required_for_this_report": [
+          "Category",
+          "Y"
+        ],
+        "populated_roles": [
+          "Category",
+          "Y"
+        ]
+      }
+    },
+    {
+      "name": "visual_bounds:status_value",
+      "passed": true,
+      "detail": {
+        "page": "overview",
+        "position": {
+          "x": 804,
+          "y": 640,
+          "z": 17000,
+          "width": 756,
+          "height": 284,
+          "tabOrder": 17000
+        },
+        "canvas": [
+          1600,
+          1000
+        ]
+      }
+    },
+    {
+      "name": "visual_folder_id:status_value",
+      "passed": true,
+      "detail": "status_value"
+    },
+    {
+      "name": "formatting_metadata_bindings:overview/status_value",
+      "passed": true,
+      "detail": {
+        "selectors": 1,
+        "unresolved": []
+      }
+    },
+    {
+      "name": "data_visual_projection:status_value",
+      "passed": true,
+      "detail": {
+        "type": "barChart",
+        "projection_count": 2
+      }
+    },
+    {
+      "name": "native_visual_roles:status_value",
+      "passed": true,
+      "detail": {
+        "type": "barChart",
+        "required_for_this_report": [
+          "Category",
+          "Y"
+        ],
+        "populated_roles": [
+          "Category",
+          "Y"
+        ]
+      }
+    },
+    {
+      "name": "data_visual_overlap:overview",
+      "passed": true,
+      "detail": "No overlapping data-visual rectangles. Background shapes/text are excluded."
+    },
+    {
+      "name": "visual_interaction_endpoints:overview",
+      "passed": true,
+      "detail": {
+        "interactions": 77,
+        "invalid": []
+      }
+    },
+    {
+      "name": "visual_interaction_pairs_unique:overview",
+      "passed": true,
+      "detail": {
+        "interactions": 77
+      }
+    },
+    {
+      "name": "page_folder_id:routes_customers",
+      "passed": true,
+      "detail": "routes_customers"
+    },
+    {
+      "name": "visual_bounds:class_value",
+      "passed": true,
+      "detail": {
+        "page": "routes_customers",
+        "position": {
+          "x": 40,
+          "y": 650,
+          "z": 14000,
+          "width": 494,
+          "height": 274,
+          "tabOrder": 14000
+        },
+        "canvas": [
+          1600,
+          1000
+        ]
+      }
+    },
+    {
+      "name": "visual_folder_id:class_value",
+      "passed": true,
+      "detail": "class_value"
+    },
+    {
+      "name": "formatting_metadata_bindings:routes_customers/class_value",
+      "passed": true,
+      "detail": {
+        "selectors": 1,
+        "unresolved": []
+      }
+    },
+    {
+      "name": "data_visual_projection:class_value",
+      "passed": true,
+      "detail": {
+        "type": "barChart",
+        "projection_count": 2
+      }
+    },
+    {
+      "name": "native_visual_roles:class_value",
+      "passed": true,
+      "detail": {
+        "type": "barChart",
+        "required_for_this_report": [
+          "Category",
+          "Y"
+        ],
+        "populated_roles": [
+          "Category",
+          "Y"
+        ]
+      }
+    },
+    {
+      "name": "visual_bounds:filter_channel",
+      "passed": true,
+      "detail": {
+        "page": "routes_customers",
+        "position": {
+          "x": 348,
+          "y": 114,
+          "z": 5000,
+          "width": 288,
+          "height": 80,
+          "tabOrder": 5000
+        },
+        "canvas": [
+          1600,
+          1000
+        ]
+      }
+    },
+    {
+      "name": "visual_folder_id:filter_channel",
+      "passed": true,
+      "detail": "filter_channel"
+    },
+    {
+      "name": "data_visual_projection:filter_channel",
+      "passed": true,
+      "detail": {
+        "type": "slicer",
+        "projection_count": 1
+      }
+    },
+    {
+      "name": "native_visual_roles:filter_channel",
+      "passed": true,
+      "detail": {
+        "type": "slicer",
+        "required_for_this_report": [
+          "Values"
+        ],
+        "populated_roles": [
+          "Values"
+        ]
+      }
+    },
+    {
+      "name": "visual_bounds:filter_month",
+      "passed": true,
+      "detail": {
+        "page": "routes_customers",
+        "position": {
+          "x": 40,
+          "y": 114,
+          "z": 4000,
+          "width": 288,
+          "height": 80,
+          "tabOrder": 4000
+        },
+        "canvas": [
+          1600,
+          1000
+        ]
+      }
+    },
+    {
+      "name": "visual_folder_id:filter_month",
+      "passed": true,
+      "detail": "filter_month"
+    },
+    {
+      "name": "data_visual_projection:filter_month",
+      "passed": true,
+      "detail": {
+        "type": "slicer",
+        "projection_count": 1
+      }
+    },
+    {
+      "name": "native_visual_roles:filter_month",
+      "passed": true,
+      "detail": {
+        "type": "slicer",
+        "required_for_this_report": [
+          "Values"
+        ],
+        "populated_roles": [
+          "Values"
+        ]
+      }
+    },
+    {
+      "name": "visual_bounds:filter_route",
+      "passed": true,
+      "detail": {
+        "page": "routes_customers",
+        "position": {
+          "x": 1272,
+          "y": 114,
+          "z": 8000,
+          "width": 288,
+          "height": 80,
+          "tabOrder": 8000
+        },
+        "canvas": [
+          1600,
+          1000
+        ]
+      }
+    },
+    {
+      "name": "visual_folder_id:filter_route",
+      "passed": true,
+      "detail": "filter_route"
+    },
+    {
+      "name": "data_visual_projection:filter_route",
+      "passed": true,
+      "detail": {
+        "type": "slicer",
+        "projection_count": 1
+      }
+    },
+    {
+      "name": "native_visual_roles:filter_route",
+      "passed": true,
+      "detail": {
+        "type": "slicer",
+        "required_for_this_report": [
+          "Values"
+        ],
+        "populated_roles": [
+          "Values"
+        ]
+      }
+    },
+    {
+      "name": "visual_bounds:filter_status",
+      "passed": true,
+      "detail": {
+        "page": "routes_customers",
+        "position": {
+          "x": 964,
+          "y": 114,
+          "z": 7000,
+          "width": 288,
+          "height": 80,
+          "tabOrder": 7000
+        },
+        "canvas": [
+          1600,
+          1000
+        ]
+      }
+    },
+    {
+      "name": "visual_folder_id:filter_status",
+      "passed": true,
+      "detail": "filter_status"
+    },
+    {
+      "name": "data_visual_projection:filter_status",
+      "passed": true,
+      "detail": {
+        "type": "slicer",
+        "projection_count": 1
+      }
+    },
+    {
+      "name": "native_visual_roles:filter_status",
+      "passed": true,
+      "detail": {
+        "type": "slicer",
+        "required_for_this_report": [
+          "Values"
+        ],
+        "populated_roles": [
+          "Values"
+        ]
+      }
+    },
+    {
+      "name": "visual_bounds:filter_type",
+      "passed": true,
+      "detail": {
+        "page": "routes_customers",
+        "position": {
+          "x": 656,
+          "y": 114,
+          "z": 6000,
+          "width": 288,
+          "height": 80,
+          "tabOrder": 6000
+        },
+        "canvas": [
+          1600,
+          1000
+        ]
+      }
+    },
+    {
+      "name": "visual_folder_id:filter_type",
+      "passed": true,
+      "detail": "filter_type"
+    },
+    {
+      "name": "data_visual_projection:filter_type",
+      "passed": true,
+      "detail": {
+        "type": "slicer",
+        "projection_count": 1
+      }
+    },
+    {
+      "name": "native_visual_roles:filter_type",
+      "passed": true,
+      "detail": {
+        "type": "slicer",
+        "required_for_this_report": [
+          "Values"
+        ],
+        "populated_roles": [
+          "Values"
+        ]
+      }
+    },
+    {
+      "name": "visual_bounds:kpi_0",
+      "passed": true,
+      "detail": {
+        "page": "routes_customers",
+        "position": {
+          "x": 40,
+          "y": 214,
+          "z": 9000,
+          "width": 365,
+          "height": 116,
+          "tabOrder": 9000
+        },
+        "canvas": [
+          1600,
+          1000
+        ]
+      }
+    },
+    {
+      "name": "visual_folder_id:kpi_0",
+      "passed": true,
+      "detail": "kpi_0"
+    },
+    {
+      "name": "data_visual_projection:kpi_0",
+      "passed": true,
+      "detail": {
+        "type": "cardVisual",
+        "projection_count": 1
+      }
+    },
+    {
+      "name": "native_visual_roles:kpi_0",
+      "passed": true,
+      "detail": {
+        "type": "cardVisual",
+        "required_for_this_report": [
+          "Data"
+        ],
+        "populated_roles": [
+          "Data"
+        ]
+      }
+    },
+    {
+      "name": "visual_bounds:kpi_1",
+      "passed": true,
+      "detail": {
+        "page": "routes_customers",
+        "position": {
+          "x": 425,
+          "y": 214,
+          "z": 10000,
+          "width": 365,
+          "height": 116,
+          "tabOrder": 10000
+        },
+        "canvas": [
+          1600,
+          1000
+        ]
+      }
+    },
+    {
+      "name": "visual_folder_id:kpi_1",
+      "passed": true,
+      "detail": "kpi_1"
+    },
+    {
+      "name": "data_visual_projection:kpi_1",
+      "passed": true,
+      "detail": {
+        "type": "cardVisual",
+        "projection_count": 1
+      }
+    },
+    {
+      "name": "native_visual_roles:kpi_1",
+      "passed": true,
+      "detail": {
+        "type": "cardVisual",
+        "required_for_this_report": [
+          "Data"
+        ],
+        "populated_roles": [
+          "Data"
+        ]
+      }
+    },
+    {
+      "name": "visual_bounds:kpi_2",
+      "passed": true,
+      "detail": {
+        "page": "routes_customers",
+        "position": {
+          "x": 810,
+          "y": 214,
+          "z": 11000,
+          "width": 365,
+          "height": 116,
+          "tabOrder": 11000
+        },
+        "canvas": [
+          1600,
+          1000
+        ]
+      }
+    },
+    {
+      "name": "visual_folder_id:kpi_2",
+      "passed": true,
+      "detail": "kpi_2"
+    },
+    {
+      "name": "data_visual_projection:kpi_2",
+      "passed": true,
+      "detail": {
+        "type": "cardVisual",
+        "projection_count": 1
+      }
+    },
+    {
+      "name": "native_visual_roles:kpi_2",
+      "passed": true,
+      "detail": {
+        "type": "cardVisual",
+        "required_for_this_report": [
+          "Data"
+        ],
+        "populated_roles": [
+          "Data"
+        ]
+      }
+    },
+    {
+      "name": "visual_bounds:kpi_3",
+      "passed": true,
+      "detail": {
+        "page": "routes_customers",
+        "position": {
+          "x": 1195,
+          "y": 214,
+          "z": 12000,
+          "width": 365,
+          "height": 116,
+          "tabOrder": 12000
+        },
+        "canvas": [
+          1600,
+          1000
+        ]
+      }
+    },
+    {
+      "name": "visual_folder_id:kpi_3",
+      "passed": true,
+      "detail": "kpi_3"
+    },
+    {
+      "name": "data_visual_projection:kpi_3",
+      "passed": true,
+      "detail": {
+        "type": "cardVisual",
+        "projection_count": 1
+      }
+    },
+    {
+      "name": "native_visual_roles:kpi_3",
+      "passed": true,
+      "detail": {
+        "type": "cardVisual",
+        "required_for_this_report": [
+          "Data"
+        ],
+        "populated_roles": [
+          "Data"
+        ]
+      }
+    },
+    {
+      "name": "visual_bounds:page_number",
+      "passed": true,
+      "detail": {
+        "page": "routes_customers",
+        "position": {
+          "x": 1330,
+          "y": 32,
+          "z": 3000,
+          "width": 230,
+          "height": 34,
+          "tabOrder": 3000
+        },
+        "canvas": [
+          1600,
+          1000
+        ]
+      }
+    },
+    {
+      "name": "visual_folder_id:page_number",
+      "passed": true,
+      "detail": "page_number"
+    },
+    {
+      "name": "visual_bounds:page_subtitle",
+      "passed": true,
+      "detail": {
+        "page": "routes_customers",
+        "position": {
+          "x": 40,
+          "y": 76,
+          "z": 2000,
+          "width": 1520,
+          "height": 28,
+          "tabOrder": 2000
+        },
+        "canvas": [
+          1600,
+          1000
+        ]
+      }
+    },
+    {
+      "name": "visual_folder_id:page_subtitle",
+      "passed": true,
+      "detail": "page_subtitle"
+    },
+    {
+      "name": "visual_bounds:page_title",
+      "passed": true,
+      "detail": {
+        "page": "routes_customers",
+        "position": {
+          "x": 40,
+          "y": 24,
+          "z": 1000,
+          "width": 1120,
+          "height": 48,
+          "tabOrder": 1000
+        },
+        "canvas": [
+          1600,
+          1000
+        ]
+      }
+    },
+    {
+      "name": "visual_folder_id:page_title",
+      "passed": true,
+      "detail": "page_title"
+    },
+    {
+      "name": "visual_bounds:payment_value",
+      "passed": true,
+      "detail": {
+        "page": "routes_customers",
+        "position": {
+          "x": 1067,
+          "y": 650,
+          "z": 16000,
+          "width": 493,
+          "height": 274,
+          "tabOrder": 16000
+        },
+        "canvas": [
+          1600,
+          1000
+        ]
+      }
+    },
+    {
+      "name": "visual_folder_id:payment_value",
+      "passed": true,
+      "detail": "payment_value"
+    },
+    {
+      "name": "formatting_metadata_bindings:routes_customers/payment_value",
+      "passed": true,
+      "detail": {
+        "selectors": 1,
+        "unresolved": []
+      }
+    },
+    {
+      "name": "data_visual_projection:payment_value",
+      "passed": true,
+      "detail": {
+        "type": "barChart",
+        "projection_count": 2
+      }
+    },
+    {
+      "name": "native_visual_roles:payment_value",
+      "passed": true,
+      "detail": {
+        "type": "barChart",
+        "required_for_this_report": [
+          "Category",
+          "Y"
+        ],
+        "populated_roles": [
+          "Category",
+          "Y"
+        ]
+      }
+    },
+    {
+      "name": "visual_bounds:route_detail",
+      "passed": true,
+      "detail": {
+        "page": "routes_customers",
+        "position": {
+          "x": 40,
+          "y": 350,
+          "z": 13000,
+          "width": 1520,
+          "height": 280,
+          "tabOrder": 13000
+        },
+        "canvas": [
+          1600,
+          1000
+        ]
+      }
+    },
+    {
+      "name": "visual_folder_id:route_detail",
+      "passed": true,
+      "detail": "route_detail"
+    },
+    {
+      "name": "data_visual_projection:route_detail",
+      "passed": true,
+      "detail": {
+        "type": "tableEx",
+        "projection_count": 7
+      }
+    },
+    {
+      "name": "native_visual_roles:route_detail",
+      "passed": true,
+      "detail": {
+        "type": "tableEx",
+        "required_for_this_report": [
+          "Values"
+        ],
+        "populated_roles": [
+          "Values"
+        ]
+      }
+    },
+    {
+      "name": "visual_bounds:route_note",
+      "passed": true,
+      "detail": {
+        "page": "routes_customers",
+        "position": {
+          "x": 40,
+          "y": 944,
+          "z": 17000,
+          "width": 1520,
+          "height": 48,
+          "tabOrder": 17000
+        },
+        "canvas": [
+          1600,
+          1000
+        ]
+      }
+    },
+    {
+      "name": "visual_folder_id:route_note",
+      "passed": true,
+      "detail": "route_note"
+    },
+    {
+      "name": "visual_bounds:train_type_bookings",
+      "passed": true,
+      "detail": {
+        "page": "routes_customers",
+        "position": {
+          "x": 554,
+          "y": 650,
+          "z": 15000,
+          "width": 493,
+          "height": 274,
+          "tabOrder": 15000
+        },
+        "canvas": [
+          1600,
+          1000
+        ]
+      }
+    },
+    {
+      "name": "visual_folder_id:train_type_bookings",
+      "passed": true,
+      "detail": "train_type_bookings"
+    },
+    {
+      "name": "formatting_metadata_bindings:routes_customers/train_type_bookings",
+      "passed": true,
+      "detail": {
+        "selectors": 1,
+        "unresolved": []
+      }
+    },
+    {
+      "name": "data_visual_projection:train_type_bookings",
+      "passed": true,
+      "detail": {
+        "type": "barChart",
+        "projection_count": 2
+      }
+    },
+    {
+      "name": "native_visual_roles:train_type_bookings",
+      "passed": true,
+      "detail": {
+        "type": "barChart",
+        "required_for_this_report": [
+          "Category",
+          "Y"
+        ],
+        "populated_roles": [
+          "Category",
+          "Y"
+        ]
+      }
+    },
+    {
+      "name": "data_visual_overlap:routes_customers",
+      "passed": true,
+      "detail": "No overlapping data-visual rectangles. Background shapes/text are excluded."
+    },
+    {
+      "name": "visual_interaction_endpoints:routes_customers",
+      "passed": true,
+      "detail": {
+        "interactions": 68,
+        "invalid": []
+      }
+    },
+    {
+      "name": "visual_interaction_pairs_unique:routes_customers",
+      "passed": true,
+      "detail": {
+        "interactions": 68
+      }
+    },
+    {
+      "name": "visual_ids_unique_within_page",
+      "passed": true,
+      "detail": {
+        "count": 60,
+        "scope": "Visual names are scoped to their containing page, per the official visualContainer schema."
+      }
+    },
+    {
+      "name": "report_field_references",
+      "passed": true,
+      "detail": {
+        "references_checked": 88,
+        "invalid": []
+      }
+    },
+    {
+      "name": "schema_negative_control",
+      "passed": true,
+      "detail": "A malformed visual coordinate must be rejected by the official visual schema."
+    }
+  ],
+  "errors": [],
+  "warnings": [],
+  "schemas": [
+    {
+      "file": "powerbi/IRCTC.pbip",
+      "url": "https://developer.microsoft.com/json-schemas/fabric/pbip/pbipProperties/1.0.0/schema.json",
+      "schema_sha256": "01aa22ce4f815a43068649676a9a7ae1cefeb4316f49fd59172ac48918086420",
+      "validator": "Draft7Validator",
+      "passed": true
+    },
+    {
+      "file": "powerbi/IRCTC.Report/definition.pbir",
+      "url": "https://developer.microsoft.com/json-schemas/fabric/item/report/definitionProperties/2.0.0/schema.json",
+      "schema_sha256": "df0cf16a926b75649879ec84459d5f962d1fe52bf04ba78b3c67f8b9d95af86a",
+      "validator": "Draft7Validator",
+      "passed": true
+    },
+    {
+      "file": "powerbi/IRCTC.SemanticModel/definition.pbism",
+      "url": "https://developer.microsoft.com/json-schemas/fabric/item/semanticModel/definitionProperties/1.0.0/schema.json",
+      "schema_sha256": "773f7b57e19621781ead5af1ce48d8a23d6e2b05dc0844b21eb327b09959773d",
+      "validator": "Draft7Validator",
+      "passed": true
+    },
+    {
+      "file": "powerbi/IRCTC.Report/definition/pages/data_quality/page.json",
+      "url": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
+      "schema_sha256": "5e98c7132bddbf6e59dd23b754c7cad4b7c1edfa98528e05b7c46d8a42456ece",
+      "validator": "Draft7Validator",
+      "passed": true
+    },
+    {
+      "file": "powerbi/IRCTC.Report/definition/pages/data_quality/visuals/amount_reconciliation/visual.json",
+      "url": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+      "schema_sha256": "dc049544037e36778b0c9850305c2b6c8b396d0ad134381a6ca309c5bc16fbbc",
+      "validator": "Draft7Validator",
+      "passed": true
+    },
+    {
+      "file": "powerbi/IRCTC.Report/definition/pages/data_quality/visuals/chronology_month/visual.json",
+      "url": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+      "schema_sha256": "dc049544037e36778b0c9850305c2b6c8b396d0ad134381a6ca309c5bc16fbbc",
+      "validator": "Draft7Validator",
+      "passed": true
+    },
+    {
+      "file": "powerbi/IRCTC.Report/definition/pages/data_quality/visuals/filter_channel/visual.json",
+      "url": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+      "schema_sha256": "dc049544037e36778b0c9850305c2b6c8b396d0ad134381a6ca309c5bc16fbbc",
+      "validator": "Draft7Validator",
+      "passed": true
+    },
+    {
+      "file": "powerbi/IRCTC.Report/definition/pages/data_quality/visuals/filter_month/visual.json",
+      "url": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+      "schema_sha256": "dc049544037e36778b0c9850305c2b6c8b396d0ad134381a6ca309c5bc16fbbc",
+      "validator": "Draft7Validator",
+      "passed": true
+    },
+    {
+      "file": "powerbi/IRCTC.Report/definition/pages/data_quality/visuals/filter_route/visual.json",
+      "url": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+      "schema_sha256": "dc049544037e36778b0c9850305c2b6c8b396d0ad134381a6ca309c5bc16fbbc",
+      "validator": "Draft7Validator",
+      "passed": true
+    },
+    {
+      "file": "powerbi/IRCTC.Report/definition/pages/data_quality/visuals/filter_status/visual.json",
+      "url": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+      "schema_sha256": "dc049544037e36778b0c9850305c2b6c8b396d0ad134381a6ca309c5bc16fbbc",
+      "validator": "Draft7Validator",
+      "passed": true
+    },
+    {
+      "file": "powerbi/IRCTC.Report/definition/pages/data_quality/visuals/filter_type/visual.json",
+      "url": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+      "schema_sha256": "dc049544037e36778b0c9850305c2b6c8b396d0ad134381a6ca309c5bc16fbbc",
+      "validator": "Draft7Validator",
+      "passed": true
+    },
+    {
+      "file": "powerbi/IRCTC.Report/definition/pages/data_quality/visuals/fixed_heading/visual.json",
+      "url": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+      "schema_sha256": "dc049544037e36778b0c9850305c2b6c8b396d0ad134381a6ca309c5bc16fbbc",
+      "validator": "Draft7Validator",
+      "passed": true
+    },
+    {
+      "file": "powerbi/IRCTC.Report/definition/pages/data_quality/visuals/page_number/visual.json",
+      "url": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+      "schema_sha256": "dc049544037e36778b0c9850305c2b6c8b396d0ad134381a6ca309c5bc16fbbc",
+      "validator": "Draft7Validator",
+      "passed": true
+    },
+    {
+      "file": "powerbi/IRCTC.Report/definition/pages/data_quality/visuals/page_subtitle/visual.json",
+      "url": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+      "schema_sha256": "dc049544037e36778b0c9850305c2b6c8b396d0ad134381a6ca309c5bc16fbbc",
+      "validator": "Draft7Validator",
+      "passed": true
+    },
+    {
+      "file": "powerbi/IRCTC.Report/definition/pages/data_quality/visuals/page_title/visual.json",
+      "url": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+      "schema_sha256": "dc049544037e36778b0c9850305c2b6c8b396d0ad134381a6ca309c5bc16fbbc",
+      "validator": "Draft7Validator",
+      "passed": true
+    },
+    {
+      "file": "powerbi/IRCTC.Report/definition/pages/data_quality/visuals/quality_details/visual.json",
+      "url": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+      "schema_sha256": "dc049544037e36778b0c9850305c2b6c8b396d0ad134381a6ca309c5bc16fbbc",
+      "validator": "Draft7Validator",
+      "passed": true
+    },
+    {
+      "file": "powerbi/IRCTC.Report/definition/pages/data_quality/visuals/quality_notes/visual.json",
+      "url": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+      "schema_sha256": "dc049544037e36778b0c9850305c2b6c8b396d0ad134381a6ca309c5bc16fbbc",
+      "validator": "Draft7Validator",
+      "passed": true
+    },
+    {
+      "file": "powerbi/IRCTC.Report/definition/pages/data_quality/visuals/route_quality/visual.json",
+      "url": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+      "schema_sha256": "dc049544037e36778b0c9850305c2b6c8b396d0ad134381a6ca309c5bc16fbbc",
+      "validator": "Draft7Validator",
+      "passed": true
+    },
+    {
+      "file": "powerbi/IRCTC.Report/definition/pages/data_quality/visuals/selected_0/visual.json",
+      "url": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+      "schema_sha256": "dc049544037e36778b0c9850305c2b6c8b396d0ad134381a6ca309c5bc16fbbc",
+      "validator": "Draft7Validator",
+      "passed": true
+    },
+    {
+      "file": "powerbi/IRCTC.Report/definition/pages/data_quality/visuals/selected_1/visual.json",
+      "url": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+      "schema_sha256": "dc049544037e36778b0c9850305c2b6c8b396d0ad134381a6ca309c5bc16fbbc",
+      "validator": "Draft7Validator",
+      "passed": true
+    },
+    {
+      "file": "powerbi/IRCTC.Report/definition/pages/data_quality/visuals/selected_2/visual.json",
+      "url": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+      "schema_sha256": "dc049544037e36778b0c9850305c2b6c8b396d0ad134381a6ca309c5bc16fbbc",
+      "validator": "Draft7Validator",
+      "passed": true
+    },
+    {
+      "file": "powerbi/IRCTC.Report/definition/pages/data_quality/visuals/selected_3/visual.json",
+      "url": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+      "schema_sha256": "dc049544037e36778b0c9850305c2b6c8b396d0ad134381a6ca309c5bc16fbbc",
+      "validator": "Draft7Validator",
+      "passed": true
+    },
+    {
+      "file": "powerbi/IRCTC.Report/definition/pages/data_quality/visuals/selected_4/visual.json",
+      "url": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+      "schema_sha256": "dc049544037e36778b0c9850305c2b6c8b396d0ad134381a6ca309c5bc16fbbc",
+      "validator": "Draft7Validator",
+      "passed": true
+    },
+    {
+      "file": "powerbi/IRCTC.Report/definition/pages/data_quality/visuals/selected_heading/visual.json",
+      "url": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+      "schema_sha256": "dc049544037e36778b0c9850305c2b6c8b396d0ad134381a6ca309c5bc16fbbc",
+      "validator": "Draft7Validator",
+      "passed": true
+    },
+    {
+      "file": "powerbi/IRCTC.Report/definition/pages/data_quality/visuals/source_0/visual.json",
+      "url": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+      "schema_sha256": "dc049544037e36778b0c9850305c2b6c8b396d0ad134381a6ca309c5bc16fbbc",
+      "validator": "Draft7Validator",
+      "passed": true
+    },
+    {
+      "file": "powerbi/IRCTC.Report/definition/pages/data_quality/visuals/source_1/visual.json",
+      "url": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+      "schema_sha256": "dc049544037e36778b0c9850305c2b6c8b396d0ad134381a6ca309c5bc16fbbc",
+      "validator": "Draft7Validator",
+      "passed": true
+    },
+    {
+      "file": "powerbi/IRCTC.Report/definition/pages/data_quality/visuals/source_2/visual.json",
+      "url": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+      "schema_sha256": "dc049544037e36778b0c9850305c2b6c8b396d0ad134381a6ca309c5bc16fbbc",
+      "validator": "Draft7Validator",
+      "passed": true
+    },
+    {
+      "file": "powerbi/IRCTC.Report/definition/pages/data_quality/visuals/source_3/visual.json",
+      "url": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+      "schema_sha256": "dc049544037e36778b0c9850305c2b6c8b396d0ad134381a6ca309c5bc16fbbc",
+      "validator": "Draft7Validator",
+      "passed": true
+    },
+    {
+      "file": "powerbi/IRCTC.Report/definition/pages/data_quality/visuals/source_4/visual.json",
+      "url": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+      "schema_sha256": "dc049544037e36778b0c9850305c2b6c8b396d0ad134381a6ca309c5bc16fbbc",
+      "validator": "Draft7Validator",
+      "passed": true
+    },
+    {
+      "file": "powerbi/IRCTC.Report/definition/pages/overview/page.json",
+      "url": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
+      "schema_sha256": "5e98c7132bddbf6e59dd23b754c7cad4b7c1edfa98528e05b7c46d8a42456ece",
+      "validator": "Draft7Validator",
+      "passed": true
+    },
+    {
+      "file": "powerbi/IRCTC.Report/definition/pages/overview/visuals/channel_type_value/visual.json",
+      "url": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+      "schema_sha256": "dc049544037e36778b0c9850305c2b6c8b396d0ad134381a6ca309c5bc16fbbc",
+      "validator": "Draft7Validator",
+      "passed": true
+    },
+    {
+      "file": "powerbi/IRCTC.Report/definition/pages/overview/visuals/filter_channel/visual.json",
+      "url": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+      "schema_sha256": "dc049544037e36778b0c9850305c2b6c8b396d0ad134381a6ca309c5bc16fbbc",
+      "validator": "Draft7Validator",
+      "passed": true
+    },
+    {
+      "file": "powerbi/IRCTC.Report/definition/pages/overview/visuals/filter_month/visual.json",
+      "url": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+      "schema_sha256": "dc049544037e36778b0c9850305c2b6c8b396d0ad134381a6ca309c5bc16fbbc",
+      "validator": "Draft7Validator",
+      "passed": true
+    },
+    {
+      "file": "powerbi/IRCTC.Report/definition/pages/overview/visuals/filter_route/visual.json",
+      "url": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+      "schema_sha256": "dc049544037e36778b0c9850305c2b6c8b396d0ad134381a6ca309c5bc16fbbc",
+      "validator": "Draft7Validator",
+      "passed": true
+    },
+    {
+      "file": "powerbi/IRCTC.Report/definition/pages/overview/visuals/filter_status/visual.json",
+      "url": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+      "schema_sha256": "dc049544037e36778b0c9850305c2b6c8b396d0ad134381a6ca309c5bc16fbbc",
+      "validator": "Draft7Validator",
+      "passed": true
+    },
+    {
+      "file": "powerbi/IRCTC.Report/definition/pages/overview/visuals/filter_type/visual.json",
+      "url": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+      "schema_sha256": "dc049544037e36778b0c9850305c2b6c8b396d0ad134381a6ca309c5bc16fbbc",
+      "validator": "Draft7Validator",
+      "passed": true
+    },
+    {
+      "file": "powerbi/IRCTC.Report/definition/pages/overview/visuals/kpi_0/visual.json",
+      "url": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+      "schema_sha256": "dc049544037e36778b0c9850305c2b6c8b396d0ad134381a6ca309c5bc16fbbc",
+      "validator": "Draft7Validator",
+      "passed": true
+    },
+    {
+      "file": "powerbi/IRCTC.Report/definition/pages/overview/visuals/kpi_1/visual.json",
+      "url": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+      "schema_sha256": "dc049544037e36778b0c9850305c2b6c8b396d0ad134381a6ca309c5bc16fbbc",
+      "validator": "Draft7Validator",
+      "passed": true
+    },
+    {
+      "file": "powerbi/IRCTC.Report/definition/pages/overview/visuals/kpi_2/visual.json",
+      "url": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+      "schema_sha256": "dc049544037e36778b0c9850305c2b6c8b396d0ad134381a6ca309c5bc16fbbc",
+      "validator": "Draft7Validator",
+      "passed": true
+    },
+    {
+      "file": "powerbi/IRCTC.Report/definition/pages/overview/visuals/kpi_3/visual.json",
+      "url": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+      "schema_sha256": "dc049544037e36778b0c9850305c2b6c8b396d0ad134381a6ca309c5bc16fbbc",
+      "validator": "Draft7Validator",
+      "passed": true
+    },
+    {
+      "file": "powerbi/IRCTC.Report/definition/pages/overview/visuals/kpi_4/visual.json",
+      "url": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+      "schema_sha256": "dc049544037e36778b0c9850305c2b6c8b396d0ad134381a6ca309c5bc16fbbc",
+      "validator": "Draft7Validator",
+      "passed": true
+    },
+    {
+      "file": "powerbi/IRCTC.Report/definition/pages/overview/visuals/metric_note/visual.json",
+      "url": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+      "schema_sha256": "dc049544037e36778b0c9850305c2b6c8b396d0ad134381a6ca309c5bc16fbbc",
+      "validator": "Draft7Validator",
+      "passed": true
+    },
+    {
+      "file": "powerbi/IRCTC.Report/definition/pages/overview/visuals/monthly_bookings/visual.json",
+      "url": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+      "schema_sha256": "dc049544037e36778b0c9850305c2b6c8b396d0ad134381a6ca309c5bc16fbbc",
+      "validator": "Draft7Validator",
+      "passed": true
+    },
+    {
+      "file": "powerbi/IRCTC.Report/definition/pages/overview/visuals/page_number/visual.json",
+      "url": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+      "schema_sha256": "dc049544037e36778b0c9850305c2b6c8b396d0ad134381a6ca309c5bc16fbbc",
+      "validator": "Draft7Validator",
+      "passed": true
+    },
+    {
+      "file": "powerbi/IRCTC.Report/definition/pages/overview/visuals/page_subtitle/visual.json",
+      "url": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+      "schema_sha256": "dc049544037e36778b0c9850305c2b6c8b396d0ad134381a6ca309c5bc16fbbc",
+      "validator": "Draft7Validator",
+      "passed": true
+    },
+    {
+      "file": "powerbi/IRCTC.Report/definition/pages/overview/visuals/page_title/visual.json",
+      "url": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+      "schema_sha256": "dc049544037e36778b0c9850305c2b6c8b396d0ad134381a6ca309c5bc16fbbc",
+      "validator": "Draft7Validator",
+      "passed": true
+    },
+    {
+      "file": "powerbi/IRCTC.Report/definition/pages/overview/visuals/route_bookings/visual.json",
+      "url": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+      "schema_sha256": "dc049544037e36778b0c9850305c2b6c8b396d0ad134381a6ca309c5bc16fbbc",
+      "validator": "Draft7Validator",
+      "passed": true
+    },
+    {
+      "file": "powerbi/IRCTC.Report/definition/pages/overview/visuals/status_value/visual.json",
+      "url": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+      "schema_sha256": "dc049544037e36778b0c9850305c2b6c8b396d0ad134381a6ca309c5bc16fbbc",
+      "validator": "Draft7Validator",
+      "passed": true
+    },
+    {
+      "file": "powerbi/IRCTC.Report/definition/pages/pages.json",
+      "url": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/pagesMetadata/1.0.0/schema.json",
+      "schema_sha256": "7981576806e12b2319d5acd1556718dee1b21594b186785ab07dd153634f3d1e",
+      "validator": "Draft7Validator",
+      "passed": true
+    },
+    {
+      "file": "powerbi/IRCTC.Report/definition/pages/routes_customers/page.json",
+      "url": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
+      "schema_sha256": "5e98c7132bddbf6e59dd23b754c7cad4b7c1edfa98528e05b7c46d8a42456ece",
+      "validator": "Draft7Validator",
+      "passed": true
+    },
+    {
+      "file": "powerbi/IRCTC.Report/definition/pages/routes_customers/visuals/class_value/visual.json",
+      "url": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+      "schema_sha256": "dc049544037e36778b0c9850305c2b6c8b396d0ad134381a6ca309c5bc16fbbc",
+      "validator": "Draft7Validator",
+      "passed": true
+    },
+    {
+      "file": "powerbi/IRCTC.Report/definition/pages/routes_customers/visuals/filter_channel/visual.json",
+      "url": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+      "schema_sha256": "dc049544037e36778b0c9850305c2b6c8b396d0ad134381a6ca309c5bc16fbbc",
+      "validator": "Draft7Validator",
+      "passed": true
+    },
+    {
+      "file": "powerbi/IRCTC.Report/definition/pages/routes_customers/visuals/filter_month/visual.json",
+      "url": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+      "schema_sha256": "dc049544037e36778b0c9850305c2b6c8b396d0ad134381a6ca309c5bc16fbbc",
+      "validator": "Draft7Validator",
+      "passed": true
+    },
+    {
+      "file": "powerbi/IRCTC.Report/definition/pages/routes_customers/visuals/filter_route/visual.json",
+      "url": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+      "schema_sha256": "dc049544037e36778b0c9850305c2b6c8b396d0ad134381a6ca309c5bc16fbbc",
+      "validator": "Draft7Validator",
+      "passed": true
+    },
+    {
+      "file": "powerbi/IRCTC.Report/definition/pages/routes_customers/visuals/filter_status/visual.json",
+      "url": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+      "schema_sha256": "dc049544037e36778b0c9850305c2b6c8b396d0ad134381a6ca309c5bc16fbbc",
+      "validator": "Draft7Validator",
+      "passed": true
+    },
+    {
+      "file": "powerbi/IRCTC.Report/definition/pages/routes_customers/visuals/filter_type/visual.json",
+      "url": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+      "schema_sha256": "dc049544037e36778b0c9850305c2b6c8b396d0ad134381a6ca309c5bc16fbbc",
+      "validator": "Draft7Validator",
+      "passed": true
+    },
+    {
+      "file": "powerbi/IRCTC.Report/definition/pages/routes_customers/visuals/kpi_0/visual.json",
+      "url": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+      "schema_sha256": "dc049544037e36778b0c9850305c2b6c8b396d0ad134381a6ca309c5bc16fbbc",
+      "validator": "Draft7Validator",
+      "passed": true
+    },
+    {
+      "file": "powerbi/IRCTC.Report/definition/pages/routes_customers/visuals/kpi_1/visual.json",
+      "url": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+      "schema_sha256": "dc049544037e36778b0c9850305c2b6c8b396d0ad134381a6ca309c5bc16fbbc",
+      "validator": "Draft7Validator",
+      "passed": true
+    },
+    {
+      "file": "powerbi/IRCTC.Report/definition/pages/routes_customers/visuals/kpi_2/visual.json",
+      "url": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+      "schema_sha256": "dc049544037e36778b0c9850305c2b6c8b396d0ad134381a6ca309c5bc16fbbc",
+      "validator": "Draft7Validator",
+      "passed": true
+    },
+    {
+      "file": "powerbi/IRCTC.Report/definition/pages/routes_customers/visuals/kpi_3/visual.json",
+      "url": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+      "schema_sha256": "dc049544037e36778b0c9850305c2b6c8b396d0ad134381a6ca309c5bc16fbbc",
+      "validator": "Draft7Validator",
+      "passed": true
+    },
+    {
+      "file": "powerbi/IRCTC.Report/definition/pages/routes_customers/visuals/page_number/visual.json",
+      "url": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+      "schema_sha256": "dc049544037e36778b0c9850305c2b6c8b396d0ad134381a6ca309c5bc16fbbc",
+      "validator": "Draft7Validator",
+      "passed": true
+    },
+    {
+      "file": "powerbi/IRCTC.Report/definition/pages/routes_customers/visuals/page_subtitle/visual.json",
+      "url": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+      "schema_sha256": "dc049544037e36778b0c9850305c2b6c8b396d0ad134381a6ca309c5bc16fbbc",
+      "validator": "Draft7Validator",
+      "passed": true
+    },
+    {
+      "file": "powerbi/IRCTC.Report/definition/pages/routes_customers/visuals/page_title/visual.json",
+      "url": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+      "schema_sha256": "dc049544037e36778b0c9850305c2b6c8b396d0ad134381a6ca309c5bc16fbbc",
+      "validator": "Draft7Validator",
+      "passed": true
+    },
+    {
+      "file": "powerbi/IRCTC.Report/definition/pages/routes_customers/visuals/payment_value/visual.json",
+      "url": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+      "schema_sha256": "dc049544037e36778b0c9850305c2b6c8b396d0ad134381a6ca309c5bc16fbbc",
+      "validator": "Draft7Validator",
+      "passed": true
+    },
+    {
+      "file": "powerbi/IRCTC.Report/definition/pages/routes_customers/visuals/route_detail/visual.json",
+      "url": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+      "schema_sha256": "dc049544037e36778b0c9850305c2b6c8b396d0ad134381a6ca309c5bc16fbbc",
+      "validator": "Draft7Validator",
+      "passed": true
+    },
+    {
+      "file": "powerbi/IRCTC.Report/definition/pages/routes_customers/visuals/route_note/visual.json",
+      "url": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+      "schema_sha256": "dc049544037e36778b0c9850305c2b6c8b396d0ad134381a6ca309c5bc16fbbc",
+      "validator": "Draft7Validator",
+      "passed": true
+    },
+    {
+      "file": "powerbi/IRCTC.Report/definition/pages/routes_customers/visuals/train_type_bookings/visual.json",
+      "url": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+      "schema_sha256": "dc049544037e36778b0c9850305c2b6c8b396d0ad134381a6ca309c5bc16fbbc",
+      "validator": "Draft7Validator",
+      "passed": true
+    },
+    {
+      "file": "powerbi/IRCTC.Report/definition/report.json",
+      "url": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/report/3.3.0/schema.json",
+      "schema_sha256": "765b33f0c99327f8e72bc959b6d79bc66073dc7f2fcfbf59941647190d781705",
+      "validator": "Draft7Validator",
+      "passed": true
+    },
+    {
+      "file": "powerbi/IRCTC.Report/definition/version.json",
+      "url": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/versionMetadata/1.0.0/schema.json",
+      "schema_sha256": "216b18ecefbe7de90a31efe4b0dc309d4e5d7d57d07c0581671c9992ce08e3ee",
+      "validator": "Draft7Validator",
+      "passed": true
+    }
+  ],
+  "files": [
+    {
+      "path": "powerbi/IRCTC.pbip",
+      "sha256": "a5ec623dd3601b5de1543a686e97388e24a81e9651348540aa050e3693c73f14",
+      "bytes": 272
+    },
+    {
+      "path": "powerbi/IRCTC.Report/definition.pbir",
+      "sha256": "4e750d7e091a7aac38bcd84d66de60e6fea002fd97f7bfd4b1c190e014d4403d",
+      "bytes": 232
+    },
+    {
+      "path": "powerbi/IRCTC.SemanticModel/definition.pbism",
+      "sha256": "792193b6309aadb09922b9a4de45b2688e2d3498f62dc7eb77f81f90d398da6e",
+      "bytes": 194
+    },
+    {
+      "path": "powerbi/IRCTC.Report/definition/pages/data_quality/page.json",
+      "sha256": "1a0f6ee6e523ba7a1fb24d33a675b8f56dcd8e114cc6b500cfb84cc99e771a45",
+      "bytes": 9193
+    },
+    {
+      "path": "powerbi/IRCTC.Report/definition/pages/data_quality/visuals/amount_reconciliation/visual.json",
+      "sha256": "adec3ea0abe487a0c0a1b61f323a7b4316b43e8f0300b2d3c1aebca508cf389a",
+      "bytes": 4071
+    },
+    {
+      "path": "powerbi/IRCTC.Report/definition/pages/data_quality/visuals/chronology_month/visual.json",
+      "sha256": "c188261816262c6f33dc9a316a3d73107a9f02a805e46bedab92e08b12f94121",
+      "bytes": 8645
+    },
+    {
+      "path": "powerbi/IRCTC.Report/definition/pages/data_quality/visuals/filter_channel/visual.json",
+      "sha256": "d165dcd3ea4d06c376e4c2b87f4bb28167030e4351736140468122e58758630b",
+      "bytes": 5501
+    },
+    {
+      "path": "powerbi/IRCTC.Report/definition/pages/data_quality/visuals/filter_month/visual.json",
+      "sha256": "40395402472086ef06016c0f3fc712da78ff0f71ac8bd679b3a7eeb6e440e10f",
+      "bytes": 5473
+    },
+    {
+      "path": "powerbi/IRCTC.Report/definition/pages/data_quality/visuals/filter_route/visual.json",
+      "sha256": "993bf32620ccd90374d9e64c28976d64fc47bf65fe22374b316f47f2fa7fc672",
+      "bytes": 5450
+    },
+    {
+      "path": "powerbi/IRCTC.Report/definition/pages/data_quality/visuals/filter_status/visual.json",
+      "sha256": "2ec420476d88b6edaf2e4e34952e791a2ec63c98f10962bc0c8005fdca50f293",
+      "bytes": 5495
+    },
+    {
+      "path": "powerbi/IRCTC.Report/definition/pages/data_quality/visuals/filter_type/visual.json",
+      "sha256": "b06a0b79c26f9dd8a7a128144538f4987602a5caa20e217f40997ca4da73ef46",
+      "bytes": 5483
+    },
+    {
+      "path": "powerbi/IRCTC.Report/definition/pages/data_quality/visuals/fixed_heading/visual.json",
+      "sha256": "bb7da0eebfa73b2c13f9838417c94c77a2c60255de205cedb312a6a74869d7d7",
+      "bytes": 4039
+    },
+    {
+      "path": "powerbi/IRCTC.Report/definition/pages/data_quality/visuals/page_number/visual.json",
+      "sha256": "18ad92ed1656e50a98761871aba5cd7ad3dfa6844013d6debf23d8d112aad5da",
+      "bytes": 3977
+    },
+    {
+      "path": "powerbi/IRCTC.Report/definition/pages/data_quality/visuals/page_subtitle/visual.json",
+      "sha256": "0a255fe4234e309b2fd024089d1ff94eb19a06f4acd213646230216c86df7bab",
+      "bytes": 4071
+    },
+    {
+      "path": "powerbi/IRCTC.Report/definition/pages/data_quality/visuals/page_title/visual.json",
+      "sha256": "7741b99cfb974ace7973e3d1f061056b7302c564b1fd152caed85887fe7911c6",
+      "bytes": 3975
+    },
+    {
+      "path": "powerbi/IRCTC.Report/definition/pages/data_quality/visuals/quality_details/visual.json",
+      "sha256": "8456ad2d2e2cd39821fc4979bd99511adc9a214f869df710d3b237d12bcf7ab0",
+      "bytes": 5175
+    },
+    {
+      "path": "powerbi/IRCTC.Report/definition/pages/data_quality/visuals/quality_notes/visual.json",
+      "sha256": "8ddf73a148f26956d652c31e51333941da3fddd99d5ced9aa62f7d0338c0efcd",
+      "bytes": 4001
+    },
+    {
+      "path": "powerbi/IRCTC.Report/definition/pages/data_quality/visuals/route_quality/visual.json",
+      "sha256": "5b16d5c89147176ffdcfb8d8641ed57a4bc3aba741c9bf4cf4581ddf29df1162",
+      "bytes": 9666
+    },
+    {
+      "path": "powerbi/IRCTC.Report/definition/pages/data_quality/visuals/selected_0/visual.json",
+      "sha256": "9ce533348020b063395ce10bb2a210b97b4a68c0b8627226dcf130b87662d9f8",
+      "bytes": 9154
+    },
+    {
+      "path": "powerbi/IRCTC.Report/definition/pages/data_quality/visuals/selected_1/visual.json",
+      "sha256": "d37895b64c8498534f7eb6e4bfb4cc320defc5b950d85b07a6ed947d4f315480",
+      "bytes": 9150
+    },
+    {
+      "path": "powerbi/IRCTC.Report/definition/pages/data_quality/visuals/selected_2/visual.json",
+      "sha256": "ce1377bebf8cb759ea8e95b129ceb35f7be1c4fce76c51bc15fdcd3d2705a2a9",
+      "bytes": 9150
+    },
+    {
+      "path": "powerbi/IRCTC.Report/definition/pages/data_quality/visuals/selected_3/visual.json",
+      "sha256": "6afe002c0d9a7c15e87ac11533dc36580b4400e4d1a1e8c7a479a264f9c3ba59",
+      "bytes": 9161
+    },
+    {
+      "path": "powerbi/IRCTC.Report/definition/pages/data_quality/visuals/selected_4/visual.json",
+      "sha256": "8fe042a3fa7904aa1954cc62cb8c60bea89b0595f7ce037c99d84030d7a50451",
+      "bytes": 9155
+    },
+    {
+      "path": "powerbi/IRCTC.Report/definition/pages/data_quality/visuals/selected_heading/visual.json",
+      "sha256": "00e8ccfd38dfcebf354f13d57476da5f1ff7c08f97cda9656e6e309209d4e6cf",
+      "bytes": 4066
+    },
+    {
+      "path": "powerbi/IRCTC.Report/definition/pages/data_quality/visuals/source_0/visual.json",
+      "sha256": "4896ccce7836a6fc7a55bccb8063918457709eb7732061dd51eb5b3b2654e4f7",
+      "bytes": 9127
+    },
+    {
+      "path": "powerbi/IRCTC.Report/definition/pages/data_quality/visuals/source_1/visual.json",
+      "sha256": "5dc230be46c6acf66242874a8d64f6ea3fd54d3a44dffabc0e6b877995a04e86",
+      "bytes": 9151
+    },
+    {
+      "path": "powerbi/IRCTC.Report/definition/pages/data_quality/visuals/source_2/visual.json",
+      "sha256": "83afa9c43909962f4ee698bea26c3550cbf289300980b4a5310dec6b47f6fd8b",
+      "bytes": 9141
+    },
+    {
+      "path": "powerbi/IRCTC.Report/definition/pages/data_quality/visuals/source_3/visual.json",
+      "sha256": "2e649b618a75af3c21e92fae889504f26750fbfd69fb63e4d3e1daf3d376066f",
+      "bytes": 9148
+    },
+    {
+      "path": "powerbi/IRCTC.Report/definition/pages/data_quality/visuals/source_4/visual.json",
+      "sha256": "af7d7a06f1f7cba6b1ad6c4d8f82a749fe65801d332f9f6624f58379ea5fddf4",
+      "bytes": 9149
+    },
+    {
+      "path": "powerbi/IRCTC.Report/definition/pages/overview/page.json",
+      "sha256": "0a4b772ea6db985e999efe421a6e5426a4f532ef0fc00f1d11d7437442c27b30",
+      "bytes": 8669
+    },
+    {
+      "path": "powerbi/IRCTC.Report/definition/pages/overview/visuals/channel_type_value/visual.json",
+      "sha256": "b7d9d9541c86844de48bed042e91a1554e552caafde091c671fa057d2d6938a8",
+      "bytes": 8130
+    },
+    {
+      "path": "powerbi/IRCTC.Report/definition/pages/overview/visuals/filter_channel/visual.json",
+      "sha256": "d165dcd3ea4d06c376e4c2b87f4bb28167030e4351736140468122e58758630b",
+      "bytes": 5501
+    },
+    {
+      "path": "powerbi/IRCTC.Report/definition/pages/overview/visuals/filter_month/visual.json",
+      "sha256": "40395402472086ef06016c0f3fc712da78ff0f71ac8bd679b3a7eeb6e440e10f",
+      "bytes": 5473
+    },
+    {
+      "path": "powerbi/IRCTC.Report/definition/pages/overview/visuals/filter_route/visual.json",
+      "sha256": "993bf32620ccd90374d9e64c28976d64fc47bf65fe22374b316f47f2fa7fc672",
+      "bytes": 5450
+    },
+    {
+      "path": "powerbi/IRCTC.Report/definition/pages/overview/visuals/filter_status/visual.json",
+      "sha256": "2ec420476d88b6edaf2e4e34952e791a2ec63c98f10962bc0c8005fdca50f293",
+      "bytes": 5495
+    },
+    {
+      "path": "powerbi/IRCTC.Report/definition/pages/overview/visuals/filter_type/visual.json",
+      "sha256": "b06a0b79c26f9dd8a7a128144538f4987602a5caa20e217f40997ca4da73ef46",
+      "bytes": 5483
+    },
+    {
+      "path": "powerbi/IRCTC.Report/definition/pages/overview/visuals/kpi_0/visual.json",
+      "sha256": "95e0be34b0238f6138d1e2690d0e483b28da5c55aa35ac35b80f6da788d24a06",
+      "bytes": 9091
+    },
+    {
+      "path": "powerbi/IRCTC.Report/definition/pages/overview/visuals/kpi_1/visual.json",
+      "sha256": "b8b1d38e3aef63fda396142c38265b36a13e135fc33e5f02f1dc62f4ac51b84f",
+      "bytes": 9148
+    },
+    {
+      "path": "powerbi/IRCTC.Report/definition/pages/overview/visuals/kpi_2/visual.json",
+      "sha256": "9b0754faa54aa725f6e6214da087aa199788d23b484111ea3bd2624d9ed3d8de",
+      "bytes": 9109
+    },
+    {
+      "path": "powerbi/IRCTC.Report/definition/pages/overview/visuals/kpi_3/visual.json",
+      "sha256": "66274d762d8e12dc1faa6e5836d9375308a3b3d971bf201179e7a66cacacd0d9",
+      "bytes": 9141
+    },
+    {
+      "path": "powerbi/IRCTC.Report/definition/pages/overview/visuals/kpi_4/visual.json",
+      "sha256": "6df71a23ba1e514fdb8a270cad36e627fc8d7eeb1d71b81ffb257224b2da0c92",
+      "bytes": 9156
+    },
+    {
+      "path": "powerbi/IRCTC.Report/definition/pages/overview/visuals/metric_note/visual.json",
+      "sha256": "74fc358f39c68bf05ddf0ec5840803b12d12552bf1f7cfcca364da7da3fd7b72",
+      "bytes": 4556
+    },
+    {
+      "path": "powerbi/IRCTC.Report/definition/pages/overview/visuals/monthly_bookings/visual.json",
+      "sha256": "a4d778c4e4ed0c67c0975d616ed0e861d2b48ab77c94707b5caddb4521c86170",
+      "bytes": 8575
+    },
+    {
+      "path": "powerbi/IRCTC.Report/definition/pages/overview/visuals/page_number/visual.json",
+      "sha256": "56b0a8fd383458e2dec192b252727a68ee038a40ca30bedd11bfbe75622f8445",
+      "bytes": 3977
+    },
+    {
+      "path": "powerbi/IRCTC.Report/definition/pages/overview/visuals/page_subtitle/visual.json",
+      "sha256": "564ecff1dae3c4ff2ccd557702d04217e092327e1f88ffeb89c4f76558d3cd02",
+      "bytes": 4052
+    },
+    {
+      "path": "powerbi/IRCTC.Report/definition/pages/overview/visuals/page_title/visual.json",
+      "sha256": "7bb219fbec13e058910dff2a69f2578b4c18239b327dcf8aa0707a4705582916",
+      "bytes": 3979
+    },
+    {
+      "path": "powerbi/IRCTC.Report/definition/pages/overview/visuals/route_bookings/visual.json",
+      "sha256": "8527edefd7cf949c45be2f0a3c633ce9e6ae75f1c129377891bd3c899256fbb7",
+      "bytes": 7978
+    },
+    {
+      "path": "powerbi/IRCTC.Report/definition/pages/overview/visuals/status_value/visual.json",
+      "sha256": "5b8805b170e3d72279a497017a6832001bd31d002dbaf603e1b9c6937787bf6d",
+      "bytes": 8081
+    },
+    {
+      "path": "powerbi/IRCTC.Report/definition/pages/pages.json",
+      "sha256": "57452ccb1d7ac599074e8808084aea99c173bc0faf54984fc3d8ffd1af6d6fa9",
+      "bytes": 239
+    },
+    {
+      "path": "powerbi/IRCTC.Report/definition/pages/routes_customers/page.json",
+      "sha256": "635a943877d9c8ed385bb5af529dacb806018cded541105cba55a3bcb9d994cb",
+      "bytes": 7717
+    },
+    {
+      "path": "powerbi/IRCTC.Report/definition/pages/routes_customers/visuals/class_value/visual.json",
+      "sha256": "cadb34e4211599447d60aed517a425c56bc73a2fa59bd242d848602f5969cc51",
+      "bytes": 8071
+    },
+    {
+      "path": "powerbi/IRCTC.Report/definition/pages/routes_customers/visuals/filter_channel/visual.json",
+      "sha256": "d165dcd3ea4d06c376e4c2b87f4bb28167030e4351736140468122e58758630b",
+      "bytes": 5501
+    },
+    {
+      "path": "powerbi/IRCTC.Report/definition/pages/routes_customers/visuals/filter_month/visual.json",
+      "sha256": "40395402472086ef06016c0f3fc712da78ff0f71ac8bd679b3a7eeb6e440e10f",
+      "bytes": 5473
+    },
+    {
+      "path": "powerbi/IRCTC.Report/definition/pages/routes_customers/visuals/filter_route/visual.json",
+      "sha256": "993bf32620ccd90374d9e64c28976d64fc47bf65fe22374b316f47f2fa7fc672",
+      "bytes": 5450
+    },
+    {
+      "path": "powerbi/IRCTC.Report/definition/pages/routes_customers/visuals/filter_status/visual.json",
+      "sha256": "2ec420476d88b6edaf2e4e34952e791a2ec63c98f10962bc0c8005fdca50f293",
+      "bytes": 5495
+    },
+    {
+      "path": "powerbi/IRCTC.Report/definition/pages/routes_customers/visuals/filter_type/visual.json",
+      "sha256": "b06a0b79c26f9dd8a7a128144538f4987602a5caa20e217f40997ca4da73ef46",
+      "bytes": 5483
+    },
+    {
+      "path": "powerbi/IRCTC.Report/definition/pages/routes_customers/visuals/kpi_0/visual.json",
+      "sha256": "f31511089113ba44d6bd91cf68e42cee6882322dc0c6b454525d96f73e08227a",
+      "bytes": 9109
+    },
+    {
+      "path": "powerbi/IRCTC.Report/definition/pages/routes_customers/visuals/kpi_1/visual.json",
+      "sha256": "18d2f5ebd007e279a96f3f16f95cb5cfeaedf5e7ea34ee2a579922fde3e4adea",
+      "bytes": 9144
+    },
+    {
+      "path": "powerbi/IRCTC.Report/definition/pages/routes_customers/visuals/kpi_2/visual.json",
+      "sha256": "ca7a9ab4ee8472bb2999b95e2f186b1d2c80a9f41e2bd1047a1f75cb3a530ad7",
+      "bytes": 9121
+    },
+    {
+      "path": "powerbi/IRCTC.Report/definition/pages/routes_customers/visuals/kpi_3/visual.json",
+      "sha256": "202b676c1ac4a480f5207d6ec9cce968cf70124aa6c73d27bc44727adbeee2fb",
+      "bytes": 9200
+    },
+    {
+      "path": "powerbi/IRCTC.Report/definition/pages/routes_customers/visuals/page_number/visual.json",
+      "sha256": "ea6afc4fe9bca071231b1c8aabb69d98c39f4af1c96cf710bad8ab9a063aa864",
+      "bytes": 3977
+    },
+    {
+      "path": "powerbi/IRCTC.Report/definition/pages/routes_customers/visuals/page_subtitle/visual.json",
+      "sha256": "5be00115e85e260baa313668d5d26dc1b6f7c6498203ae4b0e5db45bb7e5d999",
+      "bytes": 4054
+    },
+    {
+      "path": "powerbi/IRCTC.Report/definition/pages/routes_customers/visuals/page_title/visual.json",
+      "sha256": "87172aa5d7261b6d75ce75f0109d5518d8b7d1b1437a2b2a97f3afc695df13ca",
+      "bytes": 3981
+    },
+    {
+      "path": "powerbi/IRCTC.Report/definition/pages/routes_customers/visuals/payment_value/visual.json",
+      "sha256": "5c914444b8ab61ccbd879e6dd941a1fbc26bd16664a8f33378723c898366808e",
+      "bytes": 8083
+    },
+    {
+      "path": "powerbi/IRCTC.Report/definition/pages/routes_customers/visuals/route_detail/visual.json",
+      "sha256": "e91504f6aa753692d9255349a3b3c139e9d8d11838beaa9d001d6c0ea646675c",
+      "bytes": 10500
+    },
+    {
+      "path": "powerbi/IRCTC.Report/definition/pages/routes_customers/visuals/route_note/visual.json",
+      "sha256": "2bd40ab65672e09c761384fa34563d9c903cb90846d5412811a3bf415e029149",
+      "bytes": 4593
+    },
+    {
+      "path": "powerbi/IRCTC.Report/definition/pages/routes_customers/visuals/train_type_bookings/visual.json",
+      "sha256": "a37d02c3833065f337274f7e16bf3a7b9c95132f2e6b45180cb3a519ab70ecae",
+      "bytes": 7996
+    },
+    {
+      "path": "powerbi/IRCTC.Report/definition/report.json",
+      "sha256": "a1c9ee46b9e35320b7e02b3fdb606cd521e27f64ecee5466c0cd85450bb24e98",
+      "bytes": 1204
+    },
+    {
+      "path": "powerbi/IRCTC.Report/definition/version.json",
+      "sha256": "0f9f217a60981bf882d7b1963977fc72cc051078df8512b46caa607aff2e5220",
+      "bytes": 150
+    },
+    {
+      "path": "powerbi/IRCTC.SemanticModel/model.bim",
+      "sha256": "5ea94c0130ba5ff419b3ac98b734d4da0ec7a12abb791cb763c7af9b1df5b6b3",
+      "bytes": 1450045
+    },
+    {
+      "path": "powerbi/IRCTC.Report/StaticResources/SharedResources/BaseThemes/CY24SU02.json",
+      "sha256": "c0f00a77d094b79041def4729d45e8ffc43a1830761fc3f29cf502244f0e9f16",
+      "bytes": 12529
+    },
+    {
+      "path": "powerbi/IRCTC.Report/StaticResources/RegisteredResources/IRCTC_Theme.json",
+      "sha256": "404578ae2c94be7e0a01035788f53b7280a40cfc707bfdc12359d4e5d1845fd2",
+      "bytes": 227
+    }
+  ]
+}

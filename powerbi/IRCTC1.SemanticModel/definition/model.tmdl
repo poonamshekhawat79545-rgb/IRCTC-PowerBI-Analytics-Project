@@ -1,0 +1,21 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	discourageImplicitMeasures
+	sourceQueryCulture: en-US
+	dataAccessOptions
+		legacyRedirects
+
+annotation PBI_QueryOrder = ["Bookings","DimDate"]
+
+annotation __PBI_TimeIntelligenceEnabled = 0
+
+annotation IRCTC_OriginalSourceSha256 = 7c95cbe3ab5a0f34bc977c1947350246da0e0823398dcb0c08d3797479596715
+
+annotation IRCTC_Scope = Synthetic educational sample; recorded booking value includes all statuses; not official IRCTC operational or financial reporting.
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table Bookings
+ref table DimDate
+

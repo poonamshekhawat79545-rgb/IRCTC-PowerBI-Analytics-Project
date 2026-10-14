@@ -1,0 +1,9 @@
+relationship 3f6e6489-8179-5778-97b2-cbd1dd4effdb
+	fromColumn: Bookings.booking_date
+	toColumn: DimDate.date
+
+relationship 1a9e8623-6709-5ef3-b580-5b34da23d18e
+	isActive: false
+	fromColumn: Bookings.travel_date
+	toColumn: DimDate.date
+

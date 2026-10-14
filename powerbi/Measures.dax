@@ -1,0 +1,51 @@
+// Add each expression below as a separate measure in a table named Bookings.
+// The table must contain ONLY data/processed/bookings_clean.csv.
+// Amounts are recorded booking value, not recognized revenue.
+
+Bookings = COALESCE ( COUNTROWS ( 'Bookings' ), 0 )
+
+Recorded Booking Value = COALESCE ( SUM ( 'Bookings'[booking_value_inr] ), 0 )
+
+Passengers = COALESCE ( SUM ( 'Bookings'[passenger_count] ), 0 )
+
+Distinct Users = COALESCE ( DISTINCTCOUNT ( 'Bookings'[user_id] ), 0 )
+
+Distinct Train Numbers = COALESCE ( DISTINCTCOUNT ( 'Bookings'[train_number] ), 0 )
+
+Average Booking Value = DIVIDE ( [Recorded Booking Value], [Bookings] )
+
+Mean Reported Occupancy Pct = DIVIDE ( AVERAGE ( 'Bookings'[occupancy_percentage] ), 100 )
+
+Mean Record Delay Mins = AVERAGE ( 'Bookings'[on_time_delay_mins] )
+
+Cancelled Bookings =
+    CALCULATE ( [Bookings], KEEPFILTERS ( 'Bookings'[booking_status] = "Cancelled" ) )
+
+Cancellation Rate = DIVIDE ( [Cancelled Bookings], [Bookings] )
+
+Confirmed Booking Value =
+    CALCULATE ( [Recorded Booking Value], KEEPFILTERS ( 'Bookings'[booking_status] = "Confirmed" ) )
+
+Invalid Chronology Records = COALESCE ( SUM ( 'Bookings'[flag_invalid_chronology] ), 0 )
+
+Invalid Chronology Rate = DIVIDE ( [Invalid Chronology Records], [Bookings] )
+
+Valid Lead Time Records = COALESCE ( COUNT ( 'Bookings'[valid_lead_time_days] ), 0 )
+
+Mean Valid Lead Time Days = AVERAGE ( 'Bookings'[valid_lead_time_days] )
+
+// Requires DimDate[date] -> Bookings[booking_date], active, one-to-many.
+// Use DimDate[year_month] on the monthly chart. Mark DimDate as a date table.
+Previous Month Bookings =
+    CALCULATE ( [Bookings], DATEADD ( 'DimDate'[date], -1, MONTH ) )
+
+Bookings MoM Pct =
+    DIVIDE ( [Bookings] - [Previous Month Bookings], [Previous Month Bookings] )
+
+// Share of the selected route population. Use the Bookings[route] field in
+// both the slicer and chart for this deliberately flat import model.
+Selected Route Value Share =
+    DIVIDE (
+        [Recorded Booking Value],
+        CALCULATE ( [Recorded Booking Value], ALLSELECTED ( 'Bookings'[route] ) )
+    )

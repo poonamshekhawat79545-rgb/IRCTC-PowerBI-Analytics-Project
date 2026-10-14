@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "scope": "Static semantic model and embedded-data checks; not native DAX or M engine execution.",
+  "checks": {
+    "booking_payload_matches_clean_csv_bytes": true,
+    "calendar_payload_round_trip": true,
+    "embedded_booking_count_and_value_match_controls": true,
+    "column_types_parse_for_every_embedded_cell": true,
+    "keys_are_unique_and_nonblank": true,
+    "date_relationships_have_no_orphans": true,
+    "exactly_one_active_date_relationship": true,
+    "full_calendar_is_contiguous": true,
+    "sort_columns_have_valid_functional_dependencies": true,
+    "all_DAX_column_and_measure_references_exist": true,
+    "DAX_measure_dependency_graph_is_acyclic": true,
+    "no_external_file_network_or_database_calls": true
+  },
+  "booking_row_count": 19301,
+  "calendar_row_count": 365,
+  "measure_count": 38,
+  "booking_columns": 42,
+  "booking_value_inr": 51279303,
+  "source_csv_sha256": "01e05a54749d2a77096f0c3e131334cea0059028e76e97095335da08dea0b1b9",
+  "native_engine_execution": "Not available on this macOS host. Refresh and inspect in Power BI Desktop on Windows.",
+  "sources": [
+    "https://learn.microsoft.com/en-us/power-bi/developer/projects/projects-dataset",
+    "https://learn.microsoft.com/en-us/analysis-services/tmsl/database-object-tmsl",
+    "https://learn.microsoft.com/en-us/analysis-services/tmsl/tables-object-tmsl",
+    "https://learn.microsoft.com/en-us/analysis-services/tmsl/relationships-object-tmsl",
+    "https://raw.githubusercontent.com/microsoft/mcp/main/tools/Fabric.Mcp.Tools.Docs/src/Resources/item-definitions/semantic-model-definition.md",
+    "https://learn.microsoft.com/en-us/powerquery-m/binary-decompress",
+    "https://learn.microsoft.com/en-us/powerquery-m/csv-document",
+    "https://developer.microsoft.com/json-schemas/fabric/item/semanticModel/definitionProperties/1.0.0/schema.json"
+  ]
+}

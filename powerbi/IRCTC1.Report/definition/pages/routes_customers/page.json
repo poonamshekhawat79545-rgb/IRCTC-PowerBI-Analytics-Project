@@ -1,0 +1,376 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
+  "name": "routes_customers",
+  "displayName": "Routes & customers",
+  "displayOption": "FitToPage",
+  "width": 1600,
+  "height": 1000,
+  "objects": {
+    "background": [
+      {
+        "properties": {
+          "color": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'#F5F8FD'"
+                  }
+                }
+              }
+            }
+          },
+          "transparency": {
+            "expr": {
+              "Literal": {
+                "Value": "0D"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "visualInteractions": [
+    {
+      "source": "filter_month",
+      "target": "kpi_0",
+      "type": "DataFilter"
+    },
+    {
+      "source": "filter_month",
+      "target": "kpi_1",
+      "type": "DataFilter"
+    },
+    {
+      "source": "filter_month",
+      "target": "kpi_2",
+      "type": "DataFilter"
+    },
+    {
+      "source": "filter_month",
+      "target": "kpi_3",
+      "type": "DataFilter"
+    },
+    {
+      "source": "filter_month",
+      "target": "route_detail",
+      "type": "DataFilter"
+    },
+    {
+      "source": "filter_month",
+      "target": "class_value",
+      "type": "DataFilter"
+    },
+    {
+      "source": "filter_month",
+      "target": "train_type_bookings",
+      "type": "DataFilter"
+    },
+    {
+      "source": "filter_month",
+      "target": "payment_value",
+      "type": "DataFilter"
+    },
+    {
+      "source": "filter_channel",
+      "target": "kpi_0",
+      "type": "DataFilter"
+    },
+    {
+      "source": "filter_channel",
+      "target": "kpi_1",
+      "type": "DataFilter"
+    },
+    {
+      "source": "filter_channel",
+      "target": "kpi_2",
+      "type": "DataFilter"
+    },
+    {
+      "source": "filter_channel",
+      "target": "kpi_3",
+      "type": "DataFilter"
+    },
+    {
+      "source": "filter_channel",
+      "target": "route_detail",
+      "type": "DataFilter"
+    },
+    {
+      "source": "filter_channel",
+      "target": "class_value",
+      "type": "DataFilter"
+    },
+    {
+      "source": "filter_channel",
+      "target": "train_type_bookings",
+      "type": "DataFilter"
+    },
+    {
+      "source": "filter_channel",
+      "target": "payment_value",
+      "type": "DataFilter"
+    },
+    {
+      "source": "filter_type",
+      "target": "kpi_0",
+      "type": "DataFilter"
+    },
+    {
+      "source": "filter_type",
+      "target": "kpi_1",
+      "type": "DataFilter"
+    },
+    {
+      "source": "filter_type",
+      "target": "kpi_2",
+      "type": "DataFilter"
+    },
+    {
+      "source": "filter_type",
+      "target": "kpi_3",
+      "type": "DataFilter"
+    },
+    {
+      "source": "filter_type",
+      "target": "route_detail",
+      "type": "DataFilter"
+    },
+    {
+      "source": "filter_type",
+      "target": "class_value",
+      "type": "DataFilter"
+    },
+    {
+      "source": "filter_type",
+      "target": "train_type_bookings",
+      "type": "DataFilter"
+    },
+    {
+      "source": "filter_type",
+      "target": "payment_value",
+      "type": "DataFilter"
+    },
+    {
+      "source": "filter_status",
+      "target": "kpi_0",
+      "type": "DataFilter"
+    },
+    {
+      "source": "filter_status",
+      "target": "kpi_1",
+      "type": "DataFilter"
+    },
+    {
+      "source": "filter_status",
+      "target": "kpi_2",
+      "type": "DataFilter"
+    },
+    {
+      "source": "filter_status",
+      "target": "kpi_3",
+      "type": "DataFilter"
+    },
+    {
+      "source": "filter_status",
+      "target": "route_detail",
+      "type": "DataFilter"
+    },
+    {
+      "source": "filter_status",
+      "target": "class_value",
+      "type": "DataFilter"
+    },
+    {
+      "source": "filter_status",
+      "target": "train_type_bookings",
+      "type": "DataFilter"
+    },
+    {
+      "source": "filter_status",
+      "target": "payment_value",
+      "type": "DataFilter"
+    },
+    {
+      "source": "filter_route",
+      "target": "kpi_0",
+      "type": "DataFilter"
+    },
+    {
+      "source": "filter_route",
+      "target": "kpi_1",
+      "type": "DataFilter"
+    },
+    {
+      "source": "filter_route",
+      "target": "kpi_2",
+      "type": "DataFilter"
+    },
+    {
+      "source": "filter_route",
+      "target": "kpi_3",
+      "type": "DataFilter"
+    },
+    {
+      "source": "filter_route",
+      "target": "route_detail",
+      "type": "DataFilter"
+    },
+    {
+      "source": "filter_route",
+      "target": "class_value",
+      "type": "DataFilter"
+    },
+    {
+      "source": "filter_route",
+      "target": "train_type_bookings",
+      "type": "DataFilter"
+    },
+    {
+      "source": "filter_route",
+      "target": "payment_value",
+      "type": "DataFilter"
+    },
+    {
+      "source": "route_detail",
+      "target": "kpi_0",
+      "type": "DataFilter"
+    },
+    {
+      "source": "route_detail",
+      "target": "kpi_1",
+      "type": "DataFilter"
+    },
+    {
+      "source": "route_detail",
+      "target": "kpi_2",
+      "type": "DataFilter"
+    },
+    {
+      "source": "route_detail",
+      "target": "kpi_3",
+      "type": "DataFilter"
+    },
+    {
+      "source": "route_detail",
+      "target": "class_value",
+      "type": "DataFilter"
+    },
+    {
+      "source": "route_detail",
+      "target": "train_type_bookings",
+      "type": "DataFilter"
+    },
+    {
+      "source": "route_detail",
+      "target": "payment_value",
+      "type": "DataFilter"
+    },
+    {
+      "source": "class_value",
+      "target": "kpi_0",
+      "type": "DataFilter"
+    },
+    {
+      "source": "class_value",
+      "target": "kpi_1",
+      "type": "DataFilter"
+    },
+    {
+      "source": "class_value",
+      "target": "kpi_2",
+      "type": "DataFilter"
+    },
+    {
+      "source": "class_value",
+      "target": "kpi_3",
+      "type": "DataFilter"
+    },
+    {
+      "source": "class_value",
+      "target": "route_detail",
+      "type": "DataFilter"
+    },
+    {
+      "source": "class_value",
+      "target": "train_type_bookings",
+      "type": "DataFilter"
+    },
+    {
+      "source": "class_value",
+      "target": "payment_value",
+      "type": "DataFilter"
+    },
+    {
+      "source": "train_type_bookings",
+      "target": "kpi_0",
+      "type": "DataFilter"
+    },
+    {
+      "source": "train_type_bookings",
+      "target": "kpi_1",
+      "type": "DataFilter"
+    },
+    {
+      "source": "train_type_bookings",
+      "target": "kpi_2",
+      "type": "DataFilter"
+    },
+    {
+      "source": "train_type_bookings",
+      "target": "kpi_3",
+      "type": "DataFilter"
+    },
+    {
+      "source": "train_type_bookings",
+      "target": "route_detail",
+      "type": "DataFilter"
+    },
+    {
+      "source": "train_type_bookings",
+      "target": "class_value",
+      "type": "DataFilter"
+    },
+    {
+      "source": "train_type_bookings",
+      "target": "payment_value",
+      "type": "DataFilter"
+    },
+    {
+      "source": "payment_value",
+      "target": "kpi_0",
+      "type": "DataFilter"
+    },
+    {
+      "source": "payment_value",
+      "target": "kpi_1",
+      "type": "DataFilter"
+    },
+    {
+      "source": "payment_value",
+      "target": "kpi_2",
+      "type": "DataFilter"
+    },
+    {
+      "source": "payment_value",
+      "target": "kpi_3",
+      "type": "DataFilter"
+    },
+    {
+      "source": "payment_value",
+      "target": "route_detail",
+      "type": "DataFilter"
+    },
+    {
+      "source": "payment_value",
+      "target": "class_value",
+      "type": "DataFilter"
+    },
+    {
+      "source": "payment_value",
+      "target": "train_type_bookings",
+      "type": "DataFilter"
+    }
+  ]
+}

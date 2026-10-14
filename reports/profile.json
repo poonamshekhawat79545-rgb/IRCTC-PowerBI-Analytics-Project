@@ -1,0 +1,398 @@
+{
+  "columns": {
+    "Base_Fare_INR": {
+      "distinct_count": 269,
+      "max": 20658,
+      "mean": 2065.388,
+      "median": 1218.0,
+      "min": 73,
+      "missing_count": 0
+    },
+    "Booking_Channel": {
+      "distinct_count": 3,
+      "missing_count": 0,
+      "value_counts": {
+        "Authorised Partners": 2423,
+        "IRCTC App": 6883,
+        "IRCTC Website": 10694
+      }
+    },
+    "Booking_Date": {
+      "distinct_count": 365,
+      "max": "2025-12-31",
+      "min": "2025-01-01",
+      "missing_count": 0
+    },
+    "Booking_ID": {
+      "distinct_count": 19650,
+      "missing_count": 0
+    },
+    "Booking_Status": {
+      "distinct_count": 4,
+      "missing_count": 0,
+      "value_counts": {
+        "Cancelled": 749,
+        "Confirmed": 16460,
+        "RAC": 1599,
+        "Waitlisted (WL)": 1192
+      }
+    },
+    "Booking_Time": {
+      "distinct_count": 17537,
+      "missing_count": 0
+    },
+    "Booking_Type": {
+      "distinct_count": 3,
+      "missing_count": 0,
+      "value_counts": {
+        "Premium Tatkal": 2186,
+        "Reserved": 14526,
+        "Tatkal": 3288
+      }
+    },
+    "Catering_Charges_INR": {
+      "distinct_count": 19,
+      "max": 2250,
+      "mean": 310.86275,
+      "median": 185.0,
+      "min": 0,
+      "missing_count": 0,
+      "value_counts": {
+        "0": 9021,
+        "1110": 76,
+        "1125": 438,
+        "1160": 295,
+        "1450": 92,
+        "1500": 270,
+        "1740": 69,
+        "185": 1649,
+        "1875": 108,
+        "2250": 84,
+        "290": 1617,
+        "370": 1071,
+        "375": 1684,
+        "555": 398,
+        "580": 1139,
+        "740": 307,
+        "750": 1097,
+        "870": 479,
+        "925": 106
+      }
+    },
+    "Destination_Station": {
+      "distinct_count": 7,
+      "missing_count": 0,
+      "value_counts": {
+        "HWH (Howrah/Kolkata)": 3550,
+        "MAS (Chennai Central)": 2778,
+        "MMCT (Mumbai Central)": 5837,
+        "NDLS (New Delhi)": 2393,
+        "PUNE (Pune Junction)": 3006,
+        "PURI (Puri)": 1446,
+        "SBC (Bengaluru)": 990
+      }
+    },
+    "Distance_KM": {
+      "distinct_count": 8,
+      "max": 1447,
+      "mean": 803.975,
+      "median": 512.0,
+      "min": 192,
+      "missing_count": 0,
+      "value_counts": {
+        "1384": 4403,
+        "1447": 3550,
+        "192": 3006,
+        "362": 2778,
+        "491": 1434,
+        "500": 1446,
+        "512": 2393,
+        "620": 990
+      }
+    },
+    "Occupancy_Percentage": {
+      "distinct_count": 361,
+      "max": 97.9,
+      "mean": 79.917495,
+      "median": 79.8,
+      "min": 61.9,
+      "missing_count": 0
+    },
+    "On_Time_Delay_Mins": {
+      "distinct_count": 6,
+      "max": 90,
+      "mean": 22.18735,
+      "median": 5.0,
+      "min": 0,
+      "missing_count": 0,
+      "value_counts": {
+        "0": 7587,
+        "12": 2471,
+        "25": 2475,
+        "45": 2532,
+        "5": 2422,
+        "90": 2513
+      }
+    },
+    "Partner_Platform": {
+      "distinct_count": 6,
+      "missing_count": 0,
+      "value_counts": {
+        "ConfirmTkt": 468,
+        "Direct IRCTC": 17577,
+        "EaseMyTrip": 478,
+        "MakeMyTrip": 513,
+        "Paytm Travel": 499,
+        "RailYatri": 465
+      }
+    },
+    "Passenger_Count": {
+      "distinct_count": 6,
+      "max": 6,
+      "mean": 1.99745,
+      "median": 2.0,
+      "min": 1,
+      "missing_count": 0,
+      "value_counts": {
+        "1": 8992,
+        "2": 6035,
+        "3": 2408,
+        "4": 1573,
+        "5": 581,
+        "6": 411
+      }
+    },
+    "Payment_Method": {
+      "distinct_count": 5,
+      "missing_count": 0,
+      "value_counts": {
+        "Credit Card": 4010,
+        "Debit Card": 4006,
+        "IRCTC iMudra / eWallet": 3941,
+        "Net Banking": 4027,
+        "UPI (GPay/PhonePe/Paytm)": 4016
+      }
+    },
+    "Railway_Zone": {
+      "distinct_count": 8,
+      "missing_count": 0,
+      "value_counts": {
+        "Central Railway": 3006,
+        "Northern / Eastern Railway": 3550,
+        "Northern / Western Railway": 4403,
+        "Northern Railway": 2393,
+        "South Central / South Western": 990,
+        "South Eastern / East Coast Railway": 1446,
+        "South Western / Southern Railway": 2778,
+        "Western Railway": 1434
+      }
+    },
+    "Route": {
+      "distinct_count": 8,
+      "missing_count": 0,
+      "value_counts": {
+        "Ahmedabad - Mumbai": 1434,
+        "Bengaluru - Chennai": 2778,
+        "Delhi - Howrah": 3550,
+        "Delhi - Mumbai": 4403,
+        "Howrah - Puri": 1446,
+        "Hyderabad - Bengaluru": 990,
+        "Lucknow - Delhi": 2393,
+        "Mumbai - Pune": 3006
+      }
+    },
+    "Source_Station": {
+      "distinct_count": 7,
+      "missing_count": 0,
+      "value_counts": {
+        "ADI (Ahmedabad)": 1434,
+        "CSMT (Mumbai)": 3006,
+        "HWH (Howrah)": 1446,
+        "HYB (Hyderabad)": 990,
+        "LKO (Lucknow)": 2393,
+        "NDLS (New Delhi)": 7953,
+        "SBC (Bengaluru)": 2778
+      }
+    },
+    "Surge_Tatkal_Charges_INR": {
+      "distinct_count": 1690,
+      "max": 14586,
+      "mean": 202.2201,
+      "median": 0.0,
+      "min": 0,
+      "missing_count": 0
+    },
+    "Taxes_And_Convenience_INR": {
+      "distinct_count": 282,
+      "max": 316,
+      "mean": 74.3074,
+      "median": 60.0,
+      "min": 21,
+      "missing_count": 0
+    },
+    "Total_Revenue_INR": {
+      "distinct_count": 3828,
+      "max": 36897,
+      "mean": 2652.77825,
+      "median": 1665.5,
+      "min": 94,
+      "missing_count": 0
+    },
+    "Train_Capacity": {
+      "distinct_count": 6,
+      "max": 1250,
+      "mean": 943.8555,
+      "median": 920.0,
+      "min": 530,
+      "missing_count": 0,
+      "value_counts": {
+        "1050": 3355,
+        "1150": 3372,
+        "1250": 3185,
+        "530": 3399,
+        "780": 3286,
+        "920": 3403
+      }
+    },
+    "Train_Name": {
+      "distinct_count": 42,
+      "missing_count": 0,
+      "value_counts": {
+        "Ahmedabad Duronto Express": 255,
+        "Ahmedabad Garib Rath Express": 246,
+        "Ahmedabad Rajdhani Express": 257,
+        "Ahmedabad Shatabdi Express": 206,
+        "Ahmedabad Superfast / Mail Express": 218,
+        "Ahmedabad Vande Bharat Express": 252,
+        "Bengaluru Duronto Express": 470,
+        "Bengaluru Garib Rath Express": 471,
+        "Bengaluru Rajdhani Express": 448,
+        "Bengaluru Shatabdi Express": 476,
+        "Bengaluru Superfast / Mail Express": 421,
+        "Bengaluru Vande Bharat Express": 492,
+        "Delhi Duronto Express": 1295,
+        "Delhi Garib Rath Express": 1310,
+        "Delhi Rajdhani Express": 1357,
+        "Delhi Shatabdi Express": 1347,
+        "Delhi Superfast / Mail Express": 1295,
+        "Delhi Vande Bharat Express": 1349,
+        "Howrah Duronto Express": 243,
+        "Howrah Garib Rath Express": 222,
+        "Howrah Rajdhani Express": 267,
+        "Howrah Shatabdi Express": 234,
+        "Howrah Superfast / Mail Express": 207,
+        "Howrah Vande Bharat Express": 273,
+        "Hyderabad Duronto Express": 174,
+        "Hyderabad Garib Rath Express": 191,
+        "Hyderabad Rajdhani Express": 163,
+        "Hyderabad Shatabdi Express": 162,
+        "Hyderabad Superfast / Mail Express": 140,
+        "Hyderabad Vande Bharat Express": 160,
+        "Lucknow Duronto Express": 407,
+        "Lucknow Garib Rath Express": 407,
+        "Lucknow Rajdhani Express": 396,
+        "Lucknow Shatabdi Express": 404,
+        "Lucknow Superfast / Mail Express": 417,
+        "Lucknow Vande Bharat Express": 362,
+        "Mumbai Duronto Express": 511,
+        "Mumbai Garib Rath Express": 525,
+        "Mumbai Rajdhani Express": 515,
+        "Mumbai Shatabdi Express": 457,
+        "Mumbai Superfast / Mail Express": 487,
+        "Mumbai Vande Bharat Express": 511
+      }
+    },
+    "Train_Number": {
+      "distinct_count": 540,
+      "missing_count": 0
+    },
+    "Train_Type": {
+      "distinct_count": 6,
+      "missing_count": 0,
+      "value_counts": {
+        "Duronto Express": 3355,
+        "Garib Rath Express": 3372,
+        "Rajdhani Express": 3403,
+        "Shatabdi Express": 3286,
+        "Superfast / Mail Express": 3185,
+        "Vande Bharat Express": 3399
+      }
+    },
+    "Travel_Class": {
+      "distinct_count": 6,
+      "missing_count": 0,
+      "value_counts": {
+        "1A": 3105,
+        "2A": 2984,
+        "3A": 4688,
+        "CC": 5121,
+        "EC": 3288,
+        "SL": 814
+      }
+    },
+    "Travel_Date": {
+      "distinct_count": 75,
+      "max": "2025-07-15",
+      "min": "2025-05-02",
+      "missing_count": 0
+    },
+    "User_ID": {
+      "distinct_count": 19439,
+      "missing_count": 0
+    }
+  },
+  "policies": {
+    "chronology": "Retain otherwise accepted rows with booking date after travel date for descriptive booking KPIs; flag and exclude only from valid lead-time analyses.",
+    "conflicting_booking_ids": "After exact-row deduplication, quarantine ALL rows whose Booking_ID has more than one distinct source record. No row is selected arbitrarily.",
+    "exact_duplicates": "Keep the first occurrence of an identical full source row; save removed occurrences with their source row numbers.",
+    "financial_reconciliation": "Require recorded booking value to equal base fare + surge/Tatkal + catering + taxes/convenience. Fail on mismatch and report count.",
+    "missing_or_malformed": "Fail immediately on missing required values, malformed dates/time/numbers, nonpositive passenger/capacity values, negative currency/delay/distance, occupancy outside 0-100, or changing source schema.",
+    "operational_fields": "Flag inconsistent train metadata and conflicting train-date occupancy/delay. Retain record-level descriptive values; do not infer service load, punctuality, utilization or actual operated trains.",
+    "provenance": "User-supplied educational dataset. No independent evidence that these are official IRCTC production records; findings apply only to this file."
+  },
+  "quality": {
+    "accepted_booking_value_inr": 51279303,
+    "accepted_row_count": 19301,
+    "conflicting_booking_id_groups": 349,
+    "conflicting_fields_by_group_count": {
+      "Booking_Date": 349
+    },
+    "exact_duplicate_rows_removed": 1,
+    "exact_duplicate_value_removed_inr": 660,
+    "invalid_chronology_count": 11408,
+    "invalid_chronology_pct": 59.105746,
+    "population": "accepted booking records",
+    "quarantined_booking_value_inr": 1775602,
+    "quarantined_rows": 698,
+    "records_in_delay_conflicting_groups": 7145,
+    "records_in_occupancy_conflicting_groups": 8639,
+    "retained_row_pct": 96.505,
+    "source_booking_value_inr": 53055565,
+    "source_charge_mismatch_count": 0,
+    "source_missing_cell_count": 0,
+    "source_row_count": 20000,
+    "source_unique_booking_ids": 19650,
+    "train_date_delay_conflicting_groups": 3113,
+    "train_date_groups": 14482,
+    "train_date_groups_with_multiple_records": 3845,
+    "train_date_occupancy_conflicting_groups": 3833,
+    "train_metadata_conflicting_numbers": 540,
+    "train_metadata_conflicting_numbers_by_field": {
+      "destination_station": 540,
+      "distance_km": 540,
+      "railway_zone": 540,
+      "route": 540,
+      "source_station": 540,
+      "train_capacity": 0,
+      "train_name": 540,
+      "train_type": 0
+    },
+    "train_number_count": 540,
+    "valid_lead_time_count": 7893
+  },
+  "schema_version": "1.0",
+  "source_columns": 28,
+  "source_file": "bookings.csv",
+  "source_rows": 20000,
+  "source_sha256": "7c95cbe3ab5a0f34bc977c1947350246da0e0823398dcb0c08d3797479596715"
+}

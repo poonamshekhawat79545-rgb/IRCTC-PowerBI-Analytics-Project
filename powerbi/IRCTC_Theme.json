@@ -1,0 +1,7 @@
+{
+  "name": "IRCTC Business Insights - supplied DataCliq palette",
+  "dataColors": ["#0E48B6", "#6579B8", "#F42829", "#2061D2", "#BDD8F6", "#FBD5D6"],
+  "background": "#FFFFFF",
+  "foreground": "#172443",
+  "tableAccent": "#0E48B6"
+}

@@ -1,0 +1,591 @@
+[
+  {
+    "name": "All records",
+    "filters": {},
+    "expected": {
+      "count": 19301,
+      "value": 51279303,
+      "passengers": 38528,
+      "users": 19101,
+      "trains": 540,
+      "invalid": 11408,
+      "validLeadCount": 7893,
+      "occupancy": 79.93179627998549
+    }
+  },
+  {
+    "name": "month: 2025-01",
+    "filters": {
+      "month": "2025-01"
+    },
+    "expected": {
+      "count": 1428,
+      "value": 3774093,
+      "passengers": 2837,
+      "users": 1427,
+      "trains": 497,
+      "invalid": 0,
+      "validLeadCount": 1428,
+      "occupancy": 80.00840336134453
+    }
+  },
+  {
+    "name": "month: 2025-02",
+    "filters": {
+      "month": "2025-02"
+    },
+    "expected": {
+      "count": 1390,
+      "value": 3623607,
+      "passengers": 2748,
+      "users": 1389,
+      "trains": 500,
+      "invalid": 0,
+      "validLeadCount": 1390,
+      "occupancy": 79.90014388489209
+    }
+  },
+  {
+    "name": "month: 2025-03",
+    "filters": {
+      "month": "2025-03"
+    },
+    "expected": {
+      "count": 1518,
+      "value": 3881082,
+      "passengers": 2979,
+      "users": 1518,
+      "trains": 508,
+      "invalid": 0,
+      "validLeadCount": 1518,
+      "occupancy": 80.13201581027668
+    }
+  },
+  {
+    "name": "month: 2025-04",
+    "filters": {
+      "month": "2025-04"
+    },
+    "expected": {
+      "count": 1461,
+      "value": 3920984,
+      "passengers": 2902,
+      "users": 1460,
+      "trains": 503,
+      "invalid": 0,
+      "validLeadCount": 1461,
+      "occupancy": 79.60150581793292
+    }
+  },
+  {
+    "name": "month: 2025-05",
+    "filters": {
+      "month": "2025-05"
+    },
+    "expected": {
+      "count": 1627,
+      "value": 4467616,
+      "passengers": 3314,
+      "users": 1623,
+      "trains": 526,
+      "invalid": 179,
+      "validLeadCount": 1448,
+      "occupancy": 79.74456054087277
+    }
+  },
+  {
+    "name": "month: 2025-06",
+    "filters": {
+      "month": "2025-06"
+    },
+    "expected": {
+      "count": 1657,
+      "value": 4464593,
+      "passengers": 3361,
+      "users": 1656,
+      "trains": 516,
+      "invalid": 1033,
+      "validLeadCount": 624,
+      "occupancy": 79.40380205190102
+    }
+  },
+  {
+    "name": "month: 2025-07",
+    "filters": {
+      "month": "2025-07"
+    },
+    "expected": {
+      "count": 1418,
+      "value": 3899307,
+      "passengers": 2863,
+      "users": 1417,
+      "trains": 493,
+      "invalid": 1394,
+      "validLeadCount": 24,
+      "occupancy": 80.13046544428772
+    }
+  },
+  {
+    "name": "month: 2025-08",
+    "filters": {
+      "month": "2025-08"
+    },
+    "expected": {
+      "count": 1539,
+      "value": 3974512,
+      "passengers": 3067,
+      "users": 1538,
+      "trains": 514,
+      "invalid": 1539,
+      "validLeadCount": 0,
+      "occupancy": 79.86445743989604
+    }
+  },
+  {
+    "name": "month: 2025-09",
+    "filters": {
+      "month": "2025-09"
+    },
+    "expected": {
+      "count": 1655,
+      "value": 4356748,
+      "passengers": 3284,
+      "users": 1654,
+      "trains": 511,
+      "invalid": 1655,
+      "validLeadCount": 0,
+      "occupancy": 80.06157099697886
+    }
+  },
+  {
+    "name": "month: 2025-10",
+    "filters": {
+      "month": "2025-10"
+    },
+    "expected": {
+      "count": 1783,
+      "value": 4811471,
+      "passengers": 3456,
+      "users": 1781,
+      "trains": 518,
+      "invalid": 1783,
+      "validLeadCount": 0,
+      "occupancy": 80.05945036455412
+    }
+  },
+  {
+    "name": "month: 2025-11",
+    "filters": {
+      "month": "2025-11"
+    },
+    "expected": {
+      "count": 2010,
+      "value": 5103595,
+      "passengers": 4017,
+      "users": 2008,
+      "trains": 526,
+      "invalid": 2010,
+      "validLeadCount": 0,
+      "occupancy": 79.95507462686567
+    }
+  },
+  {
+    "name": "month: 2025-12",
+    "filters": {
+      "month": "2025-12"
+    },
+    "expected": {
+      "count": 1815,
+      "value": 5001695,
+      "passengers": 3700,
+      "users": 1815,
+      "trains": 524,
+      "invalid": 1815,
+      "validLeadCount": 0,
+      "occupancy": 80.27641873278237
+    }
+  },
+  {
+    "name": "channel: Authorised Partners",
+    "filters": {
+      "channel": "Authorised Partners"
+    },
+    "expected": {
+      "count": 2339,
+      "value": 6036219,
+      "passengers": 4615,
+      "users": 2336,
+      "trains": 528,
+      "invalid": 1386,
+      "validLeadCount": 953,
+      "occupancy": 79.58939717828132
+    }
+  },
+  {
+    "name": "channel: IRCTC App",
+    "filters": {
+      "channel": "IRCTC App"
+    },
+    "expected": {
+      "count": 6642,
+      "value": 17539357,
+      "passengers": 13196,
+      "users": 6611,
+      "trains": 540,
+      "invalid": 3961,
+      "validLeadCount": 2681,
+      "occupancy": 80.01257151460403
+    }
+  },
+  {
+    "name": "channel: IRCTC Website",
+    "filters": {
+      "channel": "IRCTC Website"
+    },
+    "expected": {
+      "count": 10320,
+      "value": 27703727,
+      "passengers": 20717,
+      "users": 10260,
+      "trains": 540,
+      "invalid": 6061,
+      "validLeadCount": 4259,
+      "occupancy": 79.95741279069767
+    }
+  },
+  {
+    "name": "type: Premium Tatkal",
+    "filters": {
+      "type": "Premium Tatkal"
+    },
+    "expected": {
+      "count": 2105,
+      "value": 7498579,
+      "passengers": 4195,
+      "users": 2102,
+      "trains": 531,
+      "invalid": 1265,
+      "validLeadCount": 840,
+      "occupancy": 80.52503562945368
+    }
+  },
+  {
+    "name": "type: Reserved",
+    "filters": {
+      "type": "Reserved"
+    },
+    "expected": {
+      "count": 14034,
+      "value": 34499345,
+      "passengers": 28060,
+      "users": 13924,
+      "trains": 540,
+      "invalid": 8242,
+      "validLeadCount": 5792,
+      "occupancy": 79.7964015961237
+    }
+  },
+  {
+    "name": "type: Tatkal",
+    "filters": {
+      "type": "Tatkal"
+    },
+    "expected": {
+      "count": 3162,
+      "value": 9281379,
+      "passengers": 6273,
+      "users": 3158,
+      "trains": 539,
+      "invalid": 1901,
+      "validLeadCount": 1261,
+      "occupancy": 80.13779253636939
+    }
+  },
+  {
+    "name": "status: Cancelled",
+    "filters": {
+      "status": "Cancelled"
+    },
+    "expected": {
+      "count": 729,
+      "value": 1962110,
+      "passengers": 1444,
+      "users": 728,
+      "trains": 398,
+      "invalid": 435,
+      "validLeadCount": 294,
+      "occupancy": 80.09135802469136
+    }
+  },
+  {
+    "name": "status: Confirmed",
+    "filters": {
+      "status": "Confirmed"
+    },
+    "expected": {
+      "count": 15864,
+      "value": 42171186,
+      "passengers": 31643,
+      "users": 15727,
+      "trains": 540,
+      "invalid": 9356,
+      "validLeadCount": 6508,
+      "occupancy": 79.91352118003026
+    }
+  },
+  {
+    "name": "status: RAC",
+    "filters": {
+      "status": "RAC"
+    },
+    "expected": {
+      "count": 1558,
+      "value": 4103559,
+      "passengers": 3145,
+      "users": 1556,
+      "trains": 508,
+      "invalid": 938,
+      "validLeadCount": 620,
+      "occupancy": 79.83940949935815
+    }
+  },
+  {
+    "name": "status: Waitlisted (WL)",
+    "filters": {
+      "status": "Waitlisted (WL)"
+    },
+    "expected": {
+      "count": 1150,
+      "value": 3042448,
+      "passengers": 2296,
+      "users": 1150,
+      "trains": 475,
+      "invalid": 679,
+      "validLeadCount": 471,
+      "occupancy": 80.20791304347826
+    }
+  },
+  {
+    "name": "route: Ahmedabad - Mumbai",
+    "filters": {
+      "route": "Ahmedabad - Mumbai"
+    },
+    "expected": {
+      "count": 1390,
+      "value": 2460329,
+      "passengers": 2813,
+      "users": 1390,
+      "trains": 503,
+      "invalid": 830,
+      "validLeadCount": 560,
+      "occupancy": 79.99985611510792
+    }
+  },
+  {
+    "name": "route: Bengaluru - Chennai",
+    "filters": {
+      "route": "Bengaluru - Chennai"
+    },
+    "expected": {
+      "count": 2681,
+      "value": 3665106,
+      "passengers": 5272,
+      "users": 2680,
+      "trains": 537,
+      "invalid": 1591,
+      "validLeadCount": 1090,
+      "occupancy": 79.89164490861619
+    }
+  },
+  {
+    "name": "route: Delhi - Howrah",
+    "filters": {
+      "route": "Delhi - Howrah"
+    },
+    "expected": {
+      "count": 3442,
+      "value": 15444108,
+      "passengers": 6776,
+      "users": 3436,
+      "trains": 540,
+      "invalid": 1998,
+      "validLeadCount": 1444,
+      "occupancy": 80.0008425334108
+    }
+  },
+  {
+    "name": "route: Delhi - Mumbai",
+    "filters": {
+      "route": "Delhi - Mumbai"
+    },
+    "expected": {
+      "count": 4245,
+      "value": 18405394,
+      "passengers": 8529,
+      "users": 4233,
+      "trains": 539,
+      "invalid": 2551,
+      "validLeadCount": 1694,
+      "occupancy": 80.15043580683157
+    }
+  },
+  {
+    "name": "route: Howrah - Puri",
+    "filters": {
+      "route": "Howrah - Puri"
+    },
+    "expected": {
+      "count": 1386,
+      "value": 2529705,
+      "passengers": 2786,
+      "users": 1385,
+      "trains": 495,
+      "invalid": 814,
+      "validLeadCount": 572,
+      "occupancy": 80.14906204906205
+    }
+  },
+  {
+    "name": "route: Hyderabad - Bengaluru",
+    "filters": {
+      "route": "Hyderabad - Bengaluru"
+    },
+    "expected": {
+      "count": 952,
+      "value": 2023261,
+      "passengers": 1874,
+      "users": 952,
+      "trains": 435,
+      "invalid": 541,
+      "validLeadCount": 411,
+      "occupancy": 79.73424369747899
+    }
+  },
+  {
+    "name": "route: Lucknow - Delhi",
+    "filters": {
+      "route": "Lucknow - Delhi"
+    },
+    "expected": {
+      "count": 2315,
+      "value": 4177128,
+      "passengers": 4663,
+      "users": 2311,
+      "trains": 531,
+      "invalid": 1393,
+      "validLeadCount": 922,
+      "occupancy": 79.81015118790496
+    }
+  },
+  {
+    "name": "route: Mumbai - Pune",
+    "filters": {
+      "route": "Mumbai - Pune"
+    },
+    "expected": {
+      "count": 2890,
+      "value": 2574272,
+      "passengers": 5815,
+      "users": 2885,
+      "trains": 536,
+      "invalid": 1690,
+      "validLeadCount": 1200,
+      "occupancy": 79.59124567474048
+    }
+  },
+  {
+    "name": "January app confirmed",
+    "filters": {
+      "month": "2025-01",
+      "channel": "IRCTC App",
+      "status": "Confirmed"
+    },
+    "expected": {
+      "count": 396,
+      "value": 1008622,
+      "passengers": 764,
+      "users": 396,
+      "trains": 288,
+      "invalid": 0,
+      "validLeadCount": 396,
+      "occupancy": 80.11338383838384
+    }
+  },
+  {
+    "name": "December partners Premium Tatkal Delhi Mumbai",
+    "filters": {
+      "month": "2025-12",
+      "channel": "Authorised Partners",
+      "type": "Premium Tatkal",
+      "route": "Delhi - Mumbai"
+    },
+    "expected": {
+      "count": 5,
+      "value": 32237,
+      "passengers": 8,
+      "users": 5,
+      "trains": 5,
+      "invalid": 5,
+      "validLeadCount": 0,
+      "occupancy": 85.1
+    }
+  },
+  {
+    "name": "Cancelled reserved Delhi Howrah",
+    "filters": {
+      "status": "Cancelled",
+      "type": "Reserved",
+      "route": "Delhi - Howrah"
+    },
+    "expected": {
+      "count": 97,
+      "value": 410127,
+      "passengers": 207,
+      "users": 97,
+      "trains": 93,
+      "invalid": 55,
+      "validLeadCount": 42,
+      "occupancy": 79.16494845360825
+    }
+  },
+  {
+    "name": "Small-value single booking",
+    "filters": {
+      "month": "2025-05",
+      "channel": "IRCTC Website",
+      "type": "Tatkal",
+      "status": "Waitlisted (WL)",
+      "route": "Mumbai - Pune"
+    },
+    "expected": {
+      "count": 1,
+      "value": 116,
+      "passengers": 1,
+      "users": 1,
+      "trains": 1,
+      "invalid": 0,
+      "validLeadCount": 1,
+      "occupancy": 69.0
+    }
+  },
+  {
+    "name": "Empty intersection",
+    "filters": {
+      "month": "2025-01",
+      "channel": "Authorised Partners",
+      "type": "Premium Tatkal",
+      "status": "Cancelled",
+      "route": "Ahmedabad - Mumbai"
+    },
+    "expected": {
+      "count": 0,
+      "value": 0,
+      "passengers": 0,
+      "users": 0,
+      "trains": 0,
+      "invalid": 0,
+      "validLeadCount": 0,
+      "occupancy": null
+    }
+  }
+]

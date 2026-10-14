@@ -1,0 +1,9 @@
+route_key,route,source_station,destination_station,distance_km,railway_zone
+1,Ahmedabad - Mumbai,ADI (Ahmedabad),MMCT (Mumbai Central),491,Western Railway
+2,Bengaluru - Chennai,SBC (Bengaluru),MAS (Chennai Central),362,South Western / Southern Railway
+3,Delhi - Howrah,NDLS (New Delhi),HWH (Howrah/Kolkata),1447,Northern / Eastern Railway
+4,Delhi - Mumbai,NDLS (New Delhi),MMCT (Mumbai Central),1384,Northern / Western Railway
+5,Howrah - Puri,HWH (Howrah),PURI (Puri),500,South Eastern / East Coast Railway
+6,Hyderabad - Bengaluru,HYB (Hyderabad),SBC (Bengaluru),620,South Central / South Western
+7,Lucknow - Delhi,LKO (Lucknow),NDLS (New Delhi),512,Northern Railway
+8,Mumbai - Pune,CSMT (Mumbai),PUNE (Pune Junction),192,Central Railway

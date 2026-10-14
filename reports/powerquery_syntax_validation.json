@@ -1,0 +1,59 @@
+{
+  "status": "PASS",
+  "checked_at_utc": "2026-10-06T14:38:43.973Z",
+  "scope": "Power Query M lexical and syntax parsing only; no M evaluation or native Power BI engine execution.",
+  "parser_package": "@microsoft/powerquery-parser",
+  "parser_version": "2.0.0",
+  "node_version": "v24.19.0",
+  "parser_api": "TaskUtils.tryLexParse(DefaultSettings, query)",
+  "parser_reference": "https://github.com/microsoft/powerquery-parser",
+  "queries": [
+    {
+      "name": "Native model / Bookings",
+      "source_file": "powerbi/IRCTC.SemanticModel/model.bim",
+      "table": "Bookings",
+      "partition": "Bookings",
+      "query_sha256": "0f59e682a06eef2adbc0a3074c89bb10820b932ad0f35aeef1021684f1bca8e9",
+      "query_utf8_bytes": 1404053,
+      "parser_stage": "Parse",
+      "parser_result_kind": "Ok",
+      "status": "PASS"
+    },
+    {
+      "name": "Native model / DimDate",
+      "source_file": "powerbi/IRCTC.SemanticModel/model.bim",
+      "table": "DimDate",
+      "partition": "DimDate",
+      "query_sha256": "28a8f4889e4b0fe9a98082cb01a23e05cfad38816ab2d502be67e33f94d9f486",
+      "query_utf8_bytes": 2938,
+      "parser_stage": "Parse",
+      "parser_result_kind": "Ok",
+      "status": "PASS"
+    },
+    {
+      "name": "Manual CSV import / Import_Bookings.pq",
+      "source_file": "powerbi/Import_Bookings.pq",
+      "query_sha256": "f5c6cc332d0649ac63bca55ffa32023b35b0a49585b704bb07e21d79a6cae48a",
+      "query_utf8_bytes": 1486,
+      "parser_stage": "Parse",
+      "parser_result_kind": "Ok",
+      "status": "PASS"
+    }
+  ],
+  "negative_control": {
+    "name": "Missing expression in let binding",
+    "input": "let x = in x",
+    "query_sha256": "61eef32fc0a905c9ed7c97bbbb9b3df3b20afad5e974411d2b580b39da986892",
+    "expected_result": "Parser error",
+    "parser_stage": "Parse",
+    "parser_result_kind": "Error",
+    "rejected_as_expected": true,
+    "status": "PASS",
+    "error": "Expected to find one of the following, but a keyword <'in'> was found instead: hex literal, keyword <'false'>, keyword <'#infinity'>, keyword <'#nan'>, keyword <'true'>, numeric literal, <'null'>, text"
+  },
+  "limitations": [
+    "M library function resolution, data types and query evaluation are not tested by a syntax parser.",
+    "DAX evaluation, Power BI Desktop opening, rendering and PBIX saving are not tested here."
+  ],
+  "model_sha256": "5ea94c0130ba5ff419b3ac98b734d4da0ec7a12abb791cb763c7af9b1df5b6b3"
+}

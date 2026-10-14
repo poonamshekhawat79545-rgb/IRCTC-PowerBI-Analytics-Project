@@ -1,0 +1,195 @@
+{
+  "status": "PASS",
+  "method": "Actual inline application script executed in Node with a minimal in-memory DOM; 36 cohorts independently calculated from CSV",
+  "checks": [
+    {
+      "test": "All records",
+      "status": "PASS",
+      "bookings": 19301
+    },
+    {
+      "test": "month: 2025-01",
+      "status": "PASS",
+      "bookings": 1428
+    },
+    {
+      "test": "month: 2025-02",
+      "status": "PASS",
+      "bookings": 1390
+    },
+    {
+      "test": "month: 2025-03",
+      "status": "PASS",
+      "bookings": 1518
+    },
+    {
+      "test": "month: 2025-04",
+      "status": "PASS",
+      "bookings": 1461
+    },
+    {
+      "test": "month: 2025-05",
+      "status": "PASS",
+      "bookings": 1627
+    },
+    {
+      "test": "month: 2025-06",
+      "status": "PASS",
+      "bookings": 1657
+    },
+    {
+      "test": "month: 2025-07",
+      "status": "PASS",
+      "bookings": 1418
+    },
+    {
+      "test": "month: 2025-08",
+      "status": "PASS",
+      "bookings": 1539
+    },
+    {
+      "test": "month: 2025-09",
+      "status": "PASS",
+      "bookings": 1655
+    },
+    {
+      "test": "month: 2025-10",
+      "status": "PASS",
+      "bookings": 1783
+    },
+    {
+      "test": "month: 2025-11",
+      "status": "PASS",
+      "bookings": 2010
+    },
+    {
+      "test": "month: 2025-12",
+      "status": "PASS",
+      "bookings": 1815
+    },
+    {
+      "test": "channel: Authorised Partners",
+      "status": "PASS",
+      "bookings": 2339
+    },
+    {
+      "test": "channel: IRCTC App",
+      "status": "PASS",
+      "bookings": 6642
+    },
+    {
+      "test": "channel: IRCTC Website",
+      "status": "PASS",
+      "bookings": 10320
+    },
+    {
+      "test": "type: Premium Tatkal",
+      "status": "PASS",
+      "bookings": 2105
+    },
+    {
+      "test": "type: Reserved",
+      "status": "PASS",
+      "bookings": 14034
+    },
+    {
+      "test": "type: Tatkal",
+      "status": "PASS",
+      "bookings": 3162
+    },
+    {
+      "test": "status: Cancelled",
+      "status": "PASS",
+      "bookings": 729
+    },
+    {
+      "test": "status: Confirmed",
+      "status": "PASS",
+      "bookings": 15864
+    },
+    {
+      "test": "status: RAC",
+      "status": "PASS",
+      "bookings": 1558
+    },
+    {
+      "test": "status: Waitlisted (WL)",
+      "status": "PASS",
+      "bookings": 1150
+    },
+    {
+      "test": "route: Ahmedabad - Mumbai",
+      "status": "PASS",
+      "bookings": 1390
+    },
+    {
+      "test": "route: Bengaluru - Chennai",
+      "status": "PASS",
+      "bookings": 2681
+    },
+    {
+      "test": "route: Delhi - Howrah",
+      "status": "PASS",
+      "bookings": 3442
+    },
+    {
+      "test": "route: Delhi - Mumbai",
+      "status": "PASS",
+      "bookings": 4245
+    },
+    {
+      "test": "route: Howrah - Puri",
+      "status": "PASS",
+      "bookings": 1386
+    },
+    {
+      "test": "route: Hyderabad - Bengaluru",
+      "status": "PASS",
+      "bookings": 952
+    },
+    {
+      "test": "route: Lucknow - Delhi",
+      "status": "PASS",
+      "bookings": 2315
+    },
+    {
+      "test": "route: Mumbai - Pune",
+      "status": "PASS",
+      "bookings": 2890
+    },
+    {
+      "test": "January app confirmed",
+      "status": "PASS",
+      "bookings": 396
+    },
+    {
+      "test": "December partners Premium Tatkal Delhi Mumbai",
+      "status": "PASS",
+      "bookings": 5
+    },
+    {
+      "test": "Cancelled reserved Delhi Howrah",
+      "status": "PASS",
+      "bookings": 97
+    },
+    {
+      "test": "Small-value single booking",
+      "status": "PASS",
+      "bookings": 1
+    },
+    {
+      "test": "Empty intersection",
+      "status": "PASS",
+      "bookings": 0
+    },
+    {
+      "test": "Generated CSV matches selected row count and filename",
+      "status": "PASS"
+    },
+    {
+      "test": "Trend metric, page state, route search, reset and modal state logic",
+      "status": "PASS"
+    }
+  ],
+  "browser_visual_validation": "NOT PERFORMED: local HTML navigation blocked by browser security policy; this test does not establish layout, native browser events, mobile appearance or download UI behavior."
+}

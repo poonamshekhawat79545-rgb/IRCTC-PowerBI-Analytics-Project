@@ -1,0 +1,227 @@
+{
+  "controls": {
+    "bookings": 19301,
+    "value": 51279303,
+    "passengers": 38528,
+    "users": 19101,
+    "trains": 540,
+    "badChronology": 11408,
+    "cancelled": 729,
+    "occupancy": 0.7993179627998542,
+    "rawRecords": 20000,
+    "rawValue": 53055565
+  },
+  "monthlyControl": [
+    {
+      "month": "2025-01",
+      "bookings": 1428,
+      "value": 3774093
+    },
+    {
+      "month": "2025-02",
+      "bookings": 1390,
+      "value": 3623607
+    },
+    {
+      "month": "2025-03",
+      "bookings": 1518,
+      "value": 3881082
+    },
+    {
+      "month": "2025-04",
+      "bookings": 1461,
+      "value": 3920984
+    },
+    {
+      "month": "2025-05",
+      "bookings": 1627,
+      "value": 4467616
+    },
+    {
+      "month": "2025-06",
+      "bookings": 1657,
+      "value": 4464593
+    },
+    {
+      "month": "2025-07",
+      "bookings": 1418,
+      "value": 3899307
+    },
+    {
+      "month": "2025-08",
+      "bookings": 1539,
+      "value": 3974512
+    },
+    {
+      "month": "2025-09",
+      "bookings": 1655,
+      "value": 4356748
+    },
+    {
+      "month": "2025-10",
+      "bookings": 1783,
+      "value": 4811471
+    },
+    {
+      "month": "2025-11",
+      "bookings": 2010,
+      "value": 5103595
+    },
+    {
+      "month": "2025-12",
+      "bookings": 1815,
+      "value": 5001695
+    }
+  ],
+  "routeControl": [
+    {
+      "route": "Ahmedabad - Mumbai",
+      "bookings": 1390,
+      "value": 2460329
+    },
+    {
+      "route": "Bengaluru - Chennai",
+      "bookings": 2681,
+      "value": 3665106
+    },
+    {
+      "route": "Delhi - Howrah",
+      "bookings": 3442,
+      "value": 15444108
+    },
+    {
+      "route": "Delhi - Mumbai",
+      "bookings": 4245,
+      "value": 18405394
+    },
+    {
+      "route": "Howrah - Puri",
+      "bookings": 1386,
+      "value": 2529705
+    },
+    {
+      "route": "Hyderabad - Bengaluru",
+      "bookings": 952,
+      "value": 2023261
+    },
+    {
+      "route": "Lucknow - Delhi",
+      "bookings": 2315,
+      "value": 4177128
+    },
+    {
+      "route": "Mumbai - Pune",
+      "bookings": 2890,
+      "value": 2574272
+    }
+  ],
+  "passed": [
+    "all headline metrics",
+    "12 monthly counts and values",
+    "8 route counts and values",
+    "temporary source amount +1000 propagated to month, route and overview",
+    "source amount restored",
+    "rendered all 5 sheets"
+  ],
+  "chartCount": 3,
+  "chartBindings": [
+    {
+      "title": "Monthly bookings",
+      "series": [
+        {
+          "values": "'Monthly'!$C$6:$C$17",
+          "categories": "'Monthly'!$P$6:$P$17"
+        }
+      ]
+    },
+    {
+      "title": "Monthly booking value (INR millions)",
+      "series": [
+        {
+          "values": "'Monthly'!$D$6:$D$17",
+          "categories": "'Monthly'!$P$6:$P$17"
+        }
+      ]
+    },
+    {
+      "title": "Bookings by route",
+      "series": [
+        {
+          "values": "'Routes'!$N$6:$N$13",
+          "categories": "'Routes'!$M$6:$M$13"
+        }
+      ]
+    }
+  ],
+  "nativeExcelTested": false,
+  "export_verification": {
+    "sheets": [
+      "Overview",
+      "Monthly",
+      "Routes",
+      "Booking data",
+      "Quality and guide"
+    ],
+    "accepted_rows": 19301,
+    "source_table": "A8:P19309",
+    "source_panes": {
+      "xSplit": "2",
+      "ySplit": "8",
+      "topLeftCell": "C9",
+      "activePane": "bottomRight",
+      "state": "frozen"
+    },
+    "chart_count": 3,
+    "charts": [
+      {
+        "file": "xl/drawings/charts/chart1.xml",
+        "formulas": [
+          "'Monthly'!$P$6:$P$17",
+          "'Monthly'!$C$6:$C$17"
+        ],
+        "colors": [
+          "1450C3",
+          "1450C3",
+          "CCCCCC",
+          "CCCCCC",
+          "D9D9D9"
+        ]
+      },
+      {
+        "file": "xl/drawings/charts/chart2.xml",
+        "formulas": [
+          "'Monthly'!$P$6:$P$17",
+          "'Monthly'!$D$6:$D$17"
+        ],
+        "colors": [
+          "BE1823",
+          "BE1823",
+          "CCCCCC",
+          "CCCCCC",
+          "D9D9D9"
+        ]
+      },
+      {
+        "file": "xl/drawings/charts/chart3.xml",
+        "formulas": [
+          "'Routes'!$M$6:$M$13",
+          "'Routes'!$N$6:$N$13"
+        ],
+        "colors": [
+          "1450C3",
+          "CCCCCC",
+          "CCCCCC",
+          "D9D9D9"
+        ]
+      }
+    ],
+    "formula_count": 248,
+    "formula_errors": [],
+    "cached_headline_values": "verified against pipeline metrics.json",
+    "quality_reconciliation": "all 9 differences zero",
+    "date_storage": "numeric Excel dates",
+    "size_bytes": 1653037,
+    "sha256": "453d5d6315a888130b72cbc4fe54e129d268b0c4d791350cdb3d7fe6aba8895b"
+  },
+  "workbook": "reports/IRCTC_Analysis.xlsx"
+}

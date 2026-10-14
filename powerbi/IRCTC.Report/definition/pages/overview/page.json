@@ -1,0 +1,421 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
+  "name": "overview",
+  "displayName": "Booking overview",
+  "displayOption": "FitToPage",
+  "width": 1600,
+  "height": 1000,
+  "objects": {
+    "background": [
+      {
+        "properties": {
+          "color": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'#F5F8FD'"
+                  }
+                }
+              }
+            }
+          },
+          "transparency": {
+            "expr": {
+              "Literal": {
+                "Value": "0D"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "visualInteractions": [
+    {
+      "source": "filter_month",
+      "target": "kpi_0",
+      "type": "DataFilter"
+    },
+    {
+      "source": "filter_month",
+      "target": "kpi_1",
+      "type": "DataFilter"
+    },
+    {
+      "source": "filter_month",
+      "target": "kpi_2",
+      "type": "DataFilter"
+    },
+    {
+      "source": "filter_month",
+      "target": "kpi_3",
+      "type": "DataFilter"
+    },
+    {
+      "source": "filter_month",
+      "target": "kpi_4",
+      "type": "DataFilter"
+    },
+    {
+      "source": "filter_month",
+      "target": "monthly_bookings",
+      "type": "DataFilter"
+    },
+    {
+      "source": "filter_month",
+      "target": "channel_type_value",
+      "type": "DataFilter"
+    },
+    {
+      "source": "filter_month",
+      "target": "route_bookings",
+      "type": "DataFilter"
+    },
+    {
+      "source": "filter_month",
+      "target": "status_value",
+      "type": "DataFilter"
+    },
+    {
+      "source": "filter_channel",
+      "target": "kpi_0",
+      "type": "DataFilter"
+    },
+    {
+      "source": "filter_channel",
+      "target": "kpi_1",
+      "type": "DataFilter"
+    },
+    {
+      "source": "filter_channel",
+      "target": "kpi_2",
+      "type": "DataFilter"
+    },
+    {
+      "source": "filter_channel",
+      "target": "kpi_3",
+      "type": "DataFilter"
+    },
+    {
+      "source": "filter_channel",
+      "target": "kpi_4",
+      "type": "DataFilter"
+    },
+    {
+      "source": "filter_channel",
+      "target": "monthly_bookings",
+      "type": "DataFilter"
+    },
+    {
+      "source": "filter_channel",
+      "target": "channel_type_value",
+      "type": "DataFilter"
+    },
+    {
+      "source": "filter_channel",
+      "target": "route_bookings",
+      "type": "DataFilter"
+    },
+    {
+      "source": "filter_channel",
+      "target": "status_value",
+      "type": "DataFilter"
+    },
+    {
+      "source": "filter_type",
+      "target": "kpi_0",
+      "type": "DataFilter"
+    },
+    {
+      "source": "filter_type",
+      "target": "kpi_1",
+      "type": "DataFilter"
+    },
+    {
+      "source": "filter_type",
+      "target": "kpi_2",
+      "type": "DataFilter"
+    },
+    {
+      "source": "filter_type",
+      "target": "kpi_3",
+      "type": "DataFilter"
+    },
+    {
+      "source": "filter_type",
+      "target": "kpi_4",
+      "type": "DataFilter"
+    },
+    {
+      "source": "filter_type",
+      "target": "monthly_bookings",
+      "type": "DataFilter"
+    },
+    {
+      "source": "filter_type",
+      "target": "channel_type_value",
+      "type": "DataFilter"
+    },
+    {
+      "source": "filter_type",
+      "target": "route_bookings",
+      "type": "DataFilter"
+    },
+    {
+      "source": "filter_type",
+      "target": "status_value",
+      "type": "DataFilter"
+    },
+    {
+      "source": "filter_status",
+      "target": "kpi_0",
+      "type": "DataFilter"
+    },
+    {
+      "source": "filter_status",
+      "target": "kpi_1",
+      "type": "DataFilter"
+    },
+    {
+      "source": "filter_status",
+      "target": "kpi_2",
+      "type": "DataFilter"
+    },
+    {
+      "source": "filter_status",
+      "target": "kpi_3",
+      "type": "DataFilter"
+    },
+    {
+      "source": "filter_status",
+      "target": "kpi_4",
+      "type": "DataFilter"
+    },
+    {
+      "source": "filter_status",
+      "target": "monthly_bookings",
+      "type": "DataFilter"
+    },
+    {
+      "source": "filter_status",
+      "target": "channel_type_value",
+      "type": "DataFilter"
+    },
+    {
+      "source": "filter_status",
+      "target": "route_bookings",
+      "type": "DataFilter"
+    },
+    {
+      "source": "filter_status",
+      "target": "status_value",
+      "type": "DataFilter"
+    },
+    {
+      "source": "filter_route",
+      "target": "kpi_0",
+      "type": "DataFilter"
+    },
+    {
+      "source": "filter_route",
+      "target": "kpi_1",
+      "type": "DataFilter"
+    },
+    {
+      "source": "filter_route",
+      "target": "kpi_2",
+      "type": "DataFilter"
+    },
+    {
+      "source": "filter_route",
+      "target": "kpi_3",
+      "type": "DataFilter"
+    },
+    {
+      "source": "filter_route",
+      "target": "kpi_4",
+      "type": "DataFilter"
+    },
+    {
+      "source": "filter_route",
+      "target": "monthly_bookings",
+      "type": "DataFilter"
+    },
+    {
+      "source": "filter_route",
+      "target": "channel_type_value",
+      "type": "DataFilter"
+    },
+    {
+      "source": "filter_route",
+      "target": "route_bookings",
+      "type": "DataFilter"
+    },
+    {
+      "source": "filter_route",
+      "target": "status_value",
+      "type": "DataFilter"
+    },
+    {
+      "source": "monthly_bookings",
+      "target": "kpi_0",
+      "type": "DataFilter"
+    },
+    {
+      "source": "monthly_bookings",
+      "target": "kpi_1",
+      "type": "DataFilter"
+    },
+    {
+      "source": "monthly_bookings",
+      "target": "kpi_2",
+      "type": "DataFilter"
+    },
+    {
+      "source": "monthly_bookings",
+      "target": "kpi_3",
+      "type": "DataFilter"
+    },
+    {
+      "source": "monthly_bookings",
+      "target": "kpi_4",
+      "type": "DataFilter"
+    },
+    {
+      "source": "monthly_bookings",
+      "target": "channel_type_value",
+      "type": "DataFilter"
+    },
+    {
+      "source": "monthly_bookings",
+      "target": "route_bookings",
+      "type": "DataFilter"
+    },
+    {
+      "source": "monthly_bookings",
+      "target": "status_value",
+      "type": "DataFilter"
+    },
+    {
+      "source": "channel_type_value",
+      "target": "kpi_0",
+      "type": "DataFilter"
+    },
+    {
+      "source": "channel_type_value",
+      "target": "kpi_1",
+      "type": "DataFilter"
+    },
+    {
+      "source": "channel_type_value",
+      "target": "kpi_2",
+      "type": "DataFilter"
+    },
+    {
+      "source": "channel_type_value",
+      "target": "kpi_3",
+      "type": "DataFilter"
+    },
+    {
+      "source": "channel_type_value",
+      "target": "kpi_4",
+      "type": "DataFilter"
+    },
+    {
+      "source": "channel_type_value",
+      "target": "monthly_bookings",
+      "type": "DataFilter"
+    },
+    {
+      "source": "channel_type_value",
+      "target": "route_bookings",
+      "type": "DataFilter"
+    },
+    {
+      "source": "channel_type_value",
+      "target": "status_value",
+      "type": "DataFilter"
+    },
+    {
+      "source": "route_bookings",
+      "target": "kpi_0",
+      "type": "DataFilter"
+    },
+    {
+      "source": "route_bookings",
+      "target": "kpi_1",
+      "type": "DataFilter"
+    },
+    {
+      "source": "route_bookings",
+      "target": "kpi_2",
+      "type": "DataFilter"
+    },
+    {
+      "source": "route_bookings",
+      "target": "kpi_3",
+      "type": "DataFilter"
+    },
+    {
+      "source": "route_bookings",
+      "target": "kpi_4",
+      "type": "DataFilter"
+    },
+    {
+      "source": "route_bookings",
+      "target": "monthly_bookings",
+      "type": "DataFilter"
+    },
+    {
+      "source": "route_bookings",
+      "target": "channel_type_value",
+      "type": "DataFilter"
+    },
+    {
+      "source": "route_bookings",
+      "target": "status_value",
+      "type": "DataFilter"
+    },
+    {
+      "source": "status_value",
+      "target": "kpi_0",
+      "type": "DataFilter"
+    },
+    {
+      "source": "status_value",
+      "target": "kpi_1",
+      "type": "DataFilter"
+    },
+    {
+      "source": "status_value",
+      "target": "kpi_2",
+      "type": "DataFilter"
+    },
+    {
+      "source": "status_value",
+      "target": "kpi_3",
+      "type": "DataFilter"
+    },
+    {
+      "source": "status_value",
+      "target": "kpi_4",
+      "type": "DataFilter"
+    },
+    {
+      "source": "status_value",
+      "target": "monthly_bookings",
+      "type": "DataFilter"
+    },
+    {
+      "source": "status_value",
+      "target": "channel_type_value",
+      "type": "DataFilter"
+    },
+    {
+      "source": "status_value",
+      "target": "route_bookings",
+      "type": "DataFilter"
+    }
+  ]
+}

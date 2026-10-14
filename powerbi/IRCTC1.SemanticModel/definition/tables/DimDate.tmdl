@@ -1,0 +1,119 @@
+/// Continuous full-year calendar spanning all supplied booking and travel dates. Booking date is the active relationship.
+table DimDate
+	lineageTag: 7b039711-19e3-5f9b-8340-98703b79ef86
+	dataCategory: Time
+
+	column date
+		dataType: dateTime
+		isUnique
+		isKey
+		isNullable: false
+		formatString: dd mmm yyyy
+		lineageTag: 43dcec8e-b928-5f36-8847-33f656acd2de
+		summarizeBy: none
+		sourceColumn: date
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column year
+		dataType: int64
+		formatString: #,##0
+		lineageTag: dbe4ed5a-5458-5d6c-a118-94c125a5ed4c
+		summarizeBy: none
+		sourceColumn: year
+
+	column quarter
+		dataType: int64
+		formatString: #,##0
+		lineageTag: 66e1bcd9-b18c-56ad-bbc8-a030528a3a74
+		summarizeBy: none
+		sourceColumn: quarter
+
+	column month_number
+		dataType: int64
+		formatString: #,##0
+		lineageTag: 4837b55d-d34a-5410-a33a-55742275cd9d
+		summarizeBy: none
+		sourceColumn: month_number
+
+	column month_name
+		dataType: string
+		lineageTag: a94a91c7-646c-5602-9e90-8fab2a4c9ba4
+		summarizeBy: none
+		sourceColumn: month_name
+		sortByColumn: month_number
+
+	column year_month
+		dataType: string
+		lineageTag: 133feb8b-5455-5b39-a54c-e72b43050d97
+		summarizeBy: none
+		sourceColumn: year_month
+
+	column weekday
+		dataType: string
+		lineageTag: ea5e1c83-6f18-5dc3-b971-18e71649fb8e
+		summarizeBy: none
+		sourceColumn: weekday
+		sortByColumn: weekday_number
+
+	column weekday_number
+		dataType: int64
+		formatString: #,##0
+		lineageTag: 8580b509-61b6-52f8-95f4-554703018921
+		summarizeBy: none
+		sourceColumn: weekday_number
+
+	column is_weekend
+		dataType: int64
+		formatString: #,##0
+		lineageTag: db155798-78c1-508d-bd5f-d99eb9f6765d
+		summarizeBy: none
+		sourceColumn: is_weekend
+
+	hierarchy Calendar
+		lineageTag: 253c52e2-209e-5ba1-95a2-6749a7602de1
+
+		level Year
+			lineageTag: a0703f28-231d-4127-8bd7-3dcd433d3924
+			column: year
+
+		level Month
+			lineageTag: a0d807ed-ba49-4c7d-9505-9fcf81598416
+			column: year_month
+
+		level Date
+			lineageTag: c6977e68-0d89-489b-8fae-8cb434f0820b
+			column: date
+
+	partition DimDate = m
+		mode: import
+		source =
+				let
+				    // Portable snapshot: source CSV bytes embedded as GZip + Base64.
+				    // No File.Contents, Web.Contents, gateway or credentials are needed.
+				    EmbeddedBase64 = Text.Combine({
+				        "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"
+				    }, ""),
+				    CsvBytes = Binary.Decompress(Binary.FromText(EmbeddedBase64, BinaryEncoding.Base64), Compression.GZip),
+				    Source = Csv.Document(CsvBytes, [Delimiter=",", Columns=9, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    Typed = Table.TransformColumnTypes(Headers, {
+				        {"date", type date},
+				        {"year", Int64.Type},
+				        {"quarter", Int64.Type},
+				        {"month_number", Int64.Type},
+				        {"month_name", type text},
+				        {"year_month", type text},
+				        {"weekday", type text},
+				        {"weekday_number", Int64.Type},
+				        {"is_weekend", Int64.Type}
+				    }, "en-US")
+				in
+				    Typed
+
+		annotation IRCTC_EmbeddedCsvSha256 = c2f19e2a629ec6250aa4bc4ee0c1a5595130bfdf6691c969a6c4ed405ba031c7
+
+		annotation IRCTC_EmbeddedCsvEncoding = UTF-8 CSV; GZip; Base64; 16000-character chunks
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,541 @@
+train_number,train_type,train_capacity
+12010,Shatabdi Express,780
+12011,Shatabdi Express,780
+12012,Shatabdi Express,780
+12013,Shatabdi Express,780
+12014,Shatabdi Express,780
+12015,Shatabdi Express,780
+12016,Shatabdi Express,780
+12017,Shatabdi Express,780
+12018,Shatabdi Express,780
+12019,Shatabdi Express,780
+12020,Shatabdi Express,780
+12021,Shatabdi Express,780
+12022,Shatabdi Express,780
+12023,Shatabdi Express,780
+12024,Shatabdi Express,780
+12025,Shatabdi Express,780
+12026,Shatabdi Express,780
+12027,Shatabdi Express,780
+12028,Shatabdi Express,780
+12029,Shatabdi Express,780
+12030,Shatabdi Express,780
+12031,Shatabdi Express,780
+12032,Shatabdi Express,780
+12033,Shatabdi Express,780
+12034,Shatabdi Express,780
+12035,Shatabdi Express,780
+12036,Shatabdi Express,780
+12037,Shatabdi Express,780
+12038,Shatabdi Express,780
+12039,Shatabdi Express,780
+12040,Shatabdi Express,780
+12041,Shatabdi Express,780
+12042,Shatabdi Express,780
+12043,Shatabdi Express,780
+12044,Shatabdi Express,780
+12045,Shatabdi Express,780
+12046,Shatabdi Express,780
+12047,Shatabdi Express,780
+12048,Shatabdi Express,780
+12049,Shatabdi Express,780
+12050,Shatabdi Express,780
+12051,Shatabdi Express,780
+12052,Shatabdi Express,780
+12053,Shatabdi Express,780
+12054,Shatabdi Express,780
+12055,Shatabdi Express,780
+12056,Shatabdi Express,780
+12057,Shatabdi Express,780
+12058,Shatabdi Express,780
+12059,Shatabdi Express,780
+12060,Shatabdi Express,780
+12061,Shatabdi Express,780
+12062,Shatabdi Express,780
+12063,Shatabdi Express,780
+12064,Shatabdi Express,780
+12065,Shatabdi Express,780
+12066,Shatabdi Express,780
+12067,Shatabdi Express,780
+12068,Shatabdi Express,780
+12069,Shatabdi Express,780
+12070,Shatabdi Express,780
+12071,Shatabdi Express,780
+12072,Shatabdi Express,780
+12073,Shatabdi Express,780
+12074,Shatabdi Express,780
+12075,Shatabdi Express,780
+12076,Shatabdi Express,780
+12077,Shatabdi Express,780
+12078,Shatabdi Express,780
+12079,Shatabdi Express,780
+12080,Shatabdi Express,780
+12081,Shatabdi Express,780
+12082,Shatabdi Express,780
+12083,Shatabdi Express,780
+12084,Shatabdi Express,780
+12085,Shatabdi Express,780
+12086,Shatabdi Express,780
+12087,Shatabdi Express,780
+12088,Shatabdi Express,780
+12089,Shatabdi Express,780
+12090,Shatabdi Express,780
+12091,Shatabdi Express,780
+12092,Shatabdi Express,780
+12093,Shatabdi Express,780
+12094,Shatabdi Express,780
+12095,Shatabdi Express,780
+12096,Shatabdi Express,780
+12097,Shatabdi Express,780
+12098,Shatabdi Express,780
+12099,Shatabdi Express,780
+12210,Duronto Express,1050
+12211,Duronto Express,1050
+12212,Duronto Express,1050
+12213,Duronto Express,1050
+12214,Duronto Express,1050
+12215,Duronto Express,1050
+12216,Duronto Express,1050
+12217,Duronto Express,1050
+12218,Duronto Express,1050
+12219,Duronto Express,1050
+12220,Duronto Express,1050
+12221,Duronto Express,1050
+12222,Duronto Express,1050
+12223,Duronto Express,1050
+12224,Duronto Express,1050
+12225,Duronto Express,1050
+12226,Duronto Express,1050
+12227,Duronto Express,1050
+12228,Duronto Express,1050
+12229,Duronto Express,1050
+12230,Duronto Express,1050
+12231,Duronto Express,1050
+12232,Duronto Express,1050
+12233,Duronto Express,1050
+12234,Duronto Express,1050
+12235,Duronto Express,1050
+12236,Duronto Express,1050
+12237,Duronto Express,1050
+12238,Duronto Express,1050
+12239,Duronto Express,1050
+12240,Duronto Express,1050
+12241,Duronto Express,1050
+12242,Duronto Express,1050
+12243,Duronto Express,1050
+12244,Duronto Express,1050
+12245,Duronto Express,1050
+12246,Duronto Express,1050
+12247,Duronto Express,1050
+12248,Duronto Express,1050
+12249,Duronto Express,1050
+12250,Duronto Express,1050
+12251,Duronto Express,1050
+12252,Duronto Express,1050
+12253,Duronto Express,1050
+12254,Duronto Express,1050
+12255,Duronto Express,1050
+12256,Duronto Express,1050
+12257,Duronto Express,1050
+12258,Duronto Express,1050
+12259,Duronto Express,1050
+12260,Duronto Express,1050
+12261,Duronto Express,1050
+12262,Duronto Express,1050
+12263,Duronto Express,1050
+12264,Duronto Express,1050
+12265,Duronto Express,1050
+12266,Duronto Express,1050
+12267,Duronto Express,1050
+12268,Duronto Express,1050
+12269,Duronto Express,1050
+12270,Duronto Express,1050
+12271,Duronto Express,1050
+12272,Duronto Express,1050
+12273,Duronto Express,1050
+12274,Duronto Express,1050
+12275,Duronto Express,1050
+12276,Duronto Express,1050
+12277,Duronto Express,1050
+12278,Duronto Express,1050
+12279,Duronto Express,1050
+12280,Duronto Express,1050
+12281,Duronto Express,1050
+12282,Duronto Express,1050
+12283,Duronto Express,1050
+12284,Duronto Express,1050
+12285,Duronto Express,1050
+12286,Duronto Express,1050
+12287,Duronto Express,1050
+12288,Duronto Express,1050
+12289,Duronto Express,1050
+12290,Duronto Express,1050
+12291,Duronto Express,1050
+12292,Duronto Express,1050
+12293,Duronto Express,1050
+12294,Duronto Express,1050
+12295,Duronto Express,1050
+12296,Duronto Express,1050
+12297,Duronto Express,1050
+12298,Duronto Express,1050
+12299,Duronto Express,1050
+12410,Rajdhani Express,920
+12411,Rajdhani Express,920
+12412,Rajdhani Express,920
+12413,Rajdhani Express,920
+12414,Rajdhani Express,920
+12415,Rajdhani Express,920
+12416,Rajdhani Express,920
+12417,Rajdhani Express,920
+12418,Rajdhani Express,920
+12419,Rajdhani Express,920
+12420,Rajdhani Express,920
+12421,Rajdhani Express,920
+12422,Rajdhani Express,920
+12423,Rajdhani Express,920
+12424,Rajdhani Express,920
+12425,Rajdhani Express,920
+12426,Rajdhani Express,920
+12427,Rajdhani Express,920
+12428,Rajdhani Express,920
+12429,Rajdhani Express,920
+12430,Rajdhani Express,920
+12431,Rajdhani Express,920
+12432,Rajdhani Express,920
+12433,Rajdhani Express,920
+12434,Rajdhani Express,920
+12435,Rajdhani Express,920
+12436,Rajdhani Express,920
+12437,Rajdhani Express,920
+12438,Rajdhani Express,920
+12439,Rajdhani Express,920
+12440,Rajdhani Express,920
+12441,Rajdhani Express,920
+12442,Rajdhani Express,920
+12443,Rajdhani Express,920
+12444,Rajdhani Express,920
+12445,Rajdhani Express,920
+12446,Rajdhani Express,920
+12447,Rajdhani Express,920
+12448,Rajdhani Express,920
+12449,Rajdhani Express,920
+12450,Rajdhani Express,920
+12451,Rajdhani Express,920
+12452,Rajdhani Express,920
+12453,Rajdhani Express,920
+12454,Rajdhani Express,920
+12455,Rajdhani Express,920
+12456,Rajdhani Express,920
+12457,Rajdhani Express,920
+12458,Rajdhani Express,920
+12459,Rajdhani Express,920
+12460,Rajdhani Express,920
+12461,Rajdhani Express,920
+12462,Rajdhani Express,920
+12463,Rajdhani Express,920
+12464,Rajdhani Express,920
+12465,Rajdhani Express,920
+12466,Rajdhani Express,920
+12467,Rajdhani Express,920
+12468,Rajdhani Express,920
+12469,Rajdhani Express,920
+12470,Rajdhani Express,920
+12471,Rajdhani Express,920
+12472,Rajdhani Express,920
+12473,Rajdhani Express,920
+12474,Rajdhani Express,920
+12475,Rajdhani Express,920
+12476,Rajdhani Express,920
+12477,Rajdhani Express,920
+12478,Rajdhani Express,920
+12479,Rajdhani Express,920
+12480,Rajdhani Express,920
+12481,Rajdhani Express,920
+12482,Rajdhani Express,920
+12483,Rajdhani Express,920
+12484,Rajdhani Express,920
+12485,Rajdhani Express,920
+12486,Rajdhani Express,920
+12487,Rajdhani Express,920
+12488,Rajdhani Express,920
+12489,Rajdhani Express,920
+12490,Rajdhani Express,920
+12491,Rajdhani Express,920
+12492,Rajdhani Express,920
+12493,Rajdhani Express,920
+12494,Rajdhani Express,920
+12495,Rajdhani Express,920
+12496,Rajdhani Express,920
+12497,Rajdhani Express,920
+12498,Rajdhani Express,920
+12499,Rajdhani Express,920
+12610,Garib Rath Express,1150
+12611,Garib Rath Express,1150
+12612,Garib Rath Express,1150
+12613,Garib Rath Express,1150
+12614,Garib Rath Express,1150
+12615,Garib Rath Express,1150
+12616,Garib Rath Express,1150
+12617,Garib Rath Express,1150
+12618,Garib Rath Express,1150
+12619,Garib Rath Express,1150
+12620,Garib Rath Express,1150
+12621,Garib Rath Express,1150
+12622,Garib Rath Express,1150
+12623,Garib Rath Express,1150
+12624,Garib Rath Express,1150
+12625,Garib Rath Express,1150
+12626,Garib Rath Express,1150
+12627,Garib Rath Express,1150
+12628,Garib Rath Express,1150
+12629,Garib Rath Express,1150
+12630,Garib Rath Express,1150
+12631,Garib Rath Express,1150
+12632,Garib Rath Express,1150
+12633,Garib Rath Express,1150
+12634,Garib Rath Express,1150
+12635,Garib Rath Express,1150
+12636,Garib Rath Express,1150
+12637,Garib Rath Express,1150
+12638,Garib Rath Express,1150
+12639,Garib Rath Express,1150
+12640,Garib Rath Express,1150
+12641,Garib Rath Express,1150
+12642,Garib Rath Express,1150
+12643,Garib Rath Express,1150
+12644,Garib Rath Express,1150
+12645,Garib Rath Express,1150
+12646,Garib Rath Express,1150
+12647,Garib Rath Express,1150
+12648,Garib Rath Express,1150
+12649,Garib Rath Express,1150
+12650,Garib Rath Express,1150
+12651,Garib Rath Express,1150
+12652,Garib Rath Express,1150
+12653,Garib Rath Express,1150
+12654,Garib Rath Express,1150
+12655,Garib Rath Express,1150
+12656,Garib Rath Express,1150
+12657,Garib Rath Express,1150
+12658,Garib Rath Express,1150
+12659,Garib Rath Express,1150
+12660,Garib Rath Express,1150
+12661,Garib Rath Express,1150
+12662,Garib Rath Express,1150
+12663,Garib Rath Express,1150
+12664,Garib Rath Express,1150
+12665,Garib Rath Express,1150
+12666,Garib Rath Express,1150
+12667,Garib Rath Express,1150
+12668,Garib Rath Express,1150
+12669,Garib Rath Express,1150
+12670,Garib Rath Express,1150
+12671,Garib Rath Express,1150
+12672,Garib Rath Express,1150
+12673,Garib Rath Express,1150
+12674,Garib Rath Express,1150
+12675,Garib Rath Express,1150
+12676,Garib Rath Express,1150
+12677,Garib Rath Express,1150
+12678,Garib Rath Express,1150
+12679,Garib Rath Express,1150
+12680,Garib Rath Express,1150
+12681,Garib Rath Express,1150
+12682,Garib Rath Express,1150
+12683,Garib Rath Express,1150
+12684,Garib Rath Express,1150
+12685,Garib Rath Express,1150
+12686,Garib Rath Express,1150
+12687,Garib Rath Express,1150
+12688,Garib Rath Express,1150
+12689,Garib Rath Express,1150
+12690,Garib Rath Express,1150
+12691,Garib Rath Express,1150
+12692,Garib Rath Express,1150
+12693,Garib Rath Express,1150
+12694,Garib Rath Express,1150
+12695,Garib Rath Express,1150
+12696,Garib Rath Express,1150
+12697,Garib Rath Express,1150
+12698,Garib Rath Express,1150
+12699,Garib Rath Express,1150
+12910,Superfast / Mail Express,1250
+12911,Superfast / Mail Express,1250
+12912,Superfast / Mail Express,1250
+12913,Superfast / Mail Express,1250
+12914,Superfast / Mail Express,1250
+12915,Superfast / Mail Express,1250
+12916,Superfast / Mail Express,1250
+12917,Superfast / Mail Express,1250
+12918,Superfast / Mail Express,1250
+12919,Superfast / Mail Express,1250
+12920,Superfast / Mail Express,1250
+12921,Superfast / Mail Express,1250
+12922,Superfast / Mail Express,1250
+12923,Superfast / Mail Express,1250
+12924,Superfast / Mail Express,1250
+12925,Superfast / Mail Express,1250
+12926,Superfast / Mail Express,1250
+12927,Superfast / Mail Express,1250
+12928,Superfast / Mail Express,1250
+12929,Superfast / Mail Express,1250
+12930,Superfast / Mail Express,1250
+12931,Superfast / Mail Express,1250
+12932,Superfast / Mail Express,1250
+12933,Superfast / Mail Express,1250
+12934,Superfast / Mail Express,1250
+12935,Superfast / Mail Express,1250
+12936,Superfast / Mail Express,1250
+12937,Superfast / Mail Express,1250
+12938,Superfast / Mail Express,1250
+12939,Superfast / Mail Express,1250
+12940,Superfast / Mail Express,1250
+12941,Superfast / Mail Express,1250
+12942,Superfast / Mail Express,1250
+12943,Superfast / Mail Express,1250
+12944,Superfast / Mail Express,1250
+12945,Superfast / Mail Express,1250
+12946,Superfast / Mail Express,1250
+12947,Superfast / Mail Express,1250
+12948,Superfast / Mail Express,1250
+12949,Superfast / Mail Express,1250
+12950,Superfast / Mail Express,1250
+12951,Superfast / Mail Express,1250
+12952,Superfast / Mail Express,1250
+12953,Superfast / Mail Express,1250
+12954,Superfast / Mail Express,1250
+12955,Superfast / Mail Express,1250
+12956,Superfast / Mail Express,1250
+12957,Superfast / Mail Express,1250
+12958,Superfast / Mail Express,1250
+12959,Superfast / Mail Express,1250
+12960,Superfast / Mail Express,1250
+12961,Superfast / Mail Express,1250
+12962,Superfast / Mail Express,1250
+12963,Superfast / Mail Express,1250
+12964,Superfast / Mail Express,1250
+12965,Superfast / Mail Express,1250
+12966,Superfast / Mail Express,1250
+12967,Superfast / Mail Express,1250
+12968,Superfast / Mail Express,1250
+12969,Superfast / Mail Express,1250
+12970,Superfast / Mail Express,1250
+12971,Superfast / Mail Express,1250
+12972,Superfast / Mail Express,1250
+12973,Superfast / Mail Express,1250
+12974,Superfast / Mail Express,1250
+12975,Superfast / Mail Express,1250
+12976,Superfast / Mail Express,1250
+12977,Superfast / Mail Express,1250
+12978,Superfast / Mail Express,1250
+12979,Superfast / Mail Express,1250
+12980,Superfast / Mail Express,1250
+12981,Superfast / Mail Express,1250
+12982,Superfast / Mail Express,1250
+12983,Superfast / Mail Express,1250
+12984,Superfast / Mail Express,1250
+12985,Superfast / Mail Express,1250
+12986,Superfast / Mail Express,1250
+12987,Superfast / Mail Express,1250
+12988,Superfast / Mail Express,1250
+12989,Superfast / Mail Express,1250
+12990,Superfast / Mail Express,1250
+12991,Superfast / Mail Express,1250
+12992,Superfast / Mail Express,1250
+12993,Superfast / Mail Express,1250
+12994,Superfast / Mail Express,1250
+12995,Superfast / Mail Express,1250
+12996,Superfast / Mail Express,1250
+12997,Superfast / Mail Express,1250
+12998,Superfast / Mail Express,1250
+12999,Superfast / Mail Express,1250
+20610,Vande Bharat Express,530
+20611,Vande Bharat Express,530
+20612,Vande Bharat Express,530
+20613,Vande Bharat Express,530
+20614,Vande Bharat Express,530
+20615,Vande Bharat Express,530
+20616,Vande Bharat Express,530
+20617,Vande Bharat Express,530
+20618,Vande Bharat Express,530
+20619,Vande Bharat Express,530
+20620,Vande Bharat Express,530
+20621,Vande Bharat Express,530
+20622,Vande Bharat Express,530
+20623,Vande Bharat Express,530
+20624,Vande Bharat Express,530
+20625,Vande Bharat Express,530
+20626,Vande Bharat Express,530
+20627,Vande Bharat Express,530
+20628,Vande Bharat Express,530
+20629,Vande Bharat Express,530
+20630,Vande Bharat Express,530
+20631,Vande Bharat Express,530
+20632,Vande Bharat Express,530
+20633,Vande Bharat Express,530
+20634,Vande Bharat Express,530
+20635,Vande Bharat Express,530
+20636,Vande Bharat Express,530
+20637,Vande Bharat Express,530
+20638,Vande Bharat Express,530
+20639,Vande Bharat Express,530
+20640,Vande Bharat Express,530
+20641,Vande Bharat Express,530
+20642,Vande Bharat Express,530
+20643,Vande Bharat Express,530
+20644,Vande Bharat Express,530
+20645,Vande Bharat Express,530
+20646,Vande Bharat Express,530
+20647,Vande Bharat Express,530
+20648,Vande Bharat Express,530
+20649,Vande Bharat Express,530
+20650,Vande Bharat Express,530
+20651,Vande Bharat Express,530
+20652,Vande Bharat Express,530
+20653,Vande Bharat Express,530
+20654,Vande Bharat Express,530
+20655,Vande Bharat Express,530
+20656,Vande Bharat Express,530
+20657,Vande Bharat Express,530
+20658,Vande Bharat Express,530
+20659,Vande Bharat Express,530
+20660,Vande Bharat Express,530
+20661,Vande Bharat Express,530
+20662,Vande Bharat Express,530
+20663,Vande Bharat Express,530
+20664,Vande Bharat Express,530
+20665,Vande Bharat Express,530
+20666,Vande Bharat Express,530
+20667,Vande Bharat Express,530
+20668,Vande Bharat Express,530
+20669,Vande Bharat Express,530
+20670,Vande Bharat Express,530
+20671,Vande Bharat Express,530
+20672,Vande Bharat Express,530
+20673,Vande Bharat Express,530
+20674,Vande Bharat Express,530
+20675,Vande Bharat Express,530
+20676,Vande Bharat Express,530
+20677,Vande Bharat Express,530
+20678,Vande Bharat Express,530
+20679,Vande Bharat Express,530
+20680,Vande Bharat Express,530
+20681,Vande Bharat Express,530
+20682,Vande Bharat Express,530
+20683,Vande Bharat Express,530
+20684,Vande Bharat Express,530
+20685,Vande Bharat Express,530
+20686,Vande Bharat Express,530
+20687,Vande Bharat Express,530
+20688,Vande Bharat Express,530
+20689,Vande Bharat Express,530
+20690,Vande Bharat Express,530
+20691,Vande Bharat Express,530
+20692,Vande Bharat Express,530
+20693,Vande Bharat Express,530
+20694,Vande Bharat Express,530
+20695,Vande Bharat Express,530
+20696,Vande Bharat Express,530
+20697,Vande Bharat Express,530
+20698,Vande Bharat Express,530
+20699,Vande Bharat Express,530
